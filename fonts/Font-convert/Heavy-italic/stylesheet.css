@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'SVN-Avenir Next';
+    src: url('SVN-AvenirNextHeavyItalic.eot');
+    src: url('SVN-AvenirNextHeavyItalic.eot?#iefix') format('embedded-opentype'), url('SVN-AvenirNextHeavyItalic.woff2') format('woff2'), url('SVN-AvenirNextHeavyItalic.woff') format('woff'), url('SVN-AvenirNextHeavyItalic.ttf') format('truetype'), url('SVN-AvenirNextHeavyItalic.svg#SVN-AvenirNextHeavyItalic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}

@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'SVN-Avenir Next';
+    src: url('SVN-AvenirNextThin.eot');
+    src: url('SVN-AvenirNextThin.eot?#iefix') format('embedded-opentype'), url('SVN-AvenirNextThin.woff2') format('woff2'), url('SVN-AvenirNextThin.woff') format('woff'), url('SVN-AvenirNextThin.ttf') format('truetype'), url('SVN-AvenirNextThin.svg#SVN-AvenirNextThin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
