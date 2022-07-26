@@ -29,7 +29,7 @@
   width: 50%;
   height: 600px;
   background-color: #f5f5f5;
-  background-image: url("../../images/signin.png");
+  background-image: url("../../images/log/signin.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: -180px 70px;
@@ -101,7 +101,7 @@
     box-shadow: var(--box-shadow);
     width: 50%;
     background-color: #f5f5f5;
-    background-image: url("../../images/register.jpg");
+    background-image: url("../../images/log/register.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -153,7 +153,7 @@
   width: 50%;
   height: 600px;
   background-color: #f5f5f5;
-  background-image: url("../../images/forgot-password.png");
+  background-image: url("../../images/log/forgot-password.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

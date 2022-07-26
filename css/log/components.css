@@ -135,7 +135,7 @@
   border-radius: 4px;
   filter: invert(87%) sepia(100%) saturate(1%) hue-rotate(180deg)
     brightness(110%) contrast(97%);
-  background-image: url("../images/checked.png");
+  background-image: url("../../images/log/checked.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 2px 3px;
