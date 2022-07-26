@@ -1,0 +1,145 @@
+/* button */
+.btn {
+  width: 100%;
+  border-radius: 100px;
+  padding: 12px 10px 10px;
+  background-color: var(--primary-color);
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  display: block;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: var(--primary-light-color);
+}
+
+.btn-text {
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* form */
+.form {
+  width: 100%;
+}
+
+.form .form-group {
+  padding: 12px 0;
+  position: relative;
+}
+
+.form .form-group .form-label {
+}
+
+.form .form-group .form-control {
+  border: 1px solid var(--border-color);
+  border-left-color: var(--primary-color);
+  border-left-width: 8px;
+  outline: none;
+  height: var(--height-control);
+  padding: 0 12px;
+  width: 100%;
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px;
+  color: var(--text-black-color);
+  font-size: 16px;
+  letter-spacing: 1.2px;
+  padding-top: 4px;
+  font-weight: 400;
+}
+
+    .form .form-group .select-fix-regis.form-select select {
+        background-image: url("data:image/svg+xml;utf8,<svg fill='rgb(47,47,47)' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+        background-repeat: no-repeat;
+        background-position: calc(100% - 8px) 11px;
+        border: 1px solid var(--border-color);
+        border-left-color: var(--primary-color);
+        border-left-width: 8px;
+        outline: none;
+        height: var(--height-control);
+        padding: 0 12px;
+        width: 100%;
+        border-top-right-radius: 18px;
+        border-bottom-right-radius: 18px;
+        color: var(--text-black-color);
+        font-size: 16px;
+        letter-spacing: 1.2px;
+        padding-top: 4px;
+        font-weight: 400;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+
+    .form .form-group .select-fix-regis.form-select select:required:invalid {
+        color: var(--placeholder-color);
+    }
+
+    .form .form-group .select-fix-regis.form-select .select-dropdown, .form .form-group .select-fix-regis.form-select svg {
+        display: none;
+    }
+
+    .form .form-group .form-checkbox {
+        position: relative;
+    }
+
+.form .form-group .form-checkbox input[type="checkbox"] {
+  visibility: hidden;
+}
+
+.form .form-group .form-checkbox > label {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.form .form-group .form-checkbox > label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0px;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  border: 1px solid var(--primary-color);
+  transition: 0.3s;
+}
+
+.form
+  .form-group
+  .form-checkbox
+  input[type="checkbox"]:checked
+  + label::before {
+  background-color: var(--primary-color);
+}
+
+.form .form-group .form-checkbox label {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--text-black-color);
+}
+
+.form .form-group .form-checkbox input[type="checkbox"]:checked + label::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  filter: invert(87%) sepia(100%) saturate(1%) hue-rotate(180deg)
+    brightness(110%) contrast(97%);
+  background-image: url("../images/checked.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 2px 3px;
+}
+
+.form .form-group .form-error {
+}

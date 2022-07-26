@@ -1,0 +1,201 @@
+/* main */
+.main {
+  margin-top: 120px;
+  width: 100%;
+  min-height: calc(100vh - 120px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.main-wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+/* sign in page */
+.signin {
+  display: flex;
+  box-shadow: var(--box-shadow);
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.signin-left {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  box-shadow: var(--box-shadow);
+  width: 50%;
+  height: 600px;
+  background-color: #f5f5f5;
+  background-image: url("../../images/signin.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -180px 70px;
+  z-index: 0;
+}
+
+.signin-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+  width: 50%;
+  background-color: white;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.signin-logo {
+  margin-bottom: 30px;
+}
+
+.signin-link {
+  color: var(--primary-color);
+  text-decoration: underline;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.signin-optional {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.signin-optional-left {
+}
+
+.signin-optional-right {
+}
+
+.signin-create {
+  text-align: center;
+}
+
+/* register page */
+.register {
+  display: flex;
+  box-shadow: var(--box-shadow);
+  border-radius: 50px;
+  align-items: stretch;
+  overflow: hidden;
+}
+
+.register-left {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+  width: 50%;
+  background-color: white;
+}
+
+.register-right {
+    box-shadow: var(--box-shadow);
+    width: 50%;
+    background-color: #f5f5f5;
+    background-image: url("../../images/register.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 0;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.register-logo {
+  margin-bottom: 30px;
+}
+
+.register-link {
+  color: var(--primary-color);
+  text-decoration: underline;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.register-optional {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.register-optional-left {
+}
+
+.register-optional-right {
+}
+
+.register-create {
+  text-align: center;
+}
+
+/* forgot password page */
+.forgotpassword {
+  display: flex;
+  box-shadow: var(--box-shadow);
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.forgotpassword-left {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  box-shadow: var(--box-shadow);
+  width: 50%;
+  height: 600px;
+  background-color: #f5f5f5;
+  background-image: url("../../images/forgot-password.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 0;
+}
+
+.forgotpassword-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+  width: 50%;
+  background-color: white;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.forgotpassword-logo {
+  margin-bottom: 30px;
+}
+
+.forgotpassword-link {
+  color: var(--primary-color);
+  text-decoration: underline;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.forgotpassword-optional {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.forgotpassword-optional-left {
+}
+
+.forgotpassword-optional-right {
+}
+
+.forgotpassword-create {
+  text-align: center;
+}

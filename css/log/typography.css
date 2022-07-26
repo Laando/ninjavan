@@ -1,0 +1,17 @@
+@font-face {
+  font-family: Avenir-Next;
+  font-weight: 600;
+  src: url("../fonts/Avenir-Next-Demibold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Avenir-Next;
+  font-weight: 400;
+  src: url("../fonts/Avenir-Next-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Avenir-Next;
+  font-weight: normal;
+  src: url("../fonts/Avenir-Next-Regular.ttf") format("truetype");
+}
