@@ -117,22 +117,22 @@ li {
 }
 
 .btn.btn-setting:hover {
-    background: #C2002F;
+    background: #031e60;
     color: #fff;
 }
 
 .btn.btn-detail {
     width: 154px;
     height: 40px;
-    background: #C2002F;
+    background: #031e60;
     color: #fff;
 }
 
 .btn.btn-detail:hover {
     background-color: white;
     border-radius: 30px;
-    border: 1px solid #C2002F;
-    color: #C2002F;
+    border: 1px solid #031e60;
+    color: #031e60;
 }
 
 .mar-r-15 {
@@ -194,7 +194,7 @@ li {
 }
 
 .color-red {
-    color: #C2002F;
+    color: #031e60;
 }
 
 header {
@@ -215,10 +215,10 @@ main {
 }
 
 .header-top {
-    background: url(../images/topbar-bg.png);
     padding: 12px 0;
     color: #fff;
     font-size: 18px;
+    background-color: #031e60;
 }
 
 .header-top .isner {
@@ -277,7 +277,7 @@ main {
 }
 
 .header-top .isner .header-top-right .list-social li a:hover {
-    background: #C2002F;
+    background: #031e60;
 }
 
 .header-top .isner .header-top-right .list-social li a:hover i {
@@ -391,7 +391,7 @@ main {
     z-index: 999;
     left: 0;
     white-space: nowrap;
-    background-color: #C2002F;
+    background-color: #031e60;
     -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     color: #fff;
@@ -433,7 +433,7 @@ main {
 }
 
 .header-bottom .isner .main-menu .main-menu-nav li a:hover {
-    color: #C2002F;
+    color: #031e60;
 }
 
 .header-bottom .isner .main-menu .main-menu-nav li:last-child a {
@@ -441,7 +441,7 @@ main {
 }
 
 .header-bottom .isner .hotline {
-    background: #C2002F;
+    background: #031e60;
     padding: 10px 50px;
     border-radius: 99px;
 }
@@ -452,7 +452,7 @@ main {
     height: 0;
     border-style: solid;
     border-width: 0 40px 85px 0;
-    border-color: transparent #C2002F transparent transparent;
+    border-color: transparent #031e60 transparent transparent;
     top: 0;
     position: absolute;
     left: -40px;
@@ -530,11 +530,11 @@ main {
 .camket-dichvu-3list .swiper-button-next::after {
     font-size: 18px;
     font-weight: bold;
-    color: #C2002F;
+    color: #031e60;
 }
 
 .camket-dichvu-3list .swiper-button-next:hover {
-    background-color: #C2002F;
+    background-color: #031e60;
 }
 
 .camket-dichvu-3list .swiper-button-next:hover::after {
@@ -557,11 +557,11 @@ main {
 .camket-dichvu-3list .swiper-button-prev::after {
     font-size: 18px;
     font-weight: bold;
-    color: #C2002F;
+    color: #031e60;
 }
 
 .camket-dichvu-3list .swiper-button-prev:hover {
-    background-color: #C2002F;
+    background-color: #031e60;
 }
 
 .camket-dichvu-3list .swiper-button-prev:hover::after {
@@ -574,7 +574,7 @@ main {
 }
 
 .camket-dichvu-3list .box-dichvu:hover .content-box {
-    background-color: #C2002F;
+    background-color: #031e60;
     color: white;
 }
 
@@ -660,18 +660,18 @@ main {
     padding: 20px;
     width: 50px;
     height: 50px;
-    border: 2px solid #C2002F;
+    border: 2px solid #031e60;
     border-radius: 50%;
 }
 
 .sec-quyenloi .swiper-button-next::after {
     font-size: 18px;
     font-weight: bold;
-    color: #C2002F;
+    color: #031e60;
 }
 
 .sec-quyenloi .swiper-button-next:hover {
-    background-color: #C2002F;
+    background-color: #031e60;
 }
 
 .sec-quyenloi .swiper-button-next:hover::after {
@@ -681,7 +681,7 @@ main {
 .sec-quyenloi .swiper-button-prev {
     position: absolute;
     left: -100px;
-    border: 2px solid #C2002F;
+    border: 2px solid #031e60;
     outline: 0;
     background-color: white;
     padding: 20px;
@@ -695,11 +695,11 @@ main {
 .sec-quyenloi .swiper-button-prev::after {
     font-size: 18px;
     font-weight: bold;
-    color: #C2002F;
+    color: #031e60;
 }
 
 .sec-quyenloi .swiper-button-prev:hover {
-    background-color: #C2002F;
+    background-color: #031e60;
 }
 
 .sec-quyenloi .swiper-button-prev:hover::after {
@@ -728,7 +728,7 @@ main {
 }
 
 .sec-quyenloi .box-dichvu:hover .content-box {
-    background-color: #C2002F;
+    background-color: #031e60;
     color: white;
 }
 
@@ -989,7 +989,7 @@ main {
 }
 
 .contact-p .form-lienhe .form-wrapper .btn-main {
-    background-color: #C2002F;
+    background-color: #031e60;
     color: white;
     padding: 10px 30px;
     border-radius: 5px;
@@ -1153,7 +1153,7 @@ main {
     cursor: pointer;
     font-size: 15px;
     background: #fff;
-    color: #C2002F;
+    color: #031e60;
     border-radius: 99px;
     margin-right: 15px;
     margin-bottom: 15px;
@@ -1170,7 +1170,7 @@ main {
 
 .find-prd-wrap .title .hd.current {
     color: #fff;
-    background: #C2002F;
+    background: #031e60;
 }
 
 .find-prd-wrap .title .hd.current img {
@@ -1295,7 +1295,7 @@ main {
     transform: translateY(-50%);
     right: 30px;
     pointer-events: none;
-    color: #C2002F;
+    color: #031e60;
 }
 
 .search-form-wrap .search-form .main-btn {
@@ -1310,7 +1310,7 @@ main {
     text-align: center;
     line-height: 42px;
     white-space: nowrap;
-    background: #C2002F;
+    background: #031e60;
     color: #fff;
     font-weight: bold;
     text-transform: uppercase;
@@ -1323,8 +1323,8 @@ main {
 
 .search-form-wrap .search-form .main-btn:hover {
     background-color: white;
-    color: #C2002F;
-    border: 1px solid #C2002F;
+    color: #031e60;
+    border: 1px solid #031e60;
     border-radius: 30px;
 }
 
@@ -1443,7 +1443,7 @@ main {
 }
 
 .table-service .columns .colum:hover .content .title-intro {
-    color: #C2002F;
+    color: #031e60;
 }
 
 .table-service .columns .colum:hover .content .btn-detail {
@@ -1451,7 +1451,7 @@ main {
 }
 
 .table-service .columns .colum:hover .content .icon:before {
-    background: #C2002F;
+    background: #031e60;
 }
 
 .table-service .columns .colum .content {
@@ -1468,7 +1468,7 @@ main {
     position: absolute;
     right: -15px;
     border-width: 0 0 30px 30px;
-    border-color: transparent transparent #C2002F transparent;
+    border-color: transparent transparent #031e60 transparent;
     opacity: 0;
     -webkit-transition: 0.3s ease;
     transition: 0.3s ease;
@@ -1520,9 +1520,9 @@ main {
 
 .table-service .columns .colum .content .btn-detail:hover {
     background-color: white;
-    color: #C2002F;
+    color: #031e60;
     border-radius: 30px;
-    border: 1px solid #C2002F;
+    border: 1px solid #031e60;
 }
 
 .arrow-up {
@@ -1652,7 +1652,7 @@ main {
 }
 
 .table-resgister .c-tab .c-tab__nav ul li.active {
-    color: #C2002F;
+    color: #031e60;
     background-color: white;
     border-radius: 30px;
 }
@@ -1713,7 +1713,7 @@ main {
 }
 
 .table-resgister .c-tab .c-tab__content .content .title-intro {
-    color: #C2002F;
+    color: #031e60;
     font-size: 18px;
     font-weight: 500;
     font-weight: bold;
@@ -1737,7 +1737,7 @@ main {
 }
 
 .table-resgister .c-tab .c-tab__content .content .desc-intro::-webkit-scrollbar-thumb {
-    background-color: #C2002F;
+    background-color: #031e60;
     border-radius: 30px;
 }
 
@@ -1792,7 +1792,7 @@ main {
 }
 
 .table-customer .columns .colum .content:hover .icon {
-    background: #C2002F;
+    background: #031e60;
 }
 
 .table-customer .columns .colum .content:hover .icon img {
@@ -1801,7 +1801,7 @@ main {
 }
 
 .table-customer .columns .colum .content:hover .title {
-    color: #C2002F;
+    color: #031e60;
 }
 
 .table-customer .columns .colum .content .icon {
@@ -1840,7 +1840,7 @@ main {
     position: absolute;
     width: 1170px;
     bottom: -97px;
-    background: #C2002F;
+    background: #031e60;
 }
 
 .contact-bottom:before {
@@ -1951,7 +1951,7 @@ main {
 .footer .table-footer .columns .colum .content-ft .title {
     font-size: 20px;
     font-weight: bold;
-    color: #C2002F;
+    color: #18c3f3;
     margin-bottom: 17px;
     text-transform: uppercase;
 }
@@ -1966,7 +1966,7 @@ main {
 }
 
 .footer .table-footer .columns .colum .content-ft .list-ft li .hover-li:hover {
-    color: #C2002F;
+    color: #031e60;
 }
 
 .footer .table-footer .columns .colum .content-ft .list-ft-social {
@@ -1995,13 +1995,13 @@ main {
 }
 
 .footer .table-footer .columns .colum .content-ft .list-ft-social li a:hover {
-    background: #C2002F;
+    background: #031e60;
     color: #fff;
 }
 
 .copy-right {
     text-align: center;
-    background: #C2002F;
+    background: #031e60;
     color: #fff;
     padding: 10px 0;
     font-size: 18px;
@@ -2019,10 +2019,10 @@ main {
     right: 20px;
     width: 50px;
     height: 50px;
-    background: #C2002F;
+    background: #031e60;
     border-radius: 25px;
     text-align: center;
-    border: 2px solid #C2002F;
+    border: 2px solid #031e60;
     -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
     opacity: 0;
@@ -2222,7 +2222,7 @@ main {
     height: 100%;
     max-width: 100%;
     border-radius: 9px;
-    background-color: #C2002F;
+    background-color: #031e60;
     background-image: -webkit-repeating-linear-gradient(135deg, transparent 0px, transparent 7px, rgba(0, 0, 0, 0.1) 7px, rgba(0, 0, 0, 0.1) 9px);
     background-image: repeating-linear-gradient(-45deg, transparent 0px, transparent 7px, rgba(0, 0, 0, 0.1) 7px, rgba(0, 0, 0, 0.1) 9px);
     background-size: 50px 50px;
@@ -2250,7 +2250,7 @@ main {
 }
 
 .status-desktop .status__body .balance__number .vnd {
-    color: #C2002F;
+    color: #031e60;
 }
 
 .status-desktop .status__body .links>a {
@@ -2262,11 +2262,11 @@ main {
 .status-desktop .status__body .links>a i {
     float: right;
     line-height: 2;
-    color: #C2002F;
+    color: #031e60;
 }
 
 .status-desktop .status__body .links>a:hover {
-    color: #C2002F;
+    color: #031e60;
 }
 
 .status-desktop .status__footer .ft-btn {
@@ -2275,7 +2275,7 @@ main {
     width: 100%;
     padding: 10px 0;
     border-radius: unset;
-    background-color: #C2002F;
+    background-color: #031e60;
     color: white;
     text-align: center;
 }
@@ -2306,7 +2306,7 @@ main {
 }
 
 .status-mobile .username {
-    color: #C2002F;
+    color: #031e60;
     margin-bottom: 10px;
     text-transform: uppercase;
     text-align: center;
@@ -2317,7 +2317,7 @@ main {
     display: block;
     text-align: center;
     font-size: 48px;
-    color: #C2002F;
+    color: #031e60;
 }
 
 .status-mobile .user-menu-logo img {
@@ -2331,12 +2331,12 @@ main {
 }
 
 .status-mobile .user-info .money {
-    color: #C2002F;
+    color: #031e60;
 }
 
 .status-mobile .user-info .vip {
     text-transform: uppercase;
-    color: #C2002F;
+    color: #031e60;
     font-weight: bold;
 }
 
@@ -2354,7 +2354,7 @@ main {
     left: 0;
     top: 0;
     bottom: 0;
-    background-color: #C2002F;
+    background-color: #031e60;
     border-radius: 8px;
 }
 
@@ -2376,7 +2376,7 @@ main {
 
 .status-mobile .menu-in-profile>li>a>i {
     margin-right: 10px;
-    color: #C2002F;
+    color: #031e60;
     font-size: 18px;
     width: 20px;
 }
@@ -2423,7 +2423,7 @@ main {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    background-color: #C2002F;
+    background-color: #031e60;
     -webkit-transition: 0.3s;
     transition: 0.3s;
     border-radius: 2px;
@@ -2436,7 +2436,7 @@ main {
     left: 0;
     width: 30px;
     height: 3px;
-    background-color: #C2002F;
+    background-color: #031e60;
     -webkit-transition: 0.3s;
     transition: 0.3s;
     border-radius: 2px;
@@ -2489,7 +2489,7 @@ main {
 }
 
 .user-box .icon {
-    color: #C2002F;
+    color: #031e60;
 }
 
 @media screen and (max-width: 1025px) {
@@ -2698,8 +2698,8 @@ main {
 }
 
 .table-services .columns .colum .content:hover {
-    background-color: #C2002F;
-    border: 3px solid #C2002F;
+    background-color: #031e60;
+    border: 3px solid #031e60;
     color: white;
 }
 
@@ -2717,13 +2717,13 @@ main {
 }
 
 .table-services .columns .colum .content:hover .btn-xt {
-    background: #C2002F;
+    background: #031e60;
     color: #fff;
-    border: 1px solid #C2002F;
+    border: 1px solid #031e60;
 }
 
 .table-services .columns .colum .content:hover .btn-xt i {
-    color: #C2002F;
+    color: #031e60;
     background: #fff;
 }
 
@@ -2798,7 +2798,7 @@ main {
 
 .table-services .columns .colum .content .btn-xt i {
     padding: 3px;
-    background: #C2002F;
+    background: #031e60;
     color: #fff;
     border-radius: 99px;
     margin-left: 5px;
@@ -2864,7 +2864,7 @@ main {
     display: inline-block;
     position: relative;
     text-align: center;
-    color: #C2002F;
+    color: #031e60;
 }
 
 .wrapper-chuongtrinhkm .main-title .title span {
@@ -2983,7 +2983,7 @@ main {
 
 .wrapper-chuongtrinhkm .all-banner .box-images .title {
     background-color: white;
-    color: #C2002F;
+    color: #031e60;
     font-weight: bold;
     font-size: 18px;
     text-align: center;
@@ -3065,7 +3065,7 @@ main {
     font-size: 22px;
     font-weight: bold;
     margin-bottom: 10px;
-    color: #C2002F;
+    color: #031e60;
 }
 
 .wrapper-chuongtrinhkm .all-services-extra .box-services-extra .text span {
@@ -3101,7 +3101,7 @@ main {
 }
 
 .wrapper-introduce-dn .main-title .title {
-    color: #C2002F;
+    color: #031e60;
 }
 
 .wrapper-introduce-dn .img-truck-ninja {
@@ -3131,7 +3131,7 @@ main {
 }
 
 .wrapper-introduce-dn .all-introduce .box-introduce {
-    background-color: #C2002F;
+    background-color: #031e60;
     background-color: transparent;
     border: 2px solid #ccc;
     color: black;
@@ -3151,8 +3151,8 @@ main {
 }
 
 .wrapper-introduce-dn .all-introduce .box-introduce:hover {
-    background-color: #C2002F;
-    border: 2px solid #C2002F;
+    background-color: #031e60;
+    border: 2px solid #031e60;
     color: white;
 }
 
@@ -3242,12 +3242,12 @@ main {
 
 .wrapper-baochi .main-title .title {
     margin-bottom: 0;
-    color: #C2002F;
+    color: #031e60;
 }
 
 .wrapper-baochi .main-title .title span {
     margin: 0 10px;
-    color: #C2002F;
+    color: #031e60;
 }
 
 .wrapper-baochi .swiper-button-next {
@@ -3258,12 +3258,12 @@ main {
     padding: 20px;
     width: 50px;
     height: 50px;
-    border: 2px solid #C2002F;
+    border: 2px solid #031e60;
     border-radius: 50%;
 }
 
 .wrapper-baochi .swiper-button-next:hover {
-    background-color: #C2002F;
+    background-color: #031e60;
 }
 
 .wrapper-baochi .swiper-button-next:hover::after {
@@ -3273,7 +3273,7 @@ main {
 .wrapper-baochi .swiper-button-next::after {
     font-size: 18px;
     font-weight: bold;
-    color: #C2002F;
+    color: #031e60;
 }
 
 .wrapper-baochi .swiper-button-prev {
@@ -3284,12 +3284,12 @@ main {
     padding: 20px;
     width: 50px;
     height: 50px;
-    border: 2px solid #C2002F;
+    border: 2px solid #031e60;
     border-radius: 50%;
 }
 
 .wrapper-baochi .swiper-button-prev:hover {
-    background-color: #C2002F;
+    background-color: #031e60;
 }
 
 .wrapper-baochi .swiper-button-prev:hover::after {
@@ -3299,7 +3299,7 @@ main {
 .wrapper-baochi .swiper-button-prev::after {
     font-size: 18px;
     font-weight: bold;
-    color: #C2002F;
+    color: #031e60;
 }
 
 .wrapper-baochi .desc-wrap {
@@ -3316,7 +3316,7 @@ main {
 }
 
 .wrapper-baochi .desc-wrap p span {
-    color: #C2002F;
+    color: #031e60;
     font-weight: bold;
 }
 
@@ -3326,7 +3326,7 @@ main {
 
 .wrapper-baochi .all-baochi .swiper-button-next {
     right: -100px;
-    color: #C2002F;
+    color: #031e60;
     outline: 0;
 }
 
@@ -3350,7 +3350,7 @@ main {
 
 .wrapper-baochi .all-baochi .swiper-button-prev {
     left: -100px;
-    color: #C2002F;
+    color: #031e60;
     outline: 0;
 }
 
@@ -3392,7 +3392,7 @@ main {
 }
 
 .sec-quyenloi .main-title .desc span {
-    color: #C2002F;
+    color: #031e60;
     font-weight: bold;
 }
 
@@ -3403,7 +3403,7 @@ main {
 }
 
 .sec-quyenloi .main-title .title {
-    color: #C2002F;
+    color: #031e60;
 }
 
 .sec-quyenloi .main-title .title span {
@@ -3421,7 +3421,7 @@ main {
 }
 
 .sec-quyenloi .main-title .desc span {
-    color: #C2002F !important;
+    color: #031e60 !important;
 }
 
 .sec-quyenloi .content-box .title {
@@ -3438,7 +3438,7 @@ main {
     width: 80px;
     border-radius: 50%;
     height: 80px;
-    border: 10px solid #C2002F;
+    border: 10px solid #031e60;
     position: fixed;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3450,7 +3450,7 @@ main {
     -ms-flex-align: center;
     align-items: center;
     font-size: 32px;
-    color: #C2002F;
+    color: #031e60;
     cursor: pointer;
     bottom: 50px;
     z-index: 1005;
@@ -3522,7 +3522,7 @@ main {
 .tooltips-mess .icon-ct {
     width: 50px;
     height: 50px;
-    background-color: #C2002F;
+    background-color: #031e60;
     border-radius: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3592,7 +3592,7 @@ main {
 }
 
 .sec-numberninja .title {
-    color: #C2002F;
+    color: #031e60;
 }
 
 .sec-numberninja .box-number-fix .content-box {
@@ -3600,7 +3600,7 @@ main {
 }
 
 .sec-numberninja .box-number-fix .content-box .title {
-    color: #C2002F;
+    color: #031e60;
     font-weight: bold;
     font-size: 52px;
 }
@@ -3658,13 +3658,13 @@ main {
 }
 
 .sec-numberninja .all-number .coli .box-coli .number p {
-    color: #C2002F;
+    color: #031e60;
     font-weight: bold;
     font-size: 52px;
 }
 
 .sec-numberninja .all-number .coli .box-coli .text p {
-    color: #C2002F;
+    color: #031e60;
 }
 
 .sec-numberninja .swiper-button-next {
@@ -3675,12 +3675,12 @@ main {
     padding: 20px;
     width: 50px;
     height: 50px;
-    border: 2px solid #C2002F;
+    border: 2px solid #031e60;
     border-radius: 50%;
 }
 
 .sec-numberninja .swiper-button-next:hover {
-    background-color: #C2002F;
+    background-color: #031e60;
 }
 
 .sec-numberninja .swiper-button-next:hover::after {
@@ -3690,7 +3690,7 @@ main {
 .sec-numberninja .swiper-button-next::after {
     font-size: 18px;
     font-weight: bold;
-    color: #C2002F;
+    color: #031e60;
 }
 
 .sec-numberninja .swiper-button-prev {
@@ -3701,12 +3701,12 @@ main {
     padding: 20px;
     width: 50px;
     height: 50px;
-    border: 2px solid #C2002F;
+    border: 2px solid #031e60;
     border-radius: 50%;
 }
 
 .sec-numberninja .swiper-button-prev:hover {
-    background-color: #C2002F;
+    background-color: #031e60;
 }
 
 .sec-numberninja .swiper-button-prev:hover::after {
@@ -3716,7 +3716,7 @@ main {
 .sec-numberninja .swiper-button-prev::after {
     font-size: 18px;
     font-weight: bold;
-    color: #C2002F;
+    color: #031e60;
 }
 
 @media screen and (max-width: 576px) {
@@ -3760,7 +3760,7 @@ main {
 
 .breadcrumb {
     list-style-type: none;
-    background-color: #C2002F;
+    background-color: #031e60;
     text-transform: uppercase;
 }
 
@@ -3834,7 +3834,7 @@ main {
 }
 
 .sidebar-item .sidebar-item-title {
-    color: #C2002F;
+    color: #031e60;
     text-transform: uppercase;
     margin-bottom: 5px;
     font-weight: bold;
@@ -3859,13 +3859,13 @@ main {
 }
 
 .sidebar-item .sidebar-item-nav li a:hover {
-    color: #C2002F;
+    color: #031e60;
 }
 
 .sidebar-item .sidebar-item-nav li a::before {
     content: '\f105';
     font-family: FontAweSome;
-    color: #C2002F;
+    color: #031e60;
     position: absolute;
     top: 0;
     left: 0;
@@ -3880,7 +3880,7 @@ main {
 
 .service-intro {
     font-weight: bold;
-    color: #C2002F;
+    color: #031e60;
     text-transform: uppercase;
     margin-bottom: 20px;
     font-size: 18px;
@@ -3978,7 +3978,7 @@ main {
 .guide-item2 .box-content .title::after {
     content: '';
     width: 30px;
-    border-bottom: 3px solid #C2002F;
+    border-bottom: 3px solid #031e60;
     position: absolute;
     top: 0;
     left: 0;
@@ -3990,7 +3990,7 @@ main {
 }
 
 .guide-item2:hover .box-content .title {
-    color: #C2002F;
+    color: #031e60;
 }
 
 .detail-link {

@@ -24,7 +24,7 @@
 }
 
 .bg-dark-gradient {
-    background: #C2002F !important
+    background: #031e60 !important
 }
 
 .teal.darken-4 {
@@ -32,7 +32,7 @@
 }
 
 .btn, .btn-large, .btn-small {
-    background-color: #C2002F;
+    background-color: #031e60;
     height: 35px;
     line-height: 35px;
     box-shadow: none;
@@ -1383,11 +1383,11 @@ table.table-warehouse.table .btn-upload {
     width: 50px;
     height: 50px;
     line-height: 50px;
-    border: 1px solid #C2002F;
+    border: 1px solid #031e60;
     text-align: center;
     border-radius: 50%;
     color: #fff;
-    background: #C2002F;
+    background: #031e60;
     -webkit-transition: all 0.3s linear;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
@@ -2011,7 +2011,7 @@ input:disabled, select:disabled {
     }
 
         .table .action-table > a:hover {
-            background: #C2002F
+            background: #031e60
         }
 
             .table .action-table > a:hover i {
@@ -2157,7 +2157,7 @@ table.table.bordered.highlight {
 
     table.table.bordered.highlight thead tr th {
         background: #f5f5f5;
-        color: #C2002F;
+        color: #031e60;
         text-align: center;
         border: 1px solid #e1e1e1
     }
@@ -2310,7 +2310,7 @@ table.table.bordered.highlight {
             }
 
             .navbar #notifications-dropdown li .tab-wrap li a.active {
-                color: #C2002F
+                color: #031e60
             }
 
         .navbar #notifications-dropdown li:hover, .navbar #notifications-dropdown li.active {
@@ -2554,13 +2554,13 @@ table.table p.group {
 }
 
     .btn-icon.btn {
-        background: #C2002F;
+        background: #031e60;
         color: #fff
     }
 
     .btn-icon:hover, .btn-icon.active {
         color: #fff;
-        background: #C2002F
+        background: #031e60
     }
 
     .btn-icon i {
@@ -2630,7 +2630,7 @@ table.table p.group {
     }
 
 .sidenav li a.active {
-    background: #C2002F;
+    background: #031e60;
     box-shadow: 3px 3px 20px 0 rgba(237,70,48,0.32);
     color: #fff
 }
@@ -2734,7 +2734,7 @@ input:not([type]):disabled, input:not([type])[readonly="readonly"], input[type=t
     }
 
 .teal-text.text-darken-4 {
-    color: #C2002F !important
+    color: #031e60 !important
 }
 
 .brand-sidebar span.logo-text {
