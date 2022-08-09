@@ -3769,10 +3769,11 @@ main {
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 15px;
+    color: #fff;
 }
 
 .breadcrumb li a:hover {
-    color: #fff
+    color: #fff;
 }
 
 .breadcrumb li+li::before {

@@ -73,7 +73,7 @@ body {
 
 header .header-customer {
   width: 100%;
-  background-color: #c11f31;
+  background-color: #031e60;
   padding: 20px 0;
 }
 
@@ -161,7 +161,7 @@ header .support-contact {
 }
 
 header .support-contact a {
-  color: #c11f31;
+  color: #031e60;
   font-size: 20px;
   font-weight: bold;
 }
@@ -172,7 +172,7 @@ header .support-contact i {
 
 header .header-short {
   width: 1040px;
-  background-color: #c11f31;
+  background-color: #031e60;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -232,14 +232,14 @@ header .logo {
 .wrapper-side-all .wrapper-side-left .sec-introduce {
   width: 100%;
   height: 700px;
-  border: 3px solid #c11f31;
+  border: 3px solid #031e60;
   border-radius: 5px;
 }
 
 .wrapper-side-all .wrapper-side-left .sec-introduce .top-introduce {
   width: 100%;
   height: 15%;
-  background-color: #c11f31;
+  background-color: #031e60;
 }
 
 .wrapper-side-all .wrapper-side-left .sec-introduce .top-introduce .text {
@@ -287,7 +287,7 @@ header .logo {
 .wrapper-side-all .wrapper-side-left .sec-introduce .bottom-introduce {
   width: 100%;
   height: 15%;
-  background-color: #c11f31;
+  background-color: #031e60;
 }
 
 .wrapper-side-all .wrapper-side-left .sec-introduce .bottom-introduce .btn-contact {
@@ -304,7 +304,7 @@ header .logo {
 }
 
 .wrapper-side-all .wrapper-side-left .sec-introduce .bottom-introduce .btn-contact a {
-  color: #c11f31;
+  color: #031e60;
   background-color: white;
   font-size: 28px;
   padding: 5px 15px;
@@ -317,7 +317,7 @@ header .logo {
 }
 
 .wrapper-side-all .wrapper-side-left .sec-introduce .bottom-introduce .btn-contact a:hover {
-  background-color: #c11f31;
+  background-color: #031e60;
   color: white;
 }
 
@@ -378,7 +378,7 @@ header .logo {
   display: block;
   text-align: center;
   background-color: white;
-  border: 2px solid #c11f31;
+  border: 2px solid #031e60;
   padding: 15px 20px;
   border-radius: 15px;
   font-size: 20px;
@@ -387,13 +387,13 @@ header .logo {
 }
 
 .btn-customer a:hover {
-  background-color: #c11f31;
+  background-color: #031e60;
   color: white;
 }
 
 .form-register {
   width: 90%;
-  background-color: #c11f31;
+  background-color: #031e60;
   padding: 30px;
   border-radius: 10px;
 }
@@ -453,7 +453,7 @@ header .logo {
   font-size: 24px;
   background-color: white;
   padding: 10px 25px;
-  color: #c11f31;
+  color: #031e60;
   border-radius: 30px;
   -webkit-transition: .3s all;
   transition: .3s all;
@@ -475,7 +475,7 @@ header .logo {
   width: 900px;
   margin: auto;
   border-radius: 15px;
-  background-color: #c11f31;
+  background-color: #031e60;
   color: white !important;
   text-align: center;
   padding: 50px 30px;
@@ -516,7 +516,7 @@ header .logo {
 .link-signin p {
     padding: 15px 20px;
     display: inline-block;
-    background-color: #c11f31;
+    background-color: #031e60;
     border-radius: 30px;
 }
 
