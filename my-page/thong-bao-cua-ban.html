@@ -4,7 +4,8 @@
 
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes" />
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="description" />
         <meta name="keywords" />
@@ -214,13 +215,56 @@
 
     <body class="horizontal-layout page-header-light horizontal-menu 2-columns  " data-open="click"
         data-menu="horizontal-menu" data-col="2-columns">
-        <form method="post" action="./dashboard" id="form1" enctype="multipart/form-data" novalidate="">
+        <form method="post" action="./thong-bao-cua-ban" id="form1" enctype="multipart/form-data" novalidate="">
+            <div class="aspNetHidden">
+                <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+                <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+                <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE"
+                    value="9TLxZ7An2b7gaxIEKkvNbxd3IhvoJW2xOf6WrjTxmkCUhYT5jhGJHbuWS6b7uvh53jr6oud/LKT7U97iS9U7OvsiW/gGcnG+PRSdzyfXqRbLCcH4ixMKIDuMeWir/oYbK+qs2I2xE5cJKuMK6LEmjuE65TMvee8Lazodhz5wsrNLt2piiTcCHmV5AE+UEMVkiV00f5vSir55nm/wwX03KMCmkna613A/iUedutt0nzYSf2Q7t4Jc1PnoVaPSwPrqZ5h/YPNCUrahBbaE0S5pkpy4OytTo2oyGBEMHs5fvp8S6xHDItYqBankGmurLHQlB+8C63oMUPbdhtSKiozR7K5u/G9IAUfALA7YI8JdhBcIILxeKbI9BJCOEOLSI7yEs+39nuIdHces0R6MEsaz4nmj+XrZ4w/AmZyIPRTD+p7kOXwRqLlZLIp5+0gcx8hMs9Rmv4+HC+q0I2WHDa8T3MAbcx7Qvn99Q5RH7ymUAuAdkdpNECO4G51z9yiVnZCvNq10hSGkSWrKBrzfbvsOvAL775z9BrZhaFz46car+p7CnkTrXXmTENvf1ZQEr1XYbqlCmNYwX0bRMqfuSq6EmfRgSZIYKkwKBmJq3rlmfbRqGDQgPeSZpvSqxbs2GesDaXL0BRrU2HKQe62sJks2fLQTaAupVC8h8Zcn6V88sDSDIywYnSuKytT+KI3IPaRtLC5kaIbgfSV9N3CNLUH+QGLyU920Uhpsmqa+D90P1oN4YmjKp/qFqEfxGIbHFFbdvF7jiwHyQKcn9p4iWgYquWfaJmupFSUXD5Lby8dNwDiHnawEqdGPDJMavOc69BmudN1EJkoc5KQ9VpzXUqdF9YEr4AfenAZr34TLbKLLmpgJFJ8gHFlSPfUyNM8tIDguvnNIwEVAW1WagZ5dQ4aJG/kGq6VTAs6RdHamewk09jpSpntLq3yhXYiujT+vWjMe8qmitEsd73aNHEEreEhGQswjwJSWe4EBQ2UnLWG6L9j3PM+8HNRSWLyY/flTeiL0pfsCu4yVJ3xLnuNwPgtBk7q+CbUYX6qZtYw/cPuWNhrFNAHT3PLBcd7yzK9EQq6/DjfojzAwvA7BaCKN31vcqe4X2bCCrmbeMZ5/APUUvo7nwJ3Cm6b4h37v42+nESJabaOFecfym4HKctQBQ+wn1Gzp0nOi9A7Zc7S56uGERVcedhHpXs+WWdS8njUHdqSKPmn8xgDQsSaCC57/Fg6G3ntvSaHh0E4YjU//o3s3BuCj3aoY3Om7zhfgCJ/Vm2bzsWWp/DZQy3fnnH96OxTd64NULF6Aodb7HkLOw3jfVL2C4qAgQJ92UDI5Rv0Cj2U9y8ko/jObhWPmVLdg8GWcuXT4o8tYMS1kcDhCSCjW8R3SSEvfwYwNh6yd9k4eZfP65qm5lAbNN5HFikAfKiMKxij0gzNTmE/gsTJEk3OiAZdstBQFyLzzx1+qU/+4lexinIMS27dbpvgjXcsFeV/+Wpz+xce8X1RCbS/8+idT7TfCiSelkH8cFBwGzmVwc1rhUdD9k2FywzEK2Qnc2Ak0jk0vpMU0Ahi3spIOAUXvoNMl67tKthx41DOqtjxW0pNFQ6WzB8loxuPgC6y6ObAH8yLxV+6I/Ov51nE1AZEf9q+1rHdA+jCbGnlRhKI68sY4E7hM/yecjluYGV+NOqeBhTLVmcyqeCQMPssS+FzRTxFhLubwj+pE042LcMIDHSkl" />
+            </div>
 
+            <script type="text/javascript">
+                //<![CDATA[
+                var theForm = document.forms['form1'];
+                if (!theForm) {
+                    theForm = document.form1;
+                }
+
+                function __doPostBack(eventTarget, eventArgument) {
+                    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+                        theForm.__EVENTTARGET.value = eventTarget;
+                        theForm.__EVENTARGUMENT.value = eventArgument;
+                        theForm.submit();
+                    }
+                }
+                //]]>
+            </script>
+
+
+            <script
+                src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZLLtADMvvx0eX3ttAWXpvkNw1cY5WP-Vrpe_cHftvUZCujT1Ki1tEPShxGvPPl-nnA2&amp;t=636726176369752514"
+                type="text/javascript"></script>
+
+
+            <script src="Scripts/WebForms/MsAjax/MicrosoftAjax.js" type="text/javascript"></script>
+            <script src="Scripts/WebForms/MsAjax/MicrosoftAjaxWebForms.js" type="text/javascript"></script>
+            <div class="aspNetHidden">
+
+                <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="971732C4" />
+                <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION"
+                    value="p5UQk1PGR7o8J5GOJ9Q4f/Y0YfC7la7cc1s5hyA+GhG2bq0qY96fq25hTbZeiYe4SivHFmsYGuvNB058EozCTKTSMESuk4u9wEKGZq6F7OpdPL82nuVS93RQN7Uok3W5XrjkSQqhyCgEPXXw1ewGTbER1aijNi4sUpNC3xYKF0DfJll1udqoq+Nu0liHfE7FN6xxAJF1Mxb6IDWxd482eQAyvl/4K0In9+Q3kHRHRQo=" />
+            </div>
             <div id="loadingajax" class="ldajax">
                 <div class="img-loading">
                     <img src="../App_Themes/NewUI/images/loading.gif" />
                 </div>
             </div>
+            <script type="text/javascript">
+                //<![CDATA[
+                Sys.WebForms.PageRequestManager._initialize('ctl00$scr', 'form1', [], [], [], 90, 'ctl00');
+                //]]>
+            </script>
+
 
             <header class="page-topbar" id="header">
                 <div class="navbar">
@@ -230,7 +274,7 @@
                             <div class="left-logo"
                                 style="width: 342px; display: flex; height: 100%; align-items: center; padding-left: 15px">
                                 <a href="/" style="display: flex">
-                                    <img style="width: 50%" src="../images/admin/logo/logo-icon.png"
+                                    <img style="width: 50%" src="/App_Themes/UserNew45/assets/images/logo/logo-icon.png"
                                         alt="materialize logo">
                                 </a>
                             </div>
@@ -242,13 +286,13 @@
                                             <div class="select-form">
                                                 <select class="fcontrol" id="brand-source">
                                                     <option value="taobao"
-                                                        data-image="../images/admin/hdsearch-item-taobao.png">
+                                                        data-image="/App_Themes/NINJA/images/hdsearch-item-taobao.png">
                                                         Taobao</option>
                                                     <option value="tmall"
-                                                        data-image="../images/admin/hdsearch-item-tmall.png">Tmall
+                                                        data-image="/App_Themes/NINJA/images/hdsearch-item-tmall.png">Tmall
                                                     </option>
                                                     <option value="1688"
-                                                        data-image="../images/admin/hdsearch-item-1688.png">1688
+                                                        data-image="/App_Themes/NINJA/images/hdsearch-item-1688.png">1688
                                                     </option>
                                                 </select>
                                                 <span class="icon">
@@ -262,6 +306,7 @@
                                             </div>
                                             <a href="javascript:" onclick="searchProduct()" class="main-btn">Tìm kiếm</a>
                                             <input type="button" name="ctl00$btnSearch" value=""
+                                                onclick="document.forms[0].target = &#39;_blank&#39;;__doPostBack(&#39;ctl00$btnSearch&#39;,&#39;&#39;)"
                                                 id="btnSearch" style="display: none" />
                                         </div>
                                     </div>
@@ -271,22 +316,15 @@
                             <ul class="navbar-list right">
                                 <li class="hide-on-med-and-down mg-right">¥1 = </span>3775 Đồng</li>
                                 <li class="hide-on-med-and-down">$1 = </span>23919 Đồng</li>
-                                <li class="hide-on-med-and-down">
-                                    <a class="waves-effect waves-block waves-light toggle-fullscreen" href="javascript:void(0);">
-                                        <i class="material-icons">settings_overscan</i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="waves-effect waves-block waves-light" href="/thong-bao-cua-ban">
-                                        <i class="material-icons">notifications_none<small class="notification-badge orange accent-3">0</small></i>
-                                    </a>
-                                </li>
-                                <li class="user-box">
-                                    <a class="waves-block" href="javascript:void(0);">
-                                        <span class="avatar-status avatar-online">
-                                            <img src="../images/admin/NO-IMAGE.jpeg" alt="avatar"><i></i>
-                                        </span>
-                                    </a>
+                                <li class="hide-on-med-and-down"><a
+                                        class="waves-effect waves-block waves-light toggle-fullscreen"
+                                        href="javascript:void(0);"><i class="material-icons">settings_overscan</i></a></li>
+                                <li><a class="waves-effect waves-block waves-light" href="/thong-bao-cua-ban"><i
+                                            class="material-icons">notifications_none<small
+                                                class="notification-badge orange accent-3">0</small></i></a></li>
+                                <li class="user-box"><a class="waves-block" href="javascript:void(0);"><span
+                                            class="avatar-status avatar-online"><img src="/NO-IMAGE.jpg"
+                                                alt="avatar"><i></i></span></a>
                                     <div class="status-desktop">
                                         <div class="status-wrap">
                                             <div class="status__header">
@@ -294,21 +332,15 @@
                                             </div>
                                             <div class="status__body">
                                                 <div class="level">
-                                                    <div class="links">
-                                                        <a href="/thong-tin-nguoi-dung">Thông tin tài khoản<i class="fa fa-caret-right"></i></a>
-                                                    </div>
-                                                    <div class="links">
-                                                        <a href="/danh-sach-don-hang?t=1">Đơn hàng của bạn<i class="fa fa-caret-right"></i></a>
-                                                    </div>
+                                                    <div class="links"><a href="/thong-tin-nguoi-dung">Thông tin tài khoản<i
+                                                                class="fa fa-caret-right"></i></a></div>
+                                                    <div class="links"><a href="/danh-sach-don-hang?t=1">Đơn hàng của bạn<i
+                                                                class="fa fa-caret-right"></i></a></div>
                                                 </div>
-                                                <div class="status__footer">
-                                                    <a href="/dang-xuat" class="ft-btn">
-                                                        ĐĂNG XUẤT
-                                                    </a>
-                                                </div>
+                                                <div class="status__footer"><a href="/dang-xuat" class="ft-btn">ĐĂNG
+                                                        XUẤT</a></div>
                                             </div>
                                         </div>
-                                    </div>
                                 </li>
                             </ul>
                             <!-- profile-dropdown-->
@@ -461,116 +493,42 @@
 
             <div id="main">
                 <div class="row">
+                    <div class="content-wrapper-before blue-grey lighten-5"></div>
                     <div class="col s12">
                         <div class="container">
                             <div class="all">
-                                <div class="user-dash-wrap f-float">
+                                <div class="card-panel mt-3">
                                     <div class="row">
                                         <div class="col s12">
                                             <div class="page-title mt-2 center-align">
-                                                <h4>Tài khoản</h4>
+                                                <h4>Danh sách thông báo</h4>
                                             </div>
                                         </div>
-                                        <div class="col s12 m6 l12">
-                                            <a class="black-text" href="/danh-sach-don-hang?t=1">
-                                                <div class="card z-depth-2 faq-card" style="background-color: #031e60;">
-                                                    <div class="card-left">
-                                                        <i class="material-icons dp48 white-text">library_books</i>
-                                                        <h6 class="font-weight-500 white-text">Mua hàng hộ ủy thác</h6>
-                                                    </div>
-                                                    <div class="card-right center-align">
-                                                        <h4 class="white-text">
-                                                            0</h4>
-                                                        <p class="font-weight-500 white-text">Đơn hàng</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col s12 m6 l12">
-                                            <a class="black-text" href="/danh-sach-don-hang?t=3">
-                                                <div class="card z-depth-2 faq-card" style="background-color: #0b1c47">
-                                                    <div class="card-left">
-                                                        <i class="material-icons dp48 white-text">library_books</i>
-                                                        <h6 class="font-weight-500 white-text">Mua hàng hộ TMĐT khác</h6>
-                                                    </div>
-                                                    <div class="card-right center-align">
-                                                        <h4 class="white-text">
-                                                            0</h4>
-                                                        <p class="font-weight-500 white-text">Đơn hàng</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col s12 m6 l12">
-                                            <a class="black-text" href="/danh-sach-don-hang?t=5">
-                                                <div class="card z-depth-2 faq-card" style="background-color: #031e60;">
-                                                    <div class="card-left">
-                                                        <i class="material-icons dp48 white-text">library_books</i>
-                                                        <h6 class="font-weight-500 white-text">Mua hàng hộ chính ngạch</h6>
-                                                    </div>
-                                                    <div class="card-right center-align">
-                                                        <h4 class="white-text">
-                                                            0</h4>
-                                                        <p class="font-weight-500 white-text">Đơn hàng</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col s12 m6 l12">
-                                            <a class="black-text" href="/danh-sach-don-hang?t=7">
-                                                <div class="card z-depth-2 faq-card" style="background-color: #0b1c47">
-                                                    <div class="card-left">
-                                                        <i class="material-icons dp48 white-text">library_books</i>
-                                                        <h6 class="font-weight-500 white-text">Mua hàng hộ tư vấn nguồn
-                                                            hàng</h6>
-                                                    </div>
-                                                    <div class="card-right center-align">
-                                                        <h4 class="white-text">
-                                                            0</h4>
-                                                        <p class="font-weight-500 white-text">Đơn hàng</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col s12 m6 l12" style="display: none">
-                                            <a class="black-text" href="/danh-sach-don-van-chuyen-ho">
-                                                <div class="card z-depth-2 gradient-45deg-purple-amber faq-card">
-
-                                                    <div class="card-left">
-                                                        <i class="material-icons dp48 white-text">next_week</i>
-                                                        <h6 class="font-weight-500 black-text">Vận chuyển ký gửi</h6>
-                                                    </div>
-                                                    <div class="card-right center-align">
-                                                        <h4 class="white-text">
-                                                            0</h4>
-                                                        <p class="font-weight-500">Đơn hàng</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col s12 m6 l4" style="display: none">
-                                            <a class="black-text" href="/danh-sach-thanh-toan-ho">
-                                                <div class="card z-depth-2 gradient-45deg-cyan-light-green faq-card">
-
-                                                    <div class="card-left">
-                                                        <i class="material-icons dp48 white-text">payment</i>
-                                                        <h6 class="font-weight-500 black-text">Thanh toán hộ</h6>
-                                                    </div>
-                                                    <div class="card-right center-align">
-                                                        <h4 class="white-text">
-                                                            0</h4>
-                                                        <p class="font-weight-500">Đơn hàng</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
                                     </div>
+                                </div>
 
+                                <div class="app-wrapper">
+                                    <div class="card card card-default border-radius-6">
+                                        <div class="card-content">
+                                            <div class="app-search" style="display:none">
+                                                <i class="material-icons mr-2 search-icon">search</i>
+                                                <input type="text" placeholder="Tìm kiếm thông báo" class="app-filter"
+                                                    id="todo_filter">
+                                            </div>
+                                            <ul class="collection todo-collection">
+
+                                            </ul>
+                                            <div class="pagi-table mt-2 center-align">
+
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+
+                                    </div>
 
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -837,7 +795,7 @@
                 transform: translateY(-50%);
                 right: 30px;
                 pointer-events: none;
-                color: #031e60;
+                color: #C2002F;
             }
 
             .search-form-wrap .search-form .main-btn {
@@ -851,7 +809,7 @@
                 text-align: center;
                 line-height: 35px;
                 white-space: nowrap;
-                background: #031e60;
+                background: #C2002F;
                 color: #fff;
                 font-weight: bold;
                 text-transform: uppercase;
@@ -864,8 +822,8 @@
 
             .search-form-wrap .search-form .main-btn:hover {
                 background-color: white;
-                color: #031e60;
-                border: 1px solid #031e60;
+                color: #C2002F;
+                border: 1px solid #C2002F;
             }
 
             .search-form-wrap .search-form .main-btn:hover .search-form-wrap .input-form .f-input {

@@ -70,7 +70,7 @@
             bottom: 0;
             left: 0;
             background-repeat: no-repeat;
-            background-image: url(/App_Themes/NINJA/images/status-header-bg.png);
+            background-image: url(../../../images/admin/status-header-bg.png);
             background-position: center;
             background-size: cover;
             position: absolute;
@@ -151,7 +151,7 @@
     }
 
         .status-desktop .status__body .balance__number .vnd {
-            color: #C2002F;
+            color: #031e60;
         }
 
     .status-desktop .status__body .links > a {
@@ -164,11 +164,11 @@
         .status-desktop .status__body .links > a i {
             float: right;
             line-height: 2;
-            color: #C2002F;
+            color: #031e60;
         }
 
         .status-desktop .status__body .links > a:hover {
-            color: #C2002F;
+            color: #031e60;
         }
 
     .status-desktop .status__footer .ft-btn {
@@ -177,7 +177,7 @@
         width: 100%;
         padding: 10px 0;
         border-radius: unset;
-        background-color: #C2002F;
+        background-color: #031e60;
         color: white;
         text-align: center;
     }

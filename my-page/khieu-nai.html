@@ -210,17 +210,69 @@
                 }
             }
         </style>
+
+        <style>
+            .all-pqd {
+                max-width: 100%;
+                margin: 0 auto;
+                position: relative;
+                overflow: hidden;
+            }
+        </style>
     </head>
 
     <body class="horizontal-layout page-header-light horizontal-menu 2-columns  " data-open="click"
         data-menu="horizontal-menu" data-col="2-columns">
-        <form method="post" action="./dashboard" id="form1" enctype="multipart/form-data" novalidate="">
+        <form method="post" action="./khieu-nai" id="form1" enctype="multipart/form-data" novalidate="">
+            <div class="aspNetHidden">
+                <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+                <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+                <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE"
+                    value="r1e+7lP5UviGD03FrwG8ZK+9zA7J9LyrB9UuhkEtYf6qn7MwjaahNQrNr4ktQLS1xClubVGUJIwbxkSg/Xb0+ueZSnyGGToeD//iKq0x27y3B019SYqGm/kUONV7LoM5ofdaID6mFE2JAmIdtGImaVcm4CxfpmMCd8rR1KFw7F4/elp4rNyzmx3mwFOPOmWSZLdV4oal1R5brDkZPKNo+ipc2zSIc3QqK37XOAwecbfNS0bY5Z6wzH4Kn7kYSzS1Ne6o5olGK50uwY4JYXUVghXN00CC8aSd+f2ZEM+Bcl4GcttZbQ0/1BpJKOxSGyg7Wf+MA0zrB9HEFO+iCfE7WZfNKtL8mQQb4AoNfaogy2FYbBB3dcECC8I7wDp3c9qmWSjtWjNqmvr379Y5oHXDBeYSNgT4Mcr7Ohz36dminMTJ+KXywk7bHf9P3DTnEDSYXVbgFOHUyBCaDb93poSqF3RtLyh4SuATL9focWVoPDrI5Q7J7zGL/3BGt7tYS6c3ENzGyyYLq5nOb4C3J1dcHUhfcA0ynz4DDhqs+vmnz3qSP19T+Nh/0MyQiIPlXib4pXMhCALikO4FKwVbRONQMzCMO/lwx7MgxWK2cUW5GqC1URPs/mAFV9tvmVvuC4eMAEBjKLhAuKdj0wS3MVAG/6V/eUIhYRAbFMlHADVNFyWLgi6TwGstOshY6vL54hIcwSuwZrkzMSbFBFgbyPAIh7mPBleJfe7Ozymboh3eYyBcwp8gav7e3ZP7qGX/H0Oskxl8itTGvOfMYFyaavhU1O9l06N4Zy6MEwXwj7WqdjAppO2igrqZ1/PN1ZgAxY8+tyNlYoNzIU9V9iuqyqwEyR3xtdG5mbW5wOQSuQWEMlTcwSpml1EJT2iJ1jbQTBhzkKadIivo/Br1ipSS6rCC3uxj4jxU6BaTqlMttT4EVMBs5tPl5J3EuAWjGNUnVQd0jk08se643EecZJNdwids2XRvcf/44je84XnXtfuy6pso7lb1lLGVx6ZXZxneHeJpsOL6PpAh3FepGgQfW9UbW+rjsVs8KUTTQ9iXqpJ7nfC9Mx9dAnOBUczjxlOUOL8ZHgszE+2htdGuqKSXfVAHjr6XFtRG4NbAX1UL66YdGA4V0bd9CdLULmC7dQnpQLKJ66PDWkY+GMKgoWwFGVgThHwY0TOvNPrEnInY6V5OP9pqbhflBjOHQJsp/ggVyYhuC3btNSYJ5qgIFmsefN+9+0MWLBIHnPvwuMYmmp3zjldJbwY+bzqfFoWKW6R1VdiOC5NVeyOJn6g78uuiWpDe66leuRhtSmFXI4NMfaQ7de581FKNRN7JQxP/tZ11ItsG44yoS/zz+hFkuyq+21hMSJEb9nQN/HZjeCXXXlcadYlRandCKAv0iGsHH8tKhmKYrrq/FnO9JM6e8x7X0BZV0rX+3JYFbrdfQF24OAdhicICi0yNjzdJaySGDWrlwHayBBhOH1JC+ExXt2aUPOTB63QfNx57wz8LxgqR4Xyb10jn3AKwcuKL0qDSFaTIgKCbDfMnp01JgsptB3DYwxiUcoCAy0DQ2+OuFy36hydxCN7I4WZ2PVeH9uMqHWA7KtLk9ZQ4vD+5ZgZtDyNX8EiT0bAdbt5+lTHEapHyIrEt/KaicRUF5NjnVupZlEYjLBkT3x+sC6W4tr682250VvhsqroDx/O3wURDmRBUi3eeqm8=" />
+            </div>
 
+            <script type="text/javascript">
+                //<![CDATA[
+                var theForm = document.forms['form1'];
+                if (!theForm) {
+                    theForm = document.form1;
+                }
+
+                function __doPostBack(eventTarget, eventArgument) {
+                    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+                        theForm.__EVENTTARGET.value = eventTarget;
+                        theForm.__EVENTARGUMENT.value = eventArgument;
+                        theForm.submit();
+                    }
+                }
+                //]]>
+            </script>
+
+
+            <script
+                src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZLLtADMvvx0eX3ttAWXpvkNw1cY5WP-Vrpe_cHftvUZCujT1Ki1tEPShxGvPPl-nnA2&amp;t=636726176369752514"
+                type="text/javascript"></script>
+
+
+            <script src="Scripts/WebForms/MsAjax/MicrosoftAjax.js" type="text/javascript"></script>
+            <script src="Scripts/WebForms/MsAjax/MicrosoftAjaxWebForms.js" type="text/javascript"></script>
+            <div class="aspNetHidden">
+
+                <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="4C6C58CF" />
+                <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION"
+                    value="LH9+LGVmilWHbg7YRFoPRMF35CzkuILlrteqy0wLoHFKqBoo0kzEJUiWrQa0p/U8srkZiuv5b9C3UD3A9grEJYUN63tMYPCzYlZxJbMon3GbaDJGteS4N1yz3aRT5DO+fUrOea26cXtdBWnLoIjQ4aUfflwAp+JqYKFt8oy3NMlPBlH2NdyBLzyVSSG7uDS97WcHpOHaLuWWXQgYzerfZ2ABRNDqd0RWy+BSmMsZK4I=" />
+            </div>
             <div id="loadingajax" class="ldajax">
                 <div class="img-loading">
                     <img src="../App_Themes/NewUI/images/loading.gif" />
                 </div>
             </div>
+            <script type="text/javascript">
+                //<![CDATA[
+                Sys.WebForms.PageRequestManager._initialize('ctl00$scr', 'form1', [], [], [], 90, 'ctl00');
+                //]]>
+            </script>
+
 
             <header class="page-topbar" id="header">
                 <div class="navbar">
@@ -230,7 +282,7 @@
                             <div class="left-logo"
                                 style="width: 342px; display: flex; height: 100%; align-items: center; padding-left: 15px">
                                 <a href="/" style="display: flex">
-                                    <img style="width: 50%" src="../images/admin/logo/logo-icon.png"
+                                    <img style="width: 50%" src="/App_Themes/UserNew45/assets/images/logo/logo-icon.png"
                                         alt="materialize logo">
                                 </a>
                             </div>
@@ -242,13 +294,13 @@
                                             <div class="select-form">
                                                 <select class="fcontrol" id="brand-source">
                                                     <option value="taobao"
-                                                        data-image="../images/admin/hdsearch-item-taobao.png">
+                                                        data-image="/App_Themes/NINJA/images/hdsearch-item-taobao.png">
                                                         Taobao</option>
                                                     <option value="tmall"
-                                                        data-image="../images/admin/hdsearch-item-tmall.png">Tmall
+                                                        data-image="/App_Themes/NINJA/images/hdsearch-item-tmall.png">Tmall
                                                     </option>
                                                     <option value="1688"
-                                                        data-image="../images/admin/hdsearch-item-1688.png">1688
+                                                        data-image="/App_Themes/NINJA/images/hdsearch-item-1688.png">1688
                                                     </option>
                                                 </select>
                                                 <span class="icon">
@@ -262,6 +314,7 @@
                                             </div>
                                             <a href="javascript:" onclick="searchProduct()" class="main-btn">Tìm kiếm</a>
                                             <input type="button" name="ctl00$btnSearch" value=""
+                                                onclick="document.forms[0].target = &#39;_blank&#39;;__doPostBack(&#39;ctl00$btnSearch&#39;,&#39;&#39;)"
                                                 id="btnSearch" style="display: none" />
                                         </div>
                                     </div>
@@ -271,22 +324,15 @@
                             <ul class="navbar-list right">
                                 <li class="hide-on-med-and-down mg-right">¥1 = </span>3775 Đồng</li>
                                 <li class="hide-on-med-and-down">$1 = </span>23919 Đồng</li>
-                                <li class="hide-on-med-and-down">
-                                    <a class="waves-effect waves-block waves-light toggle-fullscreen" href="javascript:void(0);">
-                                        <i class="material-icons">settings_overscan</i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="waves-effect waves-block waves-light" href="/thong-bao-cua-ban">
-                                        <i class="material-icons">notifications_none<small class="notification-badge orange accent-3">0</small></i>
-                                    </a>
-                                </li>
-                                <li class="user-box">
-                                    <a class="waves-block" href="javascript:void(0);">
-                                        <span class="avatar-status avatar-online">
-                                            <img src="../images/admin/NO-IMAGE.jpeg" alt="avatar"><i></i>
-                                        </span>
-                                    </a>
+                                <li class="hide-on-med-and-down"><a
+                                        class="waves-effect waves-block waves-light toggle-fullscreen"
+                                        href="javascript:void(0);"><i class="material-icons">settings_overscan</i></a></li>
+                                <li><a class="waves-effect waves-block waves-light" href="/thong-bao-cua-ban"><i
+                                            class="material-icons">notifications_none<small
+                                                class="notification-badge orange accent-3">0</small></i></a></li>
+                                <li class="user-box"><a class="waves-block" href="javascript:void(0);"><span
+                                            class="avatar-status avatar-online"><img src="/NO-IMAGE.jpg"
+                                                alt="avatar"><i></i></span></a>
                                     <div class="status-desktop">
                                         <div class="status-wrap">
                                             <div class="status__header">
@@ -294,21 +340,15 @@
                                             </div>
                                             <div class="status__body">
                                                 <div class="level">
-                                                    <div class="links">
-                                                        <a href="/thong-tin-nguoi-dung">Thông tin tài khoản<i class="fa fa-caret-right"></i></a>
-                                                    </div>
-                                                    <div class="links">
-                                                        <a href="/danh-sach-don-hang?t=1">Đơn hàng của bạn<i class="fa fa-caret-right"></i></a>
-                                                    </div>
+                                                    <div class="links"><a href="/thong-tin-nguoi-dung">Thông tin tài khoản<i
+                                                                class="fa fa-caret-right"></i></a></div>
+                                                    <div class="links"><a href="/danh-sach-don-hang?t=1">Đơn hàng của bạn<i
+                                                                class="fa fa-caret-right"></i></a></div>
                                                 </div>
-                                                <div class="status__footer">
-                                                    <a href="/dang-xuat" class="ft-btn">
-                                                        ĐĂNG XUẤT
-                                                    </a>
-                                                </div>
+                                                <div class="status__footer"><a href="/dang-xuat" class="ft-btn">ĐĂNG
+                                                        XUẤT</a></div>
                                             </div>
                                         </div>
-                                    </div>
                                 </li>
                             </ul>
                             <!-- profile-dropdown-->
@@ -461,116 +501,48 @@
 
             <div id="main">
                 <div class="row">
+                    <div class="content-wrapper-before blue-grey lighten-5"></div>
                     <div class="col s12">
                         <div class="container">
-                            <div class="all">
-                                <div class="user-dash-wrap f-float">
+                            <div class="all-pqd">
+                                <div class="card-panel mt-3 no-shadow">
                                     <div class="row">
                                         <div class="col s12">
                                             <div class="page-title mt-2 center-align">
-                                                <h4>Tài khoản</h4>
+                                                <h4>Danh sách khiếu nại</h4>
                                             </div>
                                         </div>
-                                        <div class="col s12 m6 l12">
-                                            <a class="black-text" href="/danh-sach-don-hang?t=1">
-                                                <div class="card z-depth-2 faq-card" style="background-color: #031e60;">
-                                                    <div class="card-left">
-                                                        <i class="material-icons dp48 white-text">library_books</i>
-                                                        <h6 class="font-weight-500 white-text">Mua hàng hộ ủy thác</h6>
-                                                    </div>
-                                                    <div class="card-right center-align">
-                                                        <h4 class="white-text">
-                                                            0</h4>
-                                                        <p class="font-weight-500 white-text">Đơn hàng</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col s12 m6 l12">
-                                            <a class="black-text" href="/danh-sach-don-hang?t=3">
-                                                <div class="card z-depth-2 faq-card" style="background-color: #0b1c47">
-                                                    <div class="card-left">
-                                                        <i class="material-icons dp48 white-text">library_books</i>
-                                                        <h6 class="font-weight-500 white-text">Mua hàng hộ TMĐT khác</h6>
-                                                    </div>
-                                                    <div class="card-right center-align">
-                                                        <h4 class="white-text">
-                                                            0</h4>
-                                                        <p class="font-weight-500 white-text">Đơn hàng</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col s12 m6 l12">
-                                            <a class="black-text" href="/danh-sach-don-hang?t=5">
-                                                <div class="card z-depth-2 faq-card" style="background-color: #031e60;">
-                                                    <div class="card-left">
-                                                        <i class="material-icons dp48 white-text">library_books</i>
-                                                        <h6 class="font-weight-500 white-text">Mua hàng hộ chính ngạch</h6>
-                                                    </div>
-                                                    <div class="card-right center-align">
-                                                        <h4 class="white-text">
-                                                            0</h4>
-                                                        <p class="font-weight-500 white-text">Đơn hàng</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col s12 m6 l12">
-                                            <a class="black-text" href="/danh-sach-don-hang?t=7">
-                                                <div class="card z-depth-2 faq-card" style="background-color: #0b1c47">
-                                                    <div class="card-left">
-                                                        <i class="material-icons dp48 white-text">library_books</i>
-                                                        <h6 class="font-weight-500 white-text">Mua hàng hộ tư vấn nguồn
-                                                            hàng</h6>
-                                                    </div>
-                                                    <div class="card-right center-align">
-                                                        <h4 class="white-text">
-                                                            0</h4>
-                                                        <p class="font-weight-500 white-text">Đơn hàng</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col s12 m6 l12" style="display: none">
-                                            <a class="black-text" href="/danh-sach-don-van-chuyen-ho">
-                                                <div class="card z-depth-2 gradient-45deg-purple-amber faq-card">
+                                    </div>
+                                    <div class="row mt-2">
+                                        <div class="col s12">
+                                            <table class="table responsive-table   highlight bordered  centered">
+                                                <thead>
+                                                    <tr>
+                                                        <th>ID khiếu nại</th>
+                                                        <th>Mã đơn hàng</th>
+                                                        <th>Mã vận đơn</th>
+                                                        <th>Mô tả khiếu nại</th>
+                                                        <th>Bằng chứng khiếu nại </br> (Link video, hình ảnh đính kèm)</th>
+                                                        <th>Mong muốn khách hàng</th>
+                                                        <th class="tb-date">Trạng thái</th>
+                                                        <th class="tb-date">Ngày tạo</th>
+                                                        <th class="tb-date">Thư trả lời</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
 
-                                                    <div class="card-left">
-                                                        <i class="material-icons dp48 white-text">next_week</i>
-                                                        <h6 class="font-weight-500 black-text">Vận chuyển ký gửi</h6>
-                                                    </div>
-                                                    <div class="card-right center-align">
-                                                        <h4 class="white-text">
-                                                            0</h4>
-                                                        <p class="font-weight-500">Đơn hàng</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col s12 m6 l4" style="display: none">
-                                            <a class="black-text" href="/danh-sach-thanh-toan-ho">
-                                                <div class="card z-depth-2 gradient-45deg-cyan-light-green faq-card">
+                                                </tbody>
+                                            </table>
+                                            <div class="pagi-table float-right mt-2">
 
-                                                    <div class="card-left">
-                                                        <i class="material-icons dp48 white-text">payment</i>
-                                                        <h6 class="font-weight-500 black-text">Thanh toán hộ</h6>
-                                                    </div>
-                                                    <div class="card-right center-align">
-                                                        <h4 class="white-text">
-                                                            0</h4>
-                                                        <p class="font-weight-500">Đơn hàng</p>
-                                                    </div>
-                                                </div>
-                                            </a>
+                                            </div>
+                                            <div class="clearfix"></div>
                                         </div>
                                     </div>
-
-
                                 </div>
+
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -837,7 +809,7 @@
                 transform: translateY(-50%);
                 right: 30px;
                 pointer-events: none;
-                color: #031e60;
+                color: #C2002F;
             }
 
             .search-form-wrap .search-form .main-btn {
@@ -851,7 +823,7 @@
                 text-align: center;
                 line-height: 35px;
                 white-space: nowrap;
-                background: #031e60;
+                background: #C2002F;
                 color: #fff;
                 font-weight: bold;
                 text-transform: uppercase;
@@ -864,8 +836,8 @@
 
             .search-form-wrap .search-form .main-btn:hover {
                 background-color: white;
-                color: #031e60;
-                border: 1px solid #031e60;
+                color: #C2002F;
+                border: 1px solid #C2002F;
             }
 
             .search-form-wrap .search-form .main-btn:hover .search-form-wrap .input-form .f-input {

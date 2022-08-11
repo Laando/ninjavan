@@ -1,0 +1,1320 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="description" />
+        <meta name="keywords" />
+        <meta property="og:title" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" />
+        <meta property="og:image" />
+        <meta property="og:site_name" />
+        <meta property="og:description" />
+        <title>
+            Quản trị
+        </title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <!-- BEGIN: VENDOR CSS-->
+        <link rel="stylesheet" type="text/css" href="../css/admin/vendor/vendors.min.css" />
+        <link rel="shortcut icon" href="../images/custom/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" type="text/css" href="../css/admin/vendor/animate-css/animate.css" />
+        <!-- END: VENDOR CSS-->
+        <link rel="stylesheet" href="../js/ms-Dropdown-master/css/msdropdown/dd.css" />
+        <link rel="stylesheet" href="../js/Font-awesome-4.7.0/css/font-awesome.min.css" />
+        <!-- BEGIN: Page Level CSS-->
+        <link rel="stylesheet" type="text/css" href="../css/admin/materialize.css" />
+        <link rel="stylesheet" type="text/css" href="../css/admin/style.css" />
+        <link href="../js/sweet/sweet-alert.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="../css/admin/layouts/style-horizontal.css" />
+        <link rel="stylesheet" type="text/css" href="../css/admin/datepicker/jquery.datetimepicker.css" />
+        <!-- END: Page Level CSS-->
+        <!-- BEGIN: Custom CSS-->
+        <link rel="stylesheet" type="text/css" href="../css/admin/custom/custom.css" />
+        <link rel="stylesheet" type="text/css" href="../css/admin/custom/style-new.css" />
+        <!-- END: Custom CSS-->
+        <script src="../js/admin/NewUI/jquery-1.9.1.min.js"></script>
+        <style>
+            .ldajax {
+                width: 100%;
+                height: 100%;
+                z-index: 99999;
+                position: fixed;
+                display: none;
+                opacity: 0.8;
+                background: #fff;
+            }
+
+            .img-loading {
+                width: 100%;
+                text-align: center;
+            }
+
+            .img-loading img {
+                position: absolute;
+                top: 40%;
+                left: 50%;
+            }
+
+            .mg-right {
+                margin-right: 10px;
+            }
+        </style>
+        <style>
+            @media screen and (max-width: 768px) {
+                .left-logo {
+                    width: 240px;
+                    padding-left: 65px !important;
+                }
+
+                .center-header {
+                    position: absolute;
+                    top: 60px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    z-index: 999
+                }
+
+                .form-search-box {
+                    width: 300px
+                }
+
+                .search-form-wrap {
+                    width: 100%
+                }
+
+                .search-form-wrap .search-form .select-form {
+                    width: 130px;
+                }
+
+                .search-form-wrap .search-form .select-form .icon {
+                    top: 75%;
+                    -webkit-transform: translateY(-50%);
+                    transform: translateY(-50%);
+                    right: 30px;
+                }
+
+                .search-form-wrap .search-form .main-btn {
+                    top: 55px;
+                }
+
+                .navbar-list right li:nth-child(1) {
+                    display: none;
+                }
+
+                /*      .navbar-list right li:nth-child(2) {
+                    display: none;
+                }*/
+                .navbar-list right li:nth-child(3) {
+                    display: none;
+                }
+
+                .navbar .navbar-dark ul a {
+                    transform: translateY(12px)
+                }
+
+                #main {
+                    margin-top: 130px
+                }
+
+                .navbar .navbar-dark ul a {
+                    transform: translateY(0);
+                }
+
+                .search-form-wrap .search-form .select-form .icon {
+                    top: 50%
+                }
+
+                .form-search-box {
+                    width: 500px
+                }
+
+                .search-form-wrap .search-form .main-btn {
+                    top: 50px !important;
+                }
+
+                .center-header {
+                    top: 70px
+                }
+
+                nav ul li:nth-child(1) {
+                    display: none
+                }
+            }
+
+            @media screen and (max-width: 576px) {
+                .left-logo {
+                    width: 240px !important;
+                    padding-left: 65px;
+                }
+
+                .center-header {
+                    position: absolute !important;
+                    top: 60px !important;
+                    left: 50% !important;
+                    transform: translateX(-50%) !important;
+                }
+
+                .form-search-box {
+                    width: 300px !important;
+                }
+
+                .search-form-wrap {
+                    width: 100% !important;
+                }
+
+                .search-form-wrap .search-form .select-form {
+                    width: 130px !important;
+                }
+
+                .search-form-wrap .search-form .select-form .icon {
+                    top: 75% !important;
+                    -webkit-transform: translateY(-50%) !important;
+                    transform: translateY(-50%) !important;
+                    right: 30px !important;
+                }
+
+                .search-form-wrap .search-form .main-btn {
+                    top: 55px;
+                }
+
+                .navbar-list right ul li:first-child {
+                    display: none !important;
+                }
+
+                /*      .navbar-list right li:nth-child(2) {
+                    display: none !important;
+                }*/
+                .navbar-list right li:nth-child(3) {
+                    display: none !important;
+                }
+
+                .navbar .navbar-dark ul a {
+                    transform: translateY(12px) !important;
+                }
+
+                #main {
+                    margin-top: 130px !important;
+                }
+
+                nav ul li:nth-child(1) {
+                    display: none
+                }
+
+                h4 {
+                    position: relative;
+                    z-index: -1;
+                }
+            }
+        </style>
+
+        <style>
+            .border-select {
+                border: solid 2px red !important;
+            }
+
+            .product-checkbox {
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 25px;
+            }
+
+            .product-checkbox .checkbox-item {
+                width: 33.33%;
+                padding: 0 15px;
+            }
+
+            .product-checkbox .checkbox-item label {
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            [type="checkbox"]:not(:checked),
+            [type="checkbox"]:checked {
+                opacity: 1;
+                position: relative;
+            }
+
+            .product-checkbox .checkbox-item label input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+                height: 0;
+                width: 0;
+            }
+
+            .product-checkbox .checkbox-item label {
+                position: relative;
+            }
+
+            .checkmark {
+                position: absolute;
+                top: 10px;
+                right: 65px;
+                height: 20px;
+                width: 20px;
+                background-color: #eee;
+            }
+
+            .product-checkbox .checkbox-item label input:checked~.checkmark {
+                background-color: #ccc;
+            }
+
+            .product-checkbox .checkbox-item label input:checked~.checkmark:after {
+                display: block;
+            }
+
+            .checkmark:after {
+                content: '';
+                position: absolute;
+                display: none;
+            }
+
+            .title-checkbox {
+                color: #000000;
+                font-size: 15px;
+            }
+
+            .checkmark:after {
+                left: 6px;
+                top: 3px;
+                width: 7px;
+                height: 10px;
+                border: 1px solid;
+                border-width: 0 3px 3px 0;
+                transform: rotate(45deg);
+            }
+
+            .all-pqd {
+                max-width: 100%;
+                margin: 0 auto;
+                position: relative;
+                overflow: hidden;
+            }
+
+            @media screen and (max-width: 1650px) {
+                .checkmark {
+                    right: 350px
+                }
+            }
+
+            @media screen and (max-width: 1450px) {
+                .checkmark {
+                    right: 300px
+                }
+            }
+
+            @media screen and (max-width: 1300px) {
+                .checkmark {
+                    right: 250px
+                }
+            }
+        </style>
+    </head>
+
+    <body class="horizontal-layout page-header-light horizontal-menu 2-columns  " data-open="click"
+        data-menu="horizontal-menu" data-col="2-columns">
+        <form method="post" action="./tao-don-hang-khac" id="form1" enctype="multipart/form-data" novalidate="">
+            <div class="aspNetHidden">
+                <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+                <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+                <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE"
+                    value="7ae8cewdgkSghgXJ5xaJEyToPEIa6j60Ipm5mc9MNqt+b/TFA9Pvcr30hLMhKoiJVHHkO+Rb/Yq2iBGvs4RmHhcsTZR81F7YdEnZn7R8XxYTezqVToz1eEH11blwkXU8f7Wj2GoSICmMVni1gA6dTjc18XrvkkukPWZjswKQevBiaAp21ItONjI6TX4NKP5Vwdp/xpLtBawGOYI9oPLuYEcWK37I+iTP7Fr4n/nHFVj20PaNIdAFVsqMknIaaljZE294ixGi18tVhIdZf+NT3f1ov0xjgba/743Y9kV/9/FQQrITdhm1kgDDme/Rtm+RtHuo57BwK3tb1frqJT6/F8ZXDG6hGsBkSZD6WgHaxdhHTrSqhuG6OYAF+J+OGzUUMPB4wib6B03dP0+2sU7WwAiFYLXJxZw+ZNyutJIuYhfOk3swBpty+ocBk1y0FtxXXUxBi54Ow1n+LeKrqakHKuBS5Rgy1Nk0L+HWuglg6q8LeWapGM6gDJxKqZQ2m4eWQh5UOVpC+4MCkjz7fSzL1OgKXuVkXgEjt18JzbKdOopqhGH9b7T+1GkCktCxyUP2yGM/1IJ3LygECPWbEw0LscWn3IHHZTgAJJiKFjVLZFAF5sQ4LIJj3xAwa8xI+rWdvbYBV/vxZKBQJ67gs6MHHjrSBavl+XUMX572IAQrpn2xFgaK6GdmjAb2opSvceUlNtbosNhK0lJhVPvyQ62NFbwHqVcl9gerArELVT4DwCS5Xhe085JeaqAKjodeP69wiF6ZP07qP4tbBC3mg7gSBjBck4mzWS8JSsFsHFNKpOW1ihqSJLTNMdXRtfs9QC05Cfc+Eg4EFlxA9K5HPWSOT24Ezmy94UZX0gKClXoRL6OeHaajGd6o4fuA/RQfGUjsbLSlxZ14NNASTJlI9Jy+gIIvB/+RQn9do/HIINFbA2XfW3gKUb7JOrLwwtSWm1/QoLmF62jIf4Va47sAXdddvq/BQ4myDnaqaXRsTnw2f5BbnopNhYTbPSyMRq8Kub2Z9H0iiGJO4C+BxbLZW15FVBOy8gK6vESsA77dovoJz0XaY7kSyFMyG73r9rxHjYZAYjOOamIs/V1dbcAkzVUriBkIkrldPpFfbbB0miB14gEww0lBvEwHbcqiPBjW+I5EP2Z4ePpCQFpO2HBheaJrHxM5gv+5YSILqPh6EbqUUSejD9B6tF7RUAm+aify11NB5m8E0PwOCAZsSgz0jRPgrNP2IKVCCWBjOshUnlnLBBOm/hp6v3Qbbds45doTQ+O3Hupk1jOk0QMvcUWzGkoEVO2bXnbgHimxYrePGJwm1vBwdOHtvE1ua5WGS418OIvjkZBEY9ZfYLMPUiDYeV5s/+S6kBuwhXOMFEchAwpTiI7MKyis/y9Z0XuXidjZX5fqUTnEXcc07HW2UaaiXhqptn6y38D+59S/8VMjlgKCQYjDigeOEpFD0M/z0THOMuYiIAhy+OxT4Z5V+JK10VOkXrudK46Bl90mwAWfyeRt4hy8GwLYHnkKiWZiIzKio5l7tP0v7F0/W5VztUlUGg7bLk/YHOmn/LcLBJUe6i1hh+EhT0CYRrTP6hL5YkM3iZlTEUv3KAyNsYVBJuffE5WM4AVkAvi/eE8OYR5/fuYY45ie0MCDR2fRQhjP4elFLmUfQi1g79Z1qIdNqY7hIOEyeRH9F/PGiU05m16Xaw3Nj7gObIhhJN9Mv6CMtGErXlmIKoiI5xkbMozA3X1uV29X99yZrX1QV7TTe2XqA5aimBUJYsKwThQwDxDCvl1Ei5CSwY3QpEyaUCVi4ZQ8GcCT+xZ/gVRN6jB34Z2FCfRck2JJJEZ+xcPRHTrkuolVlmil5Uf9U59g0Jj89PqwDHZs3qM4WfylMF82L28bpUWkn20eNLuwcByLDCq+3ng5JzUcDpIQo15Lmz5CAFsKW/ta1g==" />
+            </div>
+
+            <script type="text/javascript">
+                //<![CDATA[
+                var theForm = document.forms['form1'];
+                if (!theForm) {
+                    theForm = document.form1;
+                }
+
+                function __doPostBack(eventTarget, eventArgument) {
+                    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+                        theForm.__EVENTTARGET.value = eventTarget;
+                        theForm.__EVENTARGUMENT.value = eventArgument;
+                        theForm.submit();
+                    }
+                }
+                //]]>
+            </script>
+
+
+            <script
+                src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZLLtADMvvx0eX3ttAWXpvkNw1cY5WP-Vrpe_cHftvUZCujT1Ki1tEPShxGvPPl-nnA2&amp;t=636726176369752514"
+                type="text/javascript"></script>
+
+
+            <script src="Scripts/WebForms/MsAjax/MicrosoftAjax.js" type="text/javascript"></script>
+            <script src="Scripts/WebForms/MsAjax/MicrosoftAjaxWebForms.js" type="text/javascript"></script>
+            <div class="aspNetHidden">
+
+                <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="F20369A5" />
+                <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION"
+                    value="hJMcVeuRtGl83L6afHFGsqtoRGLPOzW/h85RO4xe/fkUk7qFSWIbL3WM++2b9LVP223u7p3zJJ3euW07kGiKmlVXLsk5z/ei8l0fseFfGYmh/mEujSVtuFzA1SIPGlyk/vQFB2fLjHAzBV5Fjxw1naSlcrlroavW7Ku0w8694Tsehql/H2qdRaJthyqhtVTz7P3HjIXhclXU58vfV41PzbFerk1iMTStOGi7A6/Qk7GX3aSUb/0zjZM46Id8EFLyh3dRt/G0PL5zW1P56luIY5jwfAydzSLBf838RnAhBAHV6pkMyVuDChkblxSxX33agsCJgfwHerTKiZ1uujeTRpzUA7ADi3eC39iKlnRIo1vLYNA+ue4hFSRRv1liC//k98MiGwnzi3t3mEp3jSbWjWSMsMDK/R4fMwKzD+wL3WnkG1AxhrOEs/tE0xeQKfvleWZB9CQknY6YQpdJOUfvFjzomeJShmRjtheEm5aiuis=" />
+            </div>
+            <div id="loadingajax" class="ldajax">
+                <div class="img-loading">
+                    <img src="../App_Themes/NewUI/images/loading.gif" />
+                </div>
+            </div>
+            <script type="text/javascript">
+                //<![CDATA[
+                Sys.WebForms.PageRequestManager._initialize('ctl00$scr', 'form1', [], [], [], 90, 'ctl00');
+                //]]>
+            </script>
+
+
+            <header class="page-topbar" id="header">
+                <div class="navbar">
+                    <nav class="navbar-main navbar-color nav-collapsible sideNav-lock navbar-dark bg-dark-gradient">
+                        <div class="nav-wrapper" style="display: flex; justify-content: space-between; align-items: center">
+
+                            <div class="left-logo"
+                                style="width: 342px; display: flex; height: 100%; align-items: center; padding-left: 15px">
+                                <a href="/" style="display: flex">
+                                    <img style="width: 50%" src="/App_Themes/UserNew45/assets/images/logo/logo-icon.png"
+                                        alt="materialize logo">
+                                </a>
+                            </div>
+
+                            <div class="center-header" style="display: flex; height: 100%; align-items: center">
+                                <div class="form-search-box" style="display: flex; align-items: center">
+                                    <div class="search-form-wrap">
+                                        <div id="search" class="search-form tab-content">
+                                            <div class="select-form">
+                                                <select class="fcontrol" id="brand-source">
+                                                    <option value="taobao"
+                                                        data-image="/App_Themes/NINJA/images/hdsearch-item-taobao.png">
+                                                        Taobao</option>
+                                                    <option value="tmall"
+                                                        data-image="/App_Themes/NINJA/images/hdsearch-item-tmall.png">Tmall
+                                                    </option>
+                                                    <option value="1688"
+                                                        data-image="/App_Themes/NINJA/images/hdsearch-item-1688.png">1688
+                                                    </option>
+                                                </select>
+                                                <span class="icon">
+                                                    <i class="fa fa-sort" aria-hidden="true"></i>
+                                                </span>
+                                            </div>
+                                            <div class="input-form">
+                                                <input name="ctl00$txtSearch" id="txtSearch" type="text"
+                                                    class="fcontrol f-input"
+                                                    placeholder="Nhập tên sản phẩm bạn muốn tìm kiếm" />
+                                            </div>
+                                            <a href="javascript:" onclick="searchProduct()" class="main-btn">Tìm kiếm</a>
+                                            <input type="button" name="ctl00$btnSearch" value=""
+                                                onclick="document.forms[0].target = &#39;_blank&#39;;__doPostBack(&#39;ctl00$btnSearch&#39;,&#39;&#39;)"
+                                                id="btnSearch" style="display: none" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <ul class="navbar-list right">
+                                <li class="hide-on-med-and-down mg-right">¥1 = </span>3775 Đồng</li>
+                                <li class="hide-on-med-and-down">$1 = </span>23919 Đồng</li>
+                                <li class="hide-on-med-and-down"><a
+                                        class="waves-effect waves-block waves-light toggle-fullscreen"
+                                        href="javascript:void(0);"><i class="material-icons">settings_overscan</i></a></li>
+                                <li><a class="waves-effect waves-block waves-light" href="/thong-bao-cua-ban"><i
+                                            class="material-icons">notifications_none<small
+                                                class="notification-badge orange accent-3">0</small></i></a></li>
+                                <li class="user-box"><a class="waves-block" href="javascript:void(0);"><span
+                                            class="avatar-status avatar-online"><img src="/NO-IMAGE.jpg"
+                                                alt="avatar"><i></i></span></a>
+                                    <div class="status-desktop">
+                                        <div class="status-wrap">
+                                            <div class="status__header">
+                                                <h4>luandotien</h4>
+                                            </div>
+                                            <div class="status__body">
+                                                <div class="level">
+                                                    <div class="links"><a href="/thong-tin-nguoi-dung">Thông tin tài khoản<i
+                                                                class="fa fa-caret-right"></i></a></div>
+                                                    <div class="links"><a href="/danh-sach-don-hang?t=1">Đơn hàng của bạn<i
+                                                                class="fa fa-caret-right"></i></a></div>
+                                                </div>
+                                                <div class="status__footer"><a href="/dang-xuat" class="ft-btn">ĐĂNG
+                                                        XUẤT</a></div>
+                                            </div>
+                                        </div>
+                                </li>
+                            </ul>
+                            <!-- profile-dropdown-->
+                            <ul class="dropdown-content" id="profile-dropdown">
+                                <li><a class="grey-text text-darken-1" href="/thong-tin-nguoi-dung"><i
+                                            class="material-icons">person_outline</i> Thông tin của bạn</a></li>
+                                <li><a class="grey-text text-darken-1" href="/dang-xuat"><i
+                                            class="material-icons">keyboard_tab</i> Đăng xuất</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <!-- BEGIN: Horizontal nav start-->
+                    <nav class="white hide-on-med-and-down" id="horizontal-nav">
+                        <div class="nav-wrapper">
+                            <ul class="left hide-on-med-and-down" id="ul-horizontal-nav" data-menu="menu-navigation">
+                                <li>
+                                    <a href="/dashboard"><i class="material-icons">dashboard</i><span>Tài khoản</span></a>
+                                </li>
+                                <li>
+                                    <a href="/gio-hang"><i class="material-icons">shopping_cart</i><span>Giỏ hàng
+                                        </span></a>
+                                </li>
+
+                                <li>
+                                    <a href="/danh-sach-don-hang?t=1"><i class="material-icons">library_books</i><span>Nhập
+                                            khẩu ủy thác</span></a>
+                                </li>
+
+                                <li><a class="dropdown-menu" href="#" data-target="BuyHelper"><i
+                                            class="material-icons">library_books</i><span>Đơn hàng TMĐT khác<i
+                                                class="material-icons right">keyboard_arrow_down</i></span></a>
+                                    <ul class="dropdown-content dropdown-horizontal-list" id="BuyHelper">
+                                        <li data-menu=""><a href="/tao-don-hang-khac"><i
+                                                    class="chat_bubble_outline"></i>Tạo đơn các web TMĐT khác</a>
+                                        </li>
+                                        <li data-menu=""><a href="/danh-sach-don-hang?t=3"><i class="mail_outline"></i>Danh
+                                                sách đơn hàng TMĐT khác</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li><a class="dropdown-menu" href="#" data-target="BuyHelper1"><i
+                                            class="material-icons">library_books</i><span>Nhập khẩu chính ngạch<i
+                                                class="material-icons right">keyboard_arrow_down</i></span></a>
+                                    <ul class="dropdown-content dropdown-horizontal-list" id="BuyHelper1">
+                                        <li data-menu=""><a href="/tao-don-chinh-ngach"><i
+                                                    class="chat_bubble_outline"></i>Tạo đơn chính ngạch</a>
+                                        </li>
+                                        <li data-menu=""><a href="/danh-sach-don-hang?t=5"><i class="mail_outline"></i>Danh
+                                                sách đơn hàng chính ngạch</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li><a class="dropdown-menu" href="#" data-target="BuyHelper2"><i
+                                            class="material-icons">library_books</i><span>Tư vấn nguồn hàng<i
+                                                class="material-icons right">keyboard_arrow_down</i></span></a>
+                                    <ul class="dropdown-content dropdown-horizontal-list" id="BuyHelper2">
+                                        <li data-menu=""><a href="/tao-don-tu-van-nguon-hang"><i
+                                                    class="chat_bubble_outline"></i>Tạo đơn tư vấn nguồn hàng</a>
+                                        </li>
+                                        <li data-menu=""><a href="/danh-sach-don-hang?t=7"><i class="mail_outline"></i>Danh
+                                                sách đơn hàng tư vấn nguồn hàng</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a href="/khieu-nai"><i class="material-icons">report</i><span>Khiếu nại</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="/tracking-mvd"><i class="material-icons">local_shipping</i><span>Tra cứu mã đơn
+                                            hàng</span></a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <!-- END: Horizontal nav start-->
+                    </nav>
+                </div>
+            </header>
+            <!-- END: Header-->
+            <!-- BEGIN: SideNav-->
+            <aside class="sidenav-main nav-expanded nav-lock nav-collapsible sidenav-fixed hide-on-large-only">
+                <div class="brand-sidebar sidenav-light"></div>
+                <ul class="sidenav sidenav-collapsible leftside-navigation collapsible sidenav-fixed hide-on-large-only menu-shadow"
+                    id="slide-out" data-menu="menu-navigation" data-collapsible="menu-accordion">
+                    <li class="navigation-header"><a class="navigation-header-text">NINJADIRECT</a>
+                    </li>
+                    <li class="bold"><a class="waves-effect waves-cyan " href="dashboard"><i
+                                class="material-icons">dashboard</i><span class="menu-title" data-i18n="">Tài
+                                khoản</span></a>
+                    </li>
+                    <li class="bold"><a class="waves-effect waves-cyan " href="/gio-hang"><i
+                                class="material-icons">shopping_cart</i><span class="menu-title" data-i18n="">Giỏ hàng
+                            </span></a>
+                    </li>
+
+                    <li class="bold"><a class="waves-effect waves-cyan " href="/danh-sach-don-hang"><i
+                                class="material-icons">library_books</i><span class="menu-title" data-i18n="">Nhập khẩu ủy
+                                thác</span></a>
+                    </li>
+
+                    <li class="bold"><a class="waves-effect waves-cyan " href="/tao-don-hang-khac"><i
+                                class="material-icons">library_books</i><span class="menu-title" data-i18n="">Tạo đơn các
+                                web TMĐT khác</span></a>
+                    </li>
+
+                    <li class="bold"><a class="waves-effect waves-cyan " href="/danh-sach-don-hang?t=3"><i
+                                class="material-icons">library_books</i><span class="menu-title" data-i18n="">Danh sách đơn
+                                hàng TMĐT khác</span></a>
+                    </li>
+
+                    <li class="bold"><a class="waves-effect waves-cyan " href="/tao-don-chinh-ngach"><i
+                                class="material-icons">library_books</i><span class="menu-title" data-i18n="">Tạo đơn nhập
+                                khẩu chính ngạch</span></a>
+                    </li>
+
+                    <li class="bold"><a class="waves-effect waves-cyan " href="/danh-sach-don-hang?t=5"><i
+                                class="material-icons">library_books</i><span class="menu-title" data-i18n="">Danh sách đơn
+                                hàng nhập khẩu chính ngạch</span></a>
+                    </li>
+
+                    <li class="bold"><a class="waves-effect waves-cyan " href="/tao-don-tu-van-nguon-hang"><i
+                                class="material-icons">library_books</i><span class="menu-title" data-i18n="">Tạo đơn tư vấn
+                                nguồn hàng</span></a>
+                    </li>
+
+                    <li class="bold"><a class="waves-effect waves-cyan " href="/danh-sach-don-hang?t=7"><i
+                                class="material-icons">library_books</i><span class="menu-title" data-i18n="">Danh sách đơn
+                                hàng tư vấn nguồn hàng</span></a>
+                    </li>
+
+                    <li class="bold"><a class="waves-effect waves-cyan " href="/khieu-nai"><i
+                                class="material-icons">report</i><span class="menu-title" data-i18n="">Khiếu nại</span></a>
+                    </li>
+                    <li class="bold"><a class="waves-effect waves-cyan " href="/tracking-mvd"><i
+                                class="material-icons">local_shipping</i><span class="menu-title" data-i18n="">Tra cứu mã
+                                đơn hàng</span></a>
+                    </li>
+
+                </ul>
+                <div class="navigation-background"></div>
+                <a class="sidenav-trigger btn-floating btn-medium waves-effect waves-light hide-on-large-only" href="#"
+                    data-target="slide-out"><i class="material-icons">menu</i></a>
+            </aside>
+            <!-- END: SideNav-->
+            <input type="hidden" name="ctl00$hdfWebsearch" id="hdfWebsearch" />
+
+            <div id="main">
+                <div class="row">
+                    <div class="content-wrapper-before blue-grey lighten-5"></div>
+                    <div class="col s12">
+                        <div class="container">
+                            <div class="all-pqd">
+                                <div class="card-panel mt-3 no-shadow">
+                                    <div class="row">
+                                        <div class="col s12">
+                                            <div class="page-title mt-2 center-align">
+                                                <h4>TẠO ĐƠN HÀNG TRANG TMĐT KHÁC</h4>
+                                            </div>
+                                        </div>
+                                        <div class="col s12 mt-2">
+                                            <div class="order-list-info">
+                                                <div class="total-info mb-2 create-product">
+                                                    <div class="row section">
+
+                                                        <div class="col s12">
+
+                                                            <div class="float-left mt-1">
+                                                                <div class="search-name input-field col s12 l12">
+                                                                    <select name="ctl00$ContentPlaceHolder1$ddlTypeCurrency"
+                                                                        id="ContentPlaceHolder1_ddlTypeCurrency"
+                                                                        class="form-control select2">
+                                                                        <option value="1">Tiền tệ &#165; (CNY)</option>
+                                                                        <option value="2">Tiền đ&#244; $ (USD)</option>
+
+                                                                    </select>
+                                                                    <label for="search_name"><span>Đơn vị tính (CNY /
+                                                                            USD)</span></label>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="float-left mt-1" style="display: none">
+                                                                <div class="search-name input-field col s12 l12">
+                                                                    <select name="ctl00$ContentPlaceHolder1$ddlKhoTQ"
+                                                                        id="ContentPlaceHolder1_ddlKhoTQ">
+                                                                        <option value="0">Chọn kho TQ</option>
+                                                                        <option value="1">Kho Trung Quốc</option>
+
+                                                                    </select>
+                                                                    <label for="search_name"><span>Kho TQ</span></label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="float-left mt-1" style="display: none">
+                                                                <div class="search-name input-field col s12 l12">
+                                                                    <select name="ctl00$ContentPlaceHolder1$ddlKhoVN"
+                                                                        id="ContentPlaceHolder1_ddlKhoVN">
+                                                                        <option value="0">Chọn kho VN</option>
+                                                                        <option value="1">H&#224; Nội</option>
+
+                                                                    </select>
+                                                                    <label for="search_name"><span>Kho VN</span></label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="float-left mt-1" style="display: none">
+                                                                <div class="search-name input-field col s12 l12">
+                                                                    <select name="ctl00$ContentPlaceHolder1$ddlShipping"
+                                                                        id="ContentPlaceHolder1_ddlShipping">
+                                                                        <option value="0">Chọn phương thức</option>
+                                                                        <option value="1">Đi Thường</option>
+
+                                                                    </select>
+                                                                    <label for="search_name"><span>Phương thức vận
+                                                                            chuyển</span></label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="float-right mt-2">
+                                                                <a href="javascript:;"
+                                                                    class="btn add-product valign-wrapper"
+                                                                    style="display: flex"><i
+                                                                        class="material-icons">add</i><span>Sản
+                                                                        phẩm</span></a>
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                            <div class="product-checkbox">
+
+                                                                <div class="checkbox-item">
+                                                                    <label>
+                                                                        <h5 class="title-checkbox">Đóng gỗ</h5>
+                                                                        <input type="checkbox" class="chk-check-option"
+                                                                            id="Packed" data-id="1" />
+                                                                        <div class="checkmark"></div>
+                                                                    </label>
+                                                                </div>
+
+                                                                <div class="checkbox-item">
+                                                                    <label>
+                                                                        <h5 class="title-checkbox">Bảo hiểm</h5>
+                                                                        <input type="checkbox" class="chk-check-option"
+                                                                            id="Insurrance" data-id="2" />
+                                                                        <div class="checkmark"></div>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="responsive-tb">
+                                                                <table
+                                                                    class="table    highlight bordered  centered    mt-2">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th class="tb-date">Ảnh
+                                                                                <br /> sản phẩm
+                                                                            </th>
+                                                                            <th class="tb-date">Link sản phẩm</th>
+                                                                            <th class="tb-date">Tên sản phẩm</th>
+                                                                            <th class="tb-date">Giá sản phẩm
+                                                                                <br /> (tệ / đô)
+                                                                            </th>
+                                                                            <th class="no-wrap">Màu sắc / kích thước
+                                                                            </th>
+                                                                            <th class="tb-date">Số lượng</th>
+                                                                            <th class="tb-date">Ghi chú thêm</th>
+                                                                            <th class="no-wrap">Thao tác</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody class="list-product">
+                                                                        <tr class="slide-up product-item">
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input class="upload-img productimage"
+                                                                                        type="file" name="productimage1"
+                                                                                        onchange="imagepreview(this,$(this))"
+                                                                                        title="">
+                                                                                    <button type="button"
+                                                                                        class="btn-upload">Upload</button>
+                                                                                    <img class="imgpreview"
+                                                                                        style="width: 40%;" alt="" />
+                                                                                    <a href="javascript:;" class="remove"
+                                                                                        style="display: none">Xóa</a>
+                                                                                </div>
+                                                                                <div class="preview-img"></div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <input class="product-link" type="text"
+                                                                                    value="">
+                                                                            </td>
+                                                                            <td>
+                                                                                <input class="product-name" type="text"
+                                                                                    value="">
+                                                                            </td>
+                                                                            <td>
+                                                                                <input class="product-price" type="number"
+                                                                                    value="">
+                                                                            </td>
+                                                                            <td>
+                                                                                <input class="product-colorsize" type="text"
+                                                                                    value="">
+                                                                            </td>
+                                                                            <td>
+                                                                                <input class="product-quantity"
+                                                                                    type="number" value="1">
+                                                                            </td>
+                                                                            <td>
+                                                                                <input class="product-request" type="text"
+                                                                                    value="">
+                                                                            </td>
+                                                                            <td class="no-wrap">
+                                                                                <!-- Dropdown Trigger -->
+                                                                                <a href='javascript:;'
+                                                                                    class="remove-product"><i
+                                                                                        class="material-icons valign-center">remove_circle</i></a>
+
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                            <div class="float-right mt-2">
+                                                                <a href="javascript:;" onclick="CreateOrder()"
+                                                                    class="btn create-order">Tạo đơn hàng</a>
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <input type="hidden" name="ctl00$ContentPlaceHolder1$hdfProductList" id="ContentPlaceHolder1_hdfProductList" />
+            <input type="hidden" name="ctl00$ContentPlaceHolder1$hdfListCheckBox"
+                id="ContentPlaceHolder1_hdfListCheckBox" />
+            <input type="hidden" name="ctl00$ContentPlaceHolder1$hdfcountimage" id="ContentPlaceHolder1_hdfcountimage"
+                value="1" />
+            <input type="submit" name="ctl00$ContentPlaceHolder1$btncreateuser" value="Cập nhật"
+                id="ContentPlaceHolder1_btncreateuser" class="btn btn-success btn-block pill-btn primary-btn main-btn hover"
+                style="display: none" />
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    $('.create-product .add-product').on('click', function () {
+                        var countimage = parseFloat($("#ContentPlaceHolder1_hdfcountimage").val());
+                        countimage += 1;
+                        $("#ContentPlaceHolder1_hdfcountimage").val(countimage);
+                        var tableHTML = $('.create-product table .list-product');
+                        var html = '';
+                        html += '<tr class="slide-up product-item">';
+                        html += '<td>  ';
+                        html += '<div>';
+                        html += '<input class="upload-img productimage" type="file" onchange="imagepreview(this,$(this))" name="productimage' + countimage + '" title="">';
+                        html += ' <button type="button" class="btn-upload">Upload</button>';
+                        html += ' <img class="imgpreview" style="width: 40%;" alt="" /> ';
+                        html += ' <a href="javascript:;" class="remove" style="display: none">Xóa</a> ';
+                        html += ' </div> ';
+                        html += ' <div class="preview-img"></div>';
+                        html += ' </td>';
+                        html += ' <td><input class="product-link" type="text" value=""></td>';
+                        html += ' <td><input class="product-name" type="text" value=""></td> ';
+                        html += ' <td><input class="product-price" type="number" value=""></td> ';
+                        html += ' <td><input class="product-colorsize" type="text" value=""></td> ';
+                        html += ' <td><input class="product-quantity" type="number" value="1"></td>';
+                        html += ' <td><input class="product-request" type="text" value=""></td> ';
+                        html += ' <td class="no-wrap">';
+                        html += '<a href="javascript:;" class="remove-product"><i class="material-icons valign-center">remove_circle</i></a> ';
+                        html += ' </td>';
+                        html += ' </tr>';
+                        tableHTML.append(html);
+                    });
+                    $('.create-product').on('click', '.remove-product', function () {
+                        var c = confirm('Bạn muốn xóa sản phẩm này?');
+                        if (c == true) {
+                            var countimage = parseFloat($("#ContentPlaceHolder1_hdfcountimage").val());
+                            if (countimage > 0) {
+                                countimage = countimage - 1;
+                                $("#ContentPlaceHolder1_hdfcountimage").val(countimage);
+                            }
+                            $(this).parent().parent().fadeOut(function () {
+                                $(this).remove();
+                            });
+                        }
+                    });
+                });
+
+                function keypress(e) {
+                    var keypressed = null;
+                    if (window.event) {
+                        keypressed = window.event.keyCode; //IE
+                    } else {
+                        keypressed = e.which; //NON-IE, Standard
+                    }
+                    if (keypressed < 48 || keypressed > 57) {
+                        if (keypressed == 8 || keypressed == 127) {
+                            return;
+                        }
+                        return false;
+                    }
+                }
+
+                function CreateOrder() {
+                    var khotq = $("#ContentPlaceHolder1_ddlKhoTQ").val();
+                    var khovn = $("#ContentPlaceHolder1_ddlKhoVN").val();
+                    var shipping = $("#ContentPlaceHolder1_ddlShipping").val();
+                    //if (khotq == 0) {
+                    //    alert('Vui lòng chọn kho TQ');
+                    //    return;
+                    //}
+                    //if (khovn == 0) {
+                    //    alert('Vui lòng chọn kho VN');
+                    //    return;
+                    //}
+                    //if (shipping == 0) {
+                    //    alert('Vui lòng chọn phương thức VC');
+                    //    return;
+                    //}
+                    var chuoi = "";
+                    $('.chk-check-option').each(function () {
+                        var id = $(this).attr('data-id');
+
+                        if ($(this).prop("checked") == true) {
+                            chuoi += id + "," + "1|";
+                        } else {
+                            chuoi += id + "," + "0|";
+                        }
+                    });
+
+                    if ($(".product-item").length > 0) {
+                        var html = "";
+                        var check = false;
+                        $(".product-item").each(function () {
+                            var item = $(this);
+                            var productlink_obj = item.find(".product-link");
+                            var productlink = item.find(".product-link").val();
+
+                            var productname_obj = item.find(".product-name");
+                            var productname = item.find(".product-name").val();
+
+                            var productprice_obj = item.find(".product-price");
+                            var productprice = item.find(".product-price").val();
+
+                            var productsizecolor_obj = item.find(".product-colorsize");
+                            var productsizecolor = item.find(".product-colorsize").val();
+
+                            var productquantity_obj = item.find(".product-quantity");
+                            var productquantity = item.find(".product-quantity").val();
+                            var productquantityfloat = parseFloat(item.find(".product-quantity").val());
+
+                            var productrequest = item.find(".product-request").val();
+                            if (isBlank(productlink)) {
+                                //alert('Vui lòng nhập link sản phẩm');
+                                check = true;
+                            }
+                            if (isBlank(productname)) {
+                                //alert('Vui lòng nhập tên sản phẩm');
+                                check = true;
+                            }
+                            if (isBlank(productprice)) {
+                                //alert('Vui lòng nhập gia sản phẩm');
+                                check = true;
+                            }
+                            if (isBlank(productsizecolor)) {
+                                //alert('Vui lòng nhập màu sắc, kích thước sản phẩm');
+                                check = true;
+                            }
+                            if (isBlank(productquantity)) {
+                                //alert('Vui lòng số lượng cần mua, và số lượng phải lớn hơn 0');
+                                check = true;
+                            } else if (productquantityfloat <= 0) {
+                                check = true;
+                            }
+
+                            validateText(productlink_obj);
+                            validateText(productname_obj);
+                            validateText(productprice_obj);
+                            validateText(productsizecolor_obj);
+                            validateText(productquantity_obj);
+                            validateNumber(productquantity_obj);
+                        });
+                        if (check == true) {
+                            alert('Vui lòng điền đầy đủ thông tin từng sản phẩm');
+                        } else {
+                            $(".product-item").each(function () {
+                                var item = $(this);
+                                var productlink = item.find(".product-link").val();
+                                var productname = item.find(".product-name").val();
+                                var productprice = item.find(".product-price").val();
+                                var productsizecolor = item.find(".product-colorsize").val();
+                                var productquantity = item.find(".product-quantity").val();
+                                var productrequest = item.find(".product-request").val();
+                                var image = item.find(".imgpreview").attr("src");
+
+                                html += productlink + "]" + productname + "]" + productprice + "]" + productsizecolor + "]" + productquantity + "]" + productrequest + "]" + image + "|";
+                            });
+                            $("#ContentPlaceHolder1_hdfProductList").val(html);
+                            $("#ContentPlaceHolder1_hdfListCheckBox").val(chuoi);
+                            $("#ContentPlaceHolder1_btncreateuser").click();
+                        }
+                    } else {
+                        alert('Vui lòng nhập sản phẩm');
+                    }
+                }
+
+                function validateText(obj) {
+                    var value = obj.val();
+                    if (isBlank(value)) {
+                        obj.addClass("border-select");
+                    } else {
+                        obj.removeClass("border-select");
+                    }
+                }
+
+                function validateNumber(obj) {
+                    var value = parseFloat(obj.val());
+                    if (value <= 0)
+                        obj.addClass("border-select");
+                    else
+                        obj.removeClass("border-select");
+                }
+
+                function isBlank(str) {
+                    return (!str || /^\s*$/.test(str));
+                }
+
+                function imagepreview(input, obj) {
+                    if (input.files && input.files[0]) {
+                        var reader = new FileReader();
+
+                        reader.onload = function (e) {
+                            obj.parent().find('.imgpreview').attr('src', e.target.result);
+                            //$('.imgpreview').attr('src', e.target.result);
+
+                            $(".remove").show();
+                            obj.parent().find(".remove").click(function () {
+                                obj.parent().find('.imgpreview').attr('src', "");
+                                obj.parent().find('input:file').val("");
+                                $(this).hide();
+                            });
+                        }
+                        reader.readAsDataURL(input.files[0]);
+                    }
+                }
+            </script>
+
+            <input type="hidden" name="ctl00$hdfMainLoginID" id="hdfMainLoginID" />
+            <input type="hidden" name="ctl00$hdfMainLoginStatus" id="hdfMainLoginStatus" />
+            <input type="hidden" name="ctl00$hdfShowExtension" id="hdfShowExtension" value="0" />
+        </form>
+        <footer
+            class="page-footer footer footer-static footer-dark  bg-dark-gradient gradient-shadow navbar-border navbar-shadow">
+            <div class="footer-copyright">
+                <div class="container">
+                    <span>&copy; 2021 <a href="#" target="_blank">NINJADIRECT</a>
+                        All rights reserved.</span><span class="right hide-on-small-only">NINJADIRECT
+                        <a href="#">Version: 5.0</a></span>
+                </div>
+            </div>
+        </footer>
+        <a href="javascript:;" id="return-to-top"><i class="material-icons">arrow_upward</i></a>
+        <!-- END: Footer-->
+        <!-- BEGIN VENDOR JS-->
+        <script src="../js/admin/vendors.min.js" type="text/javascript"></script>
+        <!-- BEGIN VENDOR JS-->
+        <!-- BEGIN PAGE VENDOR JS-->
+        <script src="../js/admin/formatter/jquery.formatter.min.js"
+            type="text/javascript"></script>
+        <!-- END PAGE VENDOR JS-->
+        <script src="../js/ms-Dropdown-master/js/msdropdown/jquery.dd.min.js"></script>
+        <!-- BEGIN THEME  JS-->
+        <script src="../js/user/plugins.js" type="text/javascript"></script>
+        <script src="../js/user/custom/custom-script.js" type="text/javascript"></script>
+        <script src="../js/sweet/sweet-alert.js" type="text/javascript"></script>
+        <!-- END THEME  JS-->
+        <!-- BEGIN PAGE LEVEL JS-->
+        <script src="../js/scripts/jquery.signalR-2.2.3.min.js"></script>
+        <!-- <script src="/signalr/hubs"></script> -->
+        <script src="../js/datepicker/jquery.datetimepicker.full.js"></script>
+        <script src="../js/admin/pushdesktop/CreateDevice.js"></script>
+        <!-- END PAGE LEVEL JS-->
+        <script>
+            $("#brand-source").msDropdown();
+        </script>
+
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('.txtsearchfield').on("keypress", function (e) {
+                    if (e.keyCode == 13) {
+                        searchProduct();
+                    }
+                });
+            });
+
+            function searchProduct() {
+                var web = $("#brand-source").val();
+                $("#hdfWebsearch").val(web);
+                $("#btnSearch").click();
+            }
+
+            function OnClientFileSelected(sender, args) {
+                if ($telerik.isIE) return;
+                else {
+                    truncateName(args);
+                    var file = args.get_fileInputField().files.item(0);
+                    showThumbnail(file, args);
+                }
+            }
+            $(document).ready(function () {
+                if ($("#hdfShowExtension").val() == 1) {
+                    $(".fixed-download").removeClass('open');
+                }
+            })
+
+            function truncateName(args) {
+                var $span = $(".ruUploadProgress", args.get_row());
+                var text = $span.text();
+                if (text.length > 23) {
+                    var newString = text.substring(0, 23) + '...';
+                    $span.text(newString);
+                }
+            }
+
+            function showThumbnail(file, args) {
+
+                var image = document.createElement("img");
+
+                image.file = file;
+                image.className = "ab img-responsive";
+
+                var $row = $(args.get_row());
+                $row.parent().className = "row ruInputs list-unstyled";
+                $row.append(image);
+
+
+                var reader = new FileReader();
+                reader.onload = (function (aImg) {
+                    return function (e) {
+                        aImg.src = e.target.result;
+                    };
+                }(image));
+                var ret = reader.readAsDataURL(file);
+                var canvas = document.createElement("canvas");
+
+                ctx = canvas.getContext("2d");
+                image.onload = function () {
+                    ctx.drawImage(image, 100, 100);
+                };
+            }
+
+            function notshow() {
+                var value = $("#hdfShowExtension").val();
+                $.ajax({
+                    type: "POST",
+                    url: "/dashboard.aspx/Notshow",
+                    data: "{data:'" + value + "'}",
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function (msg) {
+                        if (value = "0") {
+                            $("#hdfShowExtension").val(1);
+                        } else {
+                            $("#hdfShowExtension").val(0);
+                        }
+
+                    },
+                    error: function (xmlhttprequest, textstatus, errorthrow) {
+                        alert('lỗi');
+                    }
+                });
+
+            }
+        </script>
+
+        <style>
+            .dd {
+                width: 130px !important;
+            }
+
+            .dd .ddChild {
+                height: auto !important;
+                top: 44px !important;
+            }
+
+            .form-search-box {
+                width: 600px;
+            }
+
+            .search-form-wrap {
+                width: 100%;
+                padding: 0;
+                background: #F3F3F3;
+                border-radius: 0;
+            }
+
+            .search-form-wrap .search-form {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                position: relative;
+                border: 1px solid #e1e1e1;
+                background-color: #fff;
+                height: 45px !important;
+            }
+
+            .search-form-wrap .search-form .dd {
+                border: 0;
+                border-radius: 0;
+                outline: 0;
+            }
+
+            .search-form-wrap .search-form .dd .ddArrow {
+                display: none;
+            }
+
+            .search-form-wrap .search-form .dd .ddChild::-webkit-scrollbar {
+                width: 5px;
+            }
+
+            .search-form-wrap .search-form .dd .ddChild::-webkit-scrollbar-track {
+                background: #f1f1f1;
+            }
+
+            .search-form-wrap .search-form .dd .ddChild::-webkit-scrollbar-thumb {
+                background: #888;
+                border-radius: 5px;
+            }
+
+            .search-form-wrap .search-form .dd .ddChild li {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                width: 100%;
+            }
+
+            .search-form-wrap .search-form .dd .ddChild li img {
+                max-width: 35px;
+            }
+
+            .search-form-wrap .search-form .dd .divider {
+                display: none;
+            }
+
+            .search-form-wrap .search-form .dd .ddTitle {
+                background: #fff;
+                border-radius: 0;
+            }
+
+            .search-form-wrap .search-form .dd .ddTitle .ddTitleText {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                position: relative;
+            }
+
+            .search-form-wrap .search-form .dd .ddTitle .ddTitleText:before {
+                content: '';
+                position: absolute;
+                right: 0;
+                top: 6px;
+                height: 30px;
+                width: 1px;
+                background: #80808063;
+            }
+
+            .search-form-wrap .search-form .dd .ddTitle .ddTitleText img {
+                display: block;
+                height: 30px;
+                width: 30px;
+                -o-object-fit: contain;
+                object-fit: contain;
+            }
+
+            .search-form-wrap .search-form .dd .ddlabel {
+                font-size: 13px;
+                font-weight: 500;
+                color: black;
+                display: inline-block;
+                vertical-align: middle;
+                padding: 8px;
+                line-height: 1;
+                max-width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .search-form-wrap .search-form .select-form {
+                min-height: 42px;
+                width: 145px;
+                -ms-flex-negative: 0;
+                flex-shrink: 0;
+                position: relative;
+            }
+
+            .search-form-wrap .search-form .select-form .icon {
+                position: absolute;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+                right: 30px;
+                pointer-events: none;
+                color: #C2002F;
+            }
+
+            .search-form-wrap .search-form .main-btn {
+                position: absolute;
+                right: 5px;
+                top: 4px;
+                z-index: 1;
+                width: 126px;
+                height: 35px;
+                padding: 0;
+                text-align: center;
+                line-height: 35px;
+                white-space: nowrap;
+                background: #C2002F;
+                color: #fff;
+                font-weight: bold;
+                text-transform: uppercase;
+                font-size: 14px;
+                background-position: center center;
+                background-size: cover;
+                -webkit-transition: 0.3s ease;
+                transition: 0.3s ease;
+            }
+
+            .search-form-wrap .search-form .main-btn:hover {
+                background-color: white;
+                color: #C2002F;
+                border: 1px solid #C2002F;
+            }
+
+            .search-form-wrap .search-form .main-btn:hover .search-form-wrap .input-form .f-input {
+                border-radius: 0 30px 30px 0 !important;
+            }
+
+            @media screen and (max-width: 576px) {
+                .search-form-wrap .search-form .main-btn {
+                    top: 80px;
+                }
+            }
+
+            .search-form-wrap .input-form {
+                width: 100%;
+                position: relative;
+                height: 45px;
+            }
+
+            .search-form-wrap .input-form .f-input {
+                position: absolute;
+                height: 42px;
+                border: 0 !important;
+            }
+
+            .search-form-wrap .search-form .select-form select {
+                background-size: cover;
+                border: solid 0px #ececec;
+            }
+        </style>
+    </body>
+
+</html>
