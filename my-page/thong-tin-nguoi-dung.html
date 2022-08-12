@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="description" />
+        <meta name="keywords" />
+        <meta property="og:title" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" />
+        <meta property="og:image" />
+        <meta property="og:site_name" />
+        <meta property="og:description" />
+        <title>
+            Quản trị
+        </title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <!-- BEGIN: VENDOR CSS-->
+        <link rel="stylesheet" type="text/css" href="../css/admin/vendor/vendors.min.css" />
+        <link rel="shortcut icon" href="../images/custom/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" type="text/css" href="../css/admin/vendor/animate-css/animate.css" />
+        <!-- END: VENDOR CSS-->
+        <link rel="stylesheet" href="../js/ms-Dropdown-master/css/msdropdown/dd.css" />
+        <link rel="stylesheet" href="../js/Font-awesome-4.7.0/css/font-awesome.min.css" />
+        <!-- BEGIN: Page Level CSS-->
+        <link rel="stylesheet" type="text/css" href="../css/admin/materialize.css" />
+        <link rel="stylesheet" type="text/css" href="../css/admin/style.css" />
+        <link href="../js/sweet/sweet-alert.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="../css/admin/layouts/style-horizontal.css" />
+        <link rel="stylesheet" type="text/css" href="../css/admin/datepicker/jquery.datetimepicker.css" />
+        <!-- END: Page Level CSS-->
+        <!-- BEGIN: Custom CSS-->
+        <link rel="stylesheet" type="text/css" href="../css/admin/custom/custom.css" />
+        <link rel="stylesheet" type="text/css" href="../css/admin/custom/style-new.css" />
+        <!-- END: Custom CSS-->
+        <script src="../js/admin/NewUI/jquery-1.9.1.min.js"></script>
+        <style>
+            .ldajax {
+                width: 100%;
+                height: 100%;
+                z-index: 99999;
+                position: fixed;
+                display: none;
+                opacity: 0.8;
+                background: #fff;
+            }
+
+            .img-loading {
+                width: 100%;
+                text-align: center;
+            }
+
+            .img-loading img {
+                position: absolute;
+                top: 40%;
+                left: 50%;
+            }
+
+            .mg-right {
+                margin-right: 10px;
+            }
+        </style>
+        <style>
+            @media screen and (max-width: 768px) {
+                .left-logo {
+                    width: 240px;
+                    padding-left: 65px !important;
+                }
+
+                .center-header {
+                    position: absolute;
+                    top: 60px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    z-index: 999
+                }
+
+                .form-search-box {
+                    width: 300px
+                }
+
+                .search-form-wrap {
+                    width: 100%
+                }
+
+                .search-form-wrap .search-form .select-form {
+                    width: 130px;
+                }
+
+                .search-form-wrap .search-form .select-form .icon {
+                    top: 75%;
+                    -webkit-transform: translateY(-50%);
+                    transform: translateY(-50%);
+                    right: 30px;
+                }
+
+                .search-form-wrap .search-form .main-btn {
+                    top: 55px;
+                }
+
+                .navbar-list right li:nth-child(1) {
+                    display: none;
+                }
+
+                /*      .navbar-list right li:nth-child(2) {
+                    display: none;
+                }*/
+                .navbar-list right li:nth-child(3) {
+                    display: none;
+                }
+
+                .navbar .navbar-dark ul a {
+                    transform: translateY(12px)
+                }
+
+                #main {
+                    margin-top: 130px
+                }
+
+                .navbar .navbar-dark ul a {
+                    transform: translateY(0);
+                }
+
+                .search-form-wrap .search-form .select-form .icon {
+                    top: 50%
+                }
+
+                .form-search-box {
+                    width: 500px
+                }
+
+                .search-form-wrap .search-form .main-btn {
+                    top: 50px !important;
+                }
+
+                .center-header {
+                    top: 70px
+                }
+
+                nav ul li:nth-child(1) {
+                    display: none
+                }
+            }
+
+            @media screen and (max-width: 576px) {
+                .left-logo {
+                    width: 240px !important;
+                    padding-left: 65px;
+                }
+
+                .center-header {
+                    position: absolute !important;
+                    top: 60px !important;
+                    left: 50% !important;
+                    transform: translateX(-50%) !important;
+                }
+
+                .form-search-box {
+                    width: 300px !important;
+                }
+
+                .search-form-wrap {
+                    width: 100% !important;
+                }
+
+                .search-form-wrap .search-form .select-form {
+                    width: 130px !important;
+                }
+
+                .search-form-wrap .search-form .select-form .icon {
+                    top: 75% !important;
+                    -webkit-transform: translateY(-50%) !important;
+                    transform: translateY(-50%) !important;
+                    right: 30px !important;
+                }
+
+                .search-form-wrap .search-form .main-btn {
+                    top: 55px;
+                }
+
+                .navbar-list right ul li:first-child {
+                    display: none !important;
+                }
+
+                /*      .navbar-list right li:nth-child(2) {
+                    display: none !important;
+                }*/
+                .navbar-list right li:nth-child(3) {
+                    display: none !important;
+                }
+
+                .navbar .navbar-dark ul a {
+                    transform: translateY(12px) !important;
+                }
+
+                #main {
+                    margin-top: 130px !important;
+                }
+
+                nav ul li:nth-child(1) {
+                    display: none
+                }
+
+                h4 {
+                    position: relative;
+                    z-index: -1;
+                }
+            }
+        </style>
+    </head>
+
+    <body class="horizontal-layout page-header-light horizontal-menu 2-columns  " data-open="click"
+        data-menu="horizontal-menu" data-col="2-columns">
+        <form method="post" action="./thong-tin-nguoi-dung" onsubmit="javascript:return WebForm_OnSubmit();" id="form1"
+            enctype="multipart/form-data" novalidate="">
+            <div class="aspNetHidden">
+                <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+                <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+                <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE"
+                    value="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" />
+            </div>
+
+            <script type="text/javascript">
+                //<![CDATA[
+                var theForm = document.forms['form1'];
+                if (!theForm) {
+                    theForm = document.form1;
+                }
+
+                function __doPostBack(eventTarget, eventArgument) {
+                    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+                        theForm.__EVENTTARGET.value = eventTarget;
+                        theForm.__EVENTARGUMENT.value = eventArgument;
+                        theForm.submit();
+                    }
+                }
+                //]]>
+            </script>
+
+
+            <script
+                src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZLLtADMvvx0eX3ttAWXpvkNw1cY5WP-Vrpe_cHftvUZCujT1Ki1tEPShxGvPPl-nnA2&amp;t=636726176369752514"
+                type="text/javascript"></script>
+
+
+            <script
+                src="/ScriptResource.axd?d=nv7asgRUU0tRmHNR2D6t1GVm-Mn1eFyXHpeplgqbg5rSciYUMHiGkd3G1Z-GVfQEoet6YXw8r97Y8jBdpzqhh-dz3qR8g4m1XOfOzJjrvWsrr5wOW8Bv9HpdGOFPLyhkr_SRXBhwuZ3vwqm6VjoFyQ2&amp;t=5cf07828"
+                type="text/javascript"></script>
+            <script src="Scripts/WebForms/MsAjax/MicrosoftAjax.js" type="text/javascript"></script>
+            <script src="Scripts/WebForms/MsAjax/MicrosoftAjaxWebForms.js" type="text/javascript"></script>
+            <script type="text/javascript">
+                //<![CDATA[
+                function WebForm_OnSubmit() {
+                    if (typeof (ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+                    return true;
+                }
+                //]]>
+            </script>
+
+            <div class="aspNetHidden">
+
+                <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="05CE17AE" />
+                <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION"
+                    value="oLcuDYeCkvA2JPJVsG6JtH3tIxqiDhTcExjd0TlgGNcKpRek3Oi+QbTOws5rifsiDDNj3+Vf5vt9eTNJQ4Is+hWrZKbaBBm1O1i6eS2kuJFdxLgcvLY+e4wzLXnI9HRnikfMqvlLi/BN13VBBx9X13xFagvU9+thRa83yOsWz2nAkKiGAhNfn1EOtngPB6nK7E6NWV6RUVUA39nS2JA123uL3KPZ9JkORZyWa2ZR0WO/vTDxxiD+rwBl1VOQM5/fK4Z++zOgoV8kWupWLPKBh9bn69fHpsPN8mycF+PvIJxNPSuce5Z4SO7Mz5jjHXe2CdlYoDfSYJoc3xRBaTPtXAdZBj0gM2XsApzMUChGmq9XhDUAyfo/ma0zxIYPOwMG9qp3Ymw1BM34oBz7pWKXZtJn0pGCkV2SQLp207UO2LrnJ1sndP/0VrbpXSGhGTj+GyM4WSD6Yn5c4Kh/oGuQpoqDwzZ5fEhGkEld/W1EN4RIxS53jF6H2yXaqrk29x0FCY0V0iBW18LKCx5xBplEmmKa0DpGTYeHwC84ixP20WWT0ZiPEBMxdeDN4f1MwmT6vy74b3jxP7K1M7oh9ieIvs2YVOkUe1zqGC2N6suhk1s=" />
+            </div>
+            <div id="loadingajax" class="ldajax">
+                <div class="img-loading">
+                    <img src="../App_Themes/NewUI/images/loading.gif" />
+                </div>
+            </div>
+            <script type="text/javascript">
+                //<![CDATA[
+                Sys.WebForms.PageRequestManager._initialize('ctl00$scr', 'form1', [], [], [], 90, 'ctl00');
+                //]]>
+            </script>
+
+
+            <header class="page-topbar" id="header">
+                <div class="navbar">
+                    <nav class="navbar-main navbar-color nav-collapsible sideNav-lock navbar-dark bg-dark-gradient">
+                        <div class="nav-wrapper" style="display: flex; justify-content: space-between; align-items: center">
+
+                            <div class="left-logo"
+                                style="width: 342px; display: flex; height: 100%; align-items: center; padding-left: 15px">
+                                <a href="/" style="display: flex">
+                                    <img style="width: 50%" src="/App_Themes/UserNew45/assets/images/logo/logo-icon.png"
+                                        alt="materialize logo">
+                                </a>
+                            </div>
+
+                            <div class="center-header" style="display: flex; height: 100%; align-items: center">
+                                <div class="form-search-box" style="display: flex; align-items: center">
+                                    <div class="search-form-wrap">
+                                        <div id="search" class="search-form tab-content">
+                                            <div class="select-form">
+                                                <select class="fcontrol" id="brand-source">
+                                                    <option value="taobao"
+                                                        data-image="/App_Themes/NINJA/images/hdsearch-item-taobao.png">
+                                                        Taobao</option>
+                                                    <option value="tmall"
+                                                        data-image="/App_Themes/NINJA/images/hdsearch-item-tmall.png">Tmall
+                                                    </option>
+                                                    <option value="1688"
+                                                        data-image="/App_Themes/NINJA/images/hdsearch-item-1688.png">1688
+                                                    </option>
+                                                </select>
+                                                <span class="icon">
+                                                    <i class="fa fa-sort" aria-hidden="true"></i>
+                                                </span>
+                                            </div>
+                                            <div class="input-form">
+                                                <input name="ctl00$txtSearch" id="txtSearch" type="text"
+                                                    class="fcontrol f-input"
+                                                    placeholder="Nhập tên sản phẩm bạn muốn tìm kiếm" />
+                                            </div>
+                                            <a href="javascript:" onclick="searchProduct()" class="main-btn">Tìm kiếm</a>
+                                            <input type="button" name="ctl00$btnSearch" value=""
+                                                onclick="document.forms[0].target = &#39;_blank&#39;;WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"
+                                                id="btnSearch" style="display: none" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <ul class="navbar-list right">
+                                <li class="hide-on-med-and-down mg-right">¥1 = </span>3775 Đồng</li>
+                                <li class="hide-on-med-and-down">$1 = </span>23919 Đồng</li>
+                                <li class="hide-on-med-and-down"><a
+                                        class="waves-effect waves-block waves-light toggle-fullscreen"
+                                        href="javascript:void(0);"><i class="material-icons">settings_overscan</i></a></li>
+                                <li><a class="waves-effect waves-block waves-light" href="/thong-bao-cua-ban"><i
+                                            class="material-icons">notifications_none<small
+                                                class="notification-badge orange accent-3">0</small></i></a></li>
+                                <li class="user-box"><a class="waves-block" href="javascript:void(0);"><span
+                                            class="avatar-status avatar-online"><img src="/NO-IMAGE.jpg"
+                                                alt="avatar"><i></i></span></a>
+                                    <div class="status-desktop">
+                                        <div class="status-wrap">
+                                            <div class="status__header">
+                                                <h4>luandotien</h4>
+                                            </div>
+                                            <div class="status__body">
+                                                <div class="level">
+                                                    <div class="links"><a href="/thong-tin-nguoi-dung">Thông tin tài khoản<i
+                                                                class="fa fa-caret-right"></i></a></div>
+                                                    <div class="links"><a href="/danh-sach-don-hang?t=1">Đơn hàng của bạn<i
+                                                                class="fa fa-caret-right"></i></a></div>
+                                                </div>
+                                                <div class="status__footer"><a href="/dang-xuat" class="ft-btn">ĐĂNG
+                                                        XUẤT</a></div>
+                                            </div>
+                                        </div>
+                                </li>
+                            </ul>
+                            <!-- profile-dropdown-->
+                            <ul class="dropdown-content" id="profile-dropdown">
+                                <li><a class="grey-text text-darken-1" href="/thong-tin-nguoi-dung"><i
+                                            class="material-icons">person_outline</i> Thông tin của bạn</a></li>
+                                <li><a class="grey-text text-darken-1" href="/dang-xuat"><i
+                                            class="material-icons">keyboard_tab</i> Đăng xuất</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <!-- BEGIN: Horizontal nav start-->
+                    <nav class="white hide-on-med-and-down" id="horizontal-nav">
+                        <div class="nav-wrapper">
+                            <ul class="left hide-on-med-and-down" id="ul-horizontal-nav" data-menu="menu-navigation">
+                                <li>
+                                    <a href="/dashboard"><i class="material-icons">dashboard</i><span>Tài khoản</span></a>
+                                </li>
+                                <li>
+                                    <a href="/gio-hang"><i class="material-icons">shopping_cart</i><span>Giỏ hàng
+                                        </span></a>
+                                </li>
+
+                                <li>
+                                    <a href="/danh-sach-don-hang?t=1"><i class="material-icons">library_books</i><span>Nhập
+                                            khẩu ủy thác</span></a>
+                                </li>
+
+                                <li><a class="dropdown-menu" href="#" data-target="BuyHelper"><i
+                                            class="material-icons">library_books</i><span>Đơn hàng TMĐT khác<i
+                                                class="material-icons right">keyboard_arrow_down</i></span></a>
+                                    <ul class="dropdown-content dropdown-horizontal-list" id="BuyHelper">
+                                        <li data-menu=""><a href="/tao-don-hang-khac"><i
+                                                    class="chat_bubble_outline"></i>Tạo đơn các web TMĐT khác</a>
+                                        </li>
+                                        <li data-menu=""><a href="/danh-sach-don-hang?t=3"><i class="mail_outline"></i>Danh
+                                                sách đơn hàng TMĐT khác</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li><a class="dropdown-menu" href="#" data-target="BuyHelper1"><i
+                                            class="material-icons">library_books</i><span>Nhập khẩu chính ngạch<i
+                                                class="material-icons right">keyboard_arrow_down</i></span></a>
+                                    <ul class="dropdown-content dropdown-horizontal-list" id="BuyHelper1">
+                                        <li data-menu=""><a href="/tao-don-chinh-ngach"><i
+                                                    class="chat_bubble_outline"></i>Tạo đơn chính ngạch</a>
+                                        </li>
+                                        <li data-menu=""><a href="/danh-sach-don-hang?t=5"><i class="mail_outline"></i>Danh
+                                                sách đơn hàng chính ngạch</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li><a class="dropdown-menu" href="#" data-target="BuyHelper2"><i
+                                            class="material-icons">library_books</i><span>Tư vấn nguồn hàng<i
+                                                class="material-icons right">keyboard_arrow_down</i></span></a>
+                                    <ul class="dropdown-content dropdown-horizontal-list" id="BuyHelper2">
+                                        <li data-menu=""><a href="/tao-don-tu-van-nguon-hang"><i
+                                                    class="chat_bubble_outline"></i>Tạo đơn tư vấn nguồn hàng</a>
+                                        </li>
+                                        <li data-menu=""><a href="/danh-sach-don-hang?t=7"><i class="mail_outline"></i>Danh
+                                                sách đơn hàng tư vấn nguồn hàng</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a href="/khieu-nai"><i class="material-icons">report</i><span>Khiếu nại</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="/tracking-mvd"><i class="material-icons">local_shipping</i><span>Tra cứu mã đơn
+                                            hàng</span></a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <!-- END: Horizontal nav start-->
+                    </nav>
+                </div>
+            </header>
+            <!-- END: Header-->
+            <!-- BEGIN: SideNav-->
+            <aside class="sidenav-main nav-expanded nav-lock nav-collapsible sidenav-fixed hide-on-large-only">
+                <div class="brand-sidebar sidenav-light"></div>
+                <ul class="sidenav sidenav-collapsible leftside-navigation collapsible sidenav-fixed hide-on-large-only menu-shadow"
+                    id="slide-out" data-menu="menu-navigation" data-collapsible="menu-accordion">
+                    <li class="navigation-header"><a class="navigation-header-text">NINJADIRECT</a>
+                    </li>
+                    <li class="bold"><a class="waves-effect waves-cyan " href="dashboard"><i
+                                class="material-icons">dashboard</i><span class="menu-title" data-i18n="">Tài
+                                khoản</span></a>
+                    </li>
+                    <li class="bold"><a class="waves-effect waves-cyan " href="/gio-hang"><i
+                                class="material-icons">shopping_cart</i><span class="menu-title" data-i18n="">Giỏ hàng
+                            </span></a>
+                    </li>
+
+                    <li class="bold"><a class="waves-effect waves-cyan " href="/danh-sach-don-hang"><i
+                                class="material-icons">library_books</i><span class="menu-title" data-i18n="">Nhập khẩu ủy
+                                thác</span></a>
+                    </li>
+
+                    <li class="bold"><a class="waves-effect waves-cyan " href="/tao-don-hang-khac"><i
+                                class="material-icons">library_books</i><span class="menu-title" data-i18n="">Tạo đơn các
+                                web TMĐT khác</span></a>
+                    </li>
+
+                    <li class="bold"><a class="waves-effect waves-cyan " href="/danh-sach-don-hang?t=3"><i
+                                class="material-icons">library_books</i><span class="menu-title" data-i18n="">Danh sách đơn
+                                hàng TMĐT khác</span></a>
+                    </li>
+
+                    <li class="bold"><a class="waves-effect waves-cyan " href="/tao-don-chinh-ngach"><i
+                                class="material-icons">library_books</i><span class="menu-title" data-i18n="">Tạo đơn nhập
+                                khẩu chính ngạch</span></a>
+                    </li>
+
+                    <li class="bold"><a class="waves-effect waves-cyan " href="/danh-sach-don-hang?t=5"><i
+                                class="material-icons">library_books</i><span class="menu-title" data-i18n="">Danh sách đơn
+                                hàng nhập khẩu chính ngạch</span></a>
+                    </li>
+
+                    <li class="bold"><a class="waves-effect waves-cyan " href="/tao-don-tu-van-nguon-hang"><i
+                                class="material-icons">library_books</i><span class="menu-title" data-i18n="">Tạo đơn tư vấn
+                                nguồn hàng</span></a>
+                    </li>
+
+                    <li class="bold"><a class="waves-effect waves-cyan " href="/danh-sach-don-hang?t=7"><i
+                                class="material-icons">library_books</i><span class="menu-title" data-i18n="">Danh sách đơn
+                                hàng tư vấn nguồn hàng</span></a>
+                    </li>
+
+                    <li class="bold"><a class="waves-effect waves-cyan " href="/khieu-nai"><i
+                                class="material-icons">report</i><span class="menu-title" data-i18n="">Khiếu nại</span></a>
+                    </li>
+                    <li class="bold"><a class="waves-effect waves-cyan " href="/tracking-mvd"><i
+                                class="material-icons">local_shipping</i><span class="menu-title" data-i18n="">Tra cứu mã
+                                đơn hàng</span></a>
+                    </li>
+
+                </ul>
+                <div class="navigation-background"></div>
+                <a class="sidenav-trigger btn-floating btn-medium waves-effect waves-light hide-on-large-only" href="#"
+                    data-target="slide-out"><i class="material-icons">menu</i></a>
+            </aside>
+            <!-- END: SideNav-->
+            <input type="hidden" name="ctl00$hdfWebsearch" id="hdfWebsearch" />
+
+            <div id="main">
+                <div class="row">
+                    <div class="content-wrapper-before blue-grey lighten-5"></div>
+                    <div class="col s12">
+                        <div class="container">
+                            <div class="all">
+                                <div class="card-panel mt-3 no-shadow">
+                                    <div class="customer-profile">
+                                        <div class="row">
+                                            <div class="col s12 l4">
+                                                <div id="profile-card" class="card"
+                                                    style="overflow: hidden; margin-top: 0.5rem;">
+                                                    <div class="card-image waves-effect waves-block waves-light"><img
+                                                            class="activator"
+                                                            src="../images/admin/19.png"
+                                                            alt="user bg"></div>
+                                                    <div class="card-content"><img src="../images/admin/NO-IMAGE.jpeg" alt=""
+                                                            class="circle responsive-img activator card-profile-image green lighten-5 padding-2">
+                                                        <h5 class="card-title activator grey-text text-darken-4">Luan Do
+                                                        </h5>
+                                                        <p><i class="material-icons profile-card-i">star</i> 1125</p>
+                                                        <p><i class="material-icons profile-card-i">perm_identity</i> Nam
+                                                        </p>
+                                                        <p><i class="material-icons profile-card-i">perm_phone_msg</i>
+                                                            0705486954</p>
+                                                        <p><i class="material-icons profile-card-i">email</i> </p>
+                                                        <p><i class="material-icons profile-card-i">location_on</i> 12
+                                                            Nguyen Thuong Hien</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col s12 l8 ">
+                                                <div class="customer-change-wrap">
+                                                    <div class="card-panel clear">
+                                                        <div class="customer-change">
+                                                            <div class="cs-title mb-3 border-bottom-1">
+                                                                <h5>Thông tin tài khoản</h5>
+                                                            </div>
+                                                            <div class="cs-account clear">
+                                                                <div class="input-field col s12">
+
+                                                                </div>
+                                                                <div class="input-field col s12 m6">
+                                                                    <input name="ctl00$ContentPlaceHolder1$txtUsername"
+                                                                        type="text" value="luandotien"
+                                                                        id="ContentPlaceHolder1_txtUsername"
+                                                                        disabled="disabled" class="aspNetDisabled" />
+                                                                    <label for="username">Tên đăng nhập</label>
+                                                                </div>
+
+                                                                <div class="input-field col s12 m6">
+                                                                    <input name="ctl00$ContentPlaceHolder1$txtFirstName"
+                                                                        type="text" value="Luan Do"
+                                                                        id="ContentPlaceHolder1_txtFirstName"
+                                                                        class="form-control has-validate full-width"
+                                                                        placeholder="Họ" />
+                                                                    <span class="error-info-show">
+                                                                        <span
+                                                                            id="ContentPlaceHolder1_RequiredFieldValidator2"
+                                                                            style="color:Red;display:none;">Không được để
+                                                                            trống.</span>
+                                                                    </span>
+                                                                    <label for="fullName">Họ và tên của bạn</label>
+                                                                </div>
+
+
+                                                                <div class="input-field col s12 m6" style="display:none">
+                                                                    <input name="ctl00$ContentPlaceHolder1$txtLastName"
+                                                                        type="text" id="ContentPlaceHolder1_txtLastName"
+                                                                        class="form-control has-validate full-width"
+                                                                        placeholder="Tên" />
+
+                                                                    <label for="fullName">Tên của bạn</label>
+                                                                </div>
+
+                                                                <div class="input-field col s12 m3">
+                                                                    <select name="ctl00$ContentPlaceHolder1$ddlGender"
+                                                                        id="ContentPlaceHolder1_ddlGender">
+                                                                        <option selected="selected" value="1">Nam</option>
+                                                                        <option value="2">Nữ</option>
+
+                                                                    </select>
+                                                                    <label>Giới tính</label>
+                                                                </div>
+                                                                <div class="input-field col s12 m3">
+                                                                    <input name="ctl00$ContentPlaceHolder1$txtBirthDay"
+                                                                        type="text" value="09/08/2022 20:15"
+                                                                        id="ContentPlaceHolder1_txtBirthDay"
+                                                                        class="datetimepicker" />
+                                                                    <label for="dateofbirth">Ngày sinh</label>
+                                                                </div>
+                                                                <div class="input-field col s12 m6">
+                                                                    <input name="ctl00$ContentPlaceHolder1$txtEmail"
+                                                                        type="text" id="ContentPlaceHolder1_txtEmail"
+                                                                        disabled="disabled" class="aspNetDisabled" />
+                                                                    <label for="email">Địa chỉ Email</label>
+                                                                </div>
+                                                                <div class="input-field col s12 m6">
+                                                                    <input name="ctl00$ContentPlaceHolder1$txtPhone"
+                                                                        type="text" value="0705486954" maxlength="11"
+                                                                        id="ContentPlaceHolder1_txtPhone"
+                                                                        disabled="disabled"
+                                                                        class="aspNetDisabled form-control full-width"
+                                                                        placeholder="Số điện thoại"
+                                                                        onkeypress="return event.charCode >= 48 &amp;&amp; event.charCode &lt;= 57" />
+                                                                    <span class="error-info-show">
+                                                                        <span
+                                                                            id="ContentPlaceHolder1_RequiredFieldValidator4"
+                                                                            style="color:Red;display:none;">Không được để
+                                                                            trống số điện thoại.</span>
+                                                                    </span>
+                                                                    <label for="phoneNumber">Số điện thoại</label>
+                                                                </div>
+
+                                                                <div class="input-field col s12 m6">
+                                                                    <select
+                                                                        name="ctl00$ContentPlaceHolder1$ddlWareHouseFrom"
+                                                                        id="ContentPlaceHolder1_ddlWareHouseFrom">
+                                                                        <option value="0">Chọn kho TQ</option>
+                                                                        <option value="1">Kho Trung Quốc</option>
+
+                                                                    </select>
+                                                                    <label>Kho TQ</label>
+                                                                </div>
+
+                                                                <div class="input-field col s12 m6">
+                                                                    <select name="ctl00$ContentPlaceHolder1$ddlWareHouse"
+                                                                        id="ContentPlaceHolder1_ddlWareHouse">
+                                                                        <option value="0">Chọn kho VN</option>
+                                                                        <option value="1">H&#224; Nội</option>
+
+                                                                    </select>
+                                                                    <label>Kho VN</label>
+                                                                </div>
+
+                                                                <div class="input-field col s12 m6">
+                                                                    <select name="ctl00$ContentPlaceHolder1$ddlShipping"
+                                                                        id="ContentPlaceHolder1_ddlShipping">
+                                                                        <option value="0">Chọn phương thức VC</option>
+                                                                        <option value="1">Đi Thường</option>
+
+                                                                    </select>
+                                                                    <label>Hình thức VC</label>
+                                                                </div>
+
+                                                                <div class="input-field col s12 m6">
+                                                                    <span class="black-text">Ảnh đại diện</span>
+                                                                    <div style="display: inline-block; margin-left: 15px;">
+                                                                        <input type="file"
+                                                                            name="ctl00$ContentPlaceHolder1$UpIMG"
+                                                                            id="ContentPlaceHolder1_UpIMG"
+                                                                            class="upload-img" type="file"
+                                                                            onchange="previewFiles(this);" title="" />
+                                                                        <button class="btn-upload"
+                                                                            type="button">Upload</button>
+
+                                                                    </div>
+                                                                    <div class="preview-img">
+                                                                        <img id="ContentPlaceHolder1_UpIMGBefore" />
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="input-field col s12 m6">
+                                                                    <input name="ctl00$ContentPlaceHolder1$txtAddress2"
+                                                                        type="text" value="12 Nguyen Thuong Hien"
+                                                                        id="ContentPlaceHolder1_txtAddress2" />
+                                                                    <span class="error-info-show">
+                                                                        <span
+                                                                            id="ContentPlaceHolder1_RequiredFieldValidator1"
+                                                                            style="color:Red;display:none;">Không được để
+                                                                            trống.</span>
+                                                                    </span>
+                                                                    <label for="address">Địa chỉ</label>
+                                                                </div>
+
+                                                                <div class="input-field col s6">
+                                                                    <input name="ctl00$ContentPlaceHolder1$txtpass"
+                                                                        type="password" id="ContentPlaceHolder1_txtpass"
+                                                                        placeholder="Mật khẩu đăng nhập" />
+                                                                    <label for="password">Mật khẩu mới</label>
+                                                                </div>
+                                                                <div class="input-field col s6">
+                                                                    <input name="ctl00$ContentPlaceHolder1$txtconfirmpass"
+                                                                        type="password"
+                                                                        id="ContentPlaceHolder1_txtconfirmpass"
+                                                                        class="form-control has-validate full-width"
+                                                                        placeholder="Xác nhận mật khẩu" />
+                                                                    <span class="error-info-show">
+
+                                                                    </span>
+                                                                    <label for="repassword">Nhập lại mật khẩu
+                                                                        mới</label>
+                                                                </div>
+
+                                                                <div class="input-field col s6">
+                                                                    <a class="btn btn-primary waves-effect"
+                                                                        onclick="Update()">Cập nhật thông tin</a>
+                                                                    <input type="submit"
+                                                                        name="ctl00$ContentPlaceHolder1$btncreateuser"
+                                                                        value="Cập nhật thông tin"
+                                                                        onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$btncreateuser&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))"
+                                                                        id="ContentPlaceHolder1_btncreateuser"
+                                                                        class="btn btn-primary waves-effect"
+                                                                        style="background-color:White;display: none" />
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript">
+                function Update() {
+                    $("#ContentPlaceHolder1_btncreateuser").click();
+                }
+            </script>
+
+            <input type="hidden" name="ctl00$hdfMainLoginID" id="hdfMainLoginID" />
+            <input type="hidden" name="ctl00$hdfMainLoginStatus" id="hdfMainLoginStatus" />
+            <input type="hidden" name="ctl00$hdfShowExtension" id="hdfShowExtension" value="0" />
+
+            <script type="text/javascript">
+                //<![CDATA[
+                var Page_Validators = new Array(document.getElementById("ContentPlaceHolder1_RequiredFieldValidator2"), document.getElementById("ContentPlaceHolder1_RequiredFieldValidator4"), document.getElementById("ContentPlaceHolder1_RequiredFieldValidator1"));
+                //]]>
+            </script>
+
+            <script type="text/javascript">
+                //<![CDATA[
+                var ContentPlaceHolder1_RequiredFieldValidator2 = document.all ? document.all["ContentPlaceHolder1_RequiredFieldValidator2"] : document.getElementById("ContentPlaceHolder1_RequiredFieldValidator2");
+                ContentPlaceHolder1_RequiredFieldValidator2.controltovalidate = "ContentPlaceHolder1_txtFirstName";
+                ContentPlaceHolder1_RequiredFieldValidator2.errormessage = "Không được để trống.";
+                ContentPlaceHolder1_RequiredFieldValidator2.display = "Dynamic";
+                ContentPlaceHolder1_RequiredFieldValidator2.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+                ContentPlaceHolder1_RequiredFieldValidator2.initialvalue = "";
+                var ContentPlaceHolder1_RequiredFieldValidator4 = document.all ? document.all["ContentPlaceHolder1_RequiredFieldValidator4"] : document.getElementById("ContentPlaceHolder1_RequiredFieldValidator4");
+                ContentPlaceHolder1_RequiredFieldValidator4.controltovalidate = "ContentPlaceHolder1_txtPhone";
+                ContentPlaceHolder1_RequiredFieldValidator4.errormessage = "Không được để trống số điện thoại.";
+                ContentPlaceHolder1_RequiredFieldValidator4.display = "Dynamic";
+                ContentPlaceHolder1_RequiredFieldValidator4.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+                ContentPlaceHolder1_RequiredFieldValidator4.initialvalue = "";
+                var ContentPlaceHolder1_RequiredFieldValidator1 = document.all ? document.all["ContentPlaceHolder1_RequiredFieldValidator1"] : document.getElementById("ContentPlaceHolder1_RequiredFieldValidator1");
+                ContentPlaceHolder1_RequiredFieldValidator1.controltovalidate = "ContentPlaceHolder1_txtAddress2";
+                ContentPlaceHolder1_RequiredFieldValidator1.errormessage = "Không được để trống.";
+                ContentPlaceHolder1_RequiredFieldValidator1.display = "Dynamic";
+                ContentPlaceHolder1_RequiredFieldValidator1.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+                ContentPlaceHolder1_RequiredFieldValidator1.initialvalue = "";
+                //]]>
+            </script>
+
+
+            <script type="text/javascript">
+                //<![CDATA[
+
+                var Page_ValidationActive = false;
+                if (typeof (ValidatorOnLoad) == "function") {
+                    ValidatorOnLoad();
+                }
+
+                function ValidatorOnSubmit() {
+                    if (Page_ValidationActive) {
+                        return ValidatorCommonOnSubmit();
+                    } else {
+                        return true;
+                    }
+                }
+
+                document.getElementById('ContentPlaceHolder1_RequiredFieldValidator2').dispose = function () {
+                    Array.remove(Page_Validators, document.getElementById('ContentPlaceHolder1_RequiredFieldValidator2'));
+                }
+
+                document.getElementById('ContentPlaceHolder1_RequiredFieldValidator4').dispose = function () {
+                    Array.remove(Page_Validators, document.getElementById('ContentPlaceHolder1_RequiredFieldValidator4'));
+                }
+
+                document.getElementById('ContentPlaceHolder1_RequiredFieldValidator1').dispose = function () {
+                    Array.remove(Page_Validators, document.getElementById('ContentPlaceHolder1_RequiredFieldValidator1'));
+                }
+                //]]>
+            </script>
+        </form>
+        <footer
+            class="page-footer footer footer-static footer-dark  bg-dark-gradient gradient-shadow navbar-border navbar-shadow">
+            <div class="footer-copyright">
+                <div class="container">
+                    <span>&copy; 2021 <a href="#" target="_blank">NINJADIRECT</a>
+                        All rights reserved.</span><span class="right hide-on-small-only">NINJADIRECT
+                        <a href="#">Version: 5.0</a></span>
+                </div>
+            </div>
+        </footer>
+        <a href="javascript:;" id="return-to-top"><i class="material-icons">arrow_upward</i></a>
+        <!-- END: Footer-->
+        <!-- BEGIN VENDOR JS-->
+        <script src="../js/admin/vendors.min.js" type="text/javascript"></script>
+        <!-- BEGIN VENDOR JS-->
+        <!-- BEGIN PAGE VENDOR JS-->
+        <script src="../js/admin/formatter/jquery.formatter.min.js"
+            type="text/javascript"></script>
+        <!-- END PAGE VENDOR JS-->
+        <script src="../js/ms-Dropdown-master/js/msdropdown/jquery.dd.min.js"></script>
+        <!-- BEGIN THEME  JS-->
+        <script src="../js/user/plugins.js" type="text/javascript"></script>
+        <script src="../js/user/custom/custom-script.js" type="text/javascript"></script>
+        <script src="../js/sweet/sweet-alert.js" type="text/javascript"></script>
+        <!-- END THEME  JS-->
+        <!-- BEGIN PAGE LEVEL JS-->
+        <script src="../js/scripts/jquery.signalR-2.2.3.min.js"></script>
+        <!-- <script src="/signalr/hubs"></script> -->
+        <script src="../js/datepicker/jquery.datetimepicker.full.js"></script>
+        <script src="../js/admin/pushdesktop/CreateDevice.js"></script>
+        <!-- END PAGE LEVEL JS-->
+        <script>
+            $("#brand-source").msDropdown();
+        </script>
+
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('.txtsearchfield').on("keypress", function (e) {
+                    if (e.keyCode == 13) {
+                        searchProduct();
+                    }
+                });
+            });
+
+            function searchProduct() {
+                var web = $("#brand-source").val();
+                $("#hdfWebsearch").val(web);
+                $("#btnSearch").click();
+            }
+
+            function OnClientFileSelected(sender, args) {
+                if ($telerik.isIE) return;
+                else {
+                    truncateName(args);
+                    var file = args.get_fileInputField().files.item(0);
+                    showThumbnail(file, args);
+                }
+            }
+            $(document).ready(function () {
+                if ($("#hdfShowExtension").val() == 1) {
+                    $(".fixed-download").removeClass('open');
+                }
+            })
+
+            function truncateName(args) {
+                var $span = $(".ruUploadProgress", args.get_row());
+                var text = $span.text();
+                if (text.length > 23) {
+                    var newString = text.substring(0, 23) + '...';
+                    $span.text(newString);
+                }
+            }
+
+            function showThumbnail(file, args) {
+
+                var image = document.createElement("img");
+
+                image.file = file;
+                image.className = "ab img-responsive";
+
+                var $row = $(args.get_row());
+                $row.parent().className = "row ruInputs list-unstyled";
+                $row.append(image);
+
+
+                var reader = new FileReader();
+                reader.onload = (function (aImg) {
+                    return function (e) {
+                        aImg.src = e.target.result;
+                    };
+                }(image));
+                var ret = reader.readAsDataURL(file);
+                var canvas = document.createElement("canvas");
+
+                ctx = canvas.getContext("2d");
+                image.onload = function () {
+                    ctx.drawImage(image, 100, 100);
+                };
+            }
+
+            function notshow() {
+                var value = $("#hdfShowExtension").val();
+                $.ajax({
+                    type: "POST",
+                    url: "/dashboard.aspx/Notshow",
+                    data: "{data:'" + value + "'}",
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function (msg) {
+                        if (value = "0") {
+                            $("#hdfShowExtension").val(1);
+                        } else {
+                            $("#hdfShowExtension").val(0);
+                        }
+
+                    },
+                    error: function (xmlhttprequest, textstatus, errorthrow) {
+                        alert('lỗi');
+                    }
+                });
+
+            }
+        </script>
+
+        <style>
+            .dd {
+                width: 130px !important;
+            }
+
+            .dd .ddChild {
+                height: auto !important;
+                top: 44px !important;
+            }
+
+            .form-search-box {
+                width: 600px;
+            }
+
+            .search-form-wrap {
+                width: 100%;
+                padding: 0;
+                background: #F3F3F3;
+                border-radius: 0;
+            }
+
+            .search-form-wrap .search-form {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                position: relative;
+                border: 1px solid #e1e1e1;
+                background-color: #fff;
+                height: 45px !important;
+            }
+
+            .search-form-wrap .search-form .dd {
+                border: 0;
+                border-radius: 0;
+                outline: 0;
+            }
+
+            .search-form-wrap .search-form .dd .ddArrow {
+                display: none;
+            }
+
+            .search-form-wrap .search-form .dd .ddChild::-webkit-scrollbar {
+                width: 5px;
+            }
+
+            .search-form-wrap .search-form .dd .ddChild::-webkit-scrollbar-track {
+                background: #f1f1f1;
+            }
+
+            .search-form-wrap .search-form .dd .ddChild::-webkit-scrollbar-thumb {
+                background: #888;
+                border-radius: 5px;
+            }
+
+            .search-form-wrap .search-form .dd .ddChild li {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                width: 100%;
+            }
+
+            .search-form-wrap .search-form .dd .ddChild li img {
+                max-width: 35px;
+            }
+
+            .search-form-wrap .search-form .dd .divider {
+                display: none;
+            }
+
+            .search-form-wrap .search-form .dd .ddTitle {
+                background: #fff;
+                border-radius: 0;
+            }
+
+            .search-form-wrap .search-form .dd .ddTitle .ddTitleText {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                position: relative;
+            }
+
+            .search-form-wrap .search-form .dd .ddTitle .ddTitleText:before {
+                content: '';
+                position: absolute;
+                right: 0;
+                top: 6px;
+                height: 30px;
+                width: 1px;
+                background: #80808063;
+            }
+
+            .search-form-wrap .search-form .dd .ddTitle .ddTitleText img {
+                display: block;
+                height: 30px;
+                width: 30px;
+                -o-object-fit: contain;
+                object-fit: contain;
+            }
+
+            .search-form-wrap .search-form .dd .ddlabel {
+                font-size: 13px;
+                font-weight: 500;
+                color: black;
+                display: inline-block;
+                vertical-align: middle;
+                padding: 8px;
+                line-height: 1;
+                max-width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .search-form-wrap .search-form .select-form {
+                min-height: 42px;
+                width: 145px;
+                -ms-flex-negative: 0;
+                flex-shrink: 0;
+                position: relative;
+            }
+
+            .search-form-wrap .search-form .select-form .icon {
+                position: absolute;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+                right: 30px;
+                pointer-events: none;
+                color: #C2002F;
+            }
+
+            .search-form-wrap .search-form .main-btn {
+                position: absolute;
+                right: 5px;
+                top: 4px;
+                z-index: 1;
+                width: 126px;
+                height: 35px;
+                padding: 0;
+                text-align: center;
+                line-height: 35px;
+                white-space: nowrap;
+                background: #C2002F;
+                color: #fff;
+                font-weight: bold;
+                text-transform: uppercase;
+                font-size: 14px;
+                background-position: center center;
+                background-size: cover;
+                -webkit-transition: 0.3s ease;
+                transition: 0.3s ease;
+            }
+
+            .search-form-wrap .search-form .main-btn:hover {
+                background-color: white;
+                color: #C2002F;
+                border: 1px solid #C2002F;
+            }
+
+            .search-form-wrap .search-form .main-btn:hover .search-form-wrap .input-form .f-input {
+                border-radius: 0 30px 30px 0 !important;
+            }
+
+            @media screen and (max-width: 576px) {
+                .search-form-wrap .search-form .main-btn {
+                    top: 80px;
+                }
+            }
+
+            .search-form-wrap .input-form {
+                width: 100%;
+                position: relative;
+                height: 45px;
+            }
+
+            .search-form-wrap .input-form .f-input {
+                position: absolute;
+                height: 42px;
+                border: 0 !important;
+            }
+
+            .search-form-wrap .search-form .select-form select {
+                background-size: cover;
+                border: solid 0px #ececec;
+            }
+        </style>
+    </body>
+
+</html>

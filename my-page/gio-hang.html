@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="description" />
+        <meta name="keywords" />
+        <meta property="og:title" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" />
+        <meta property="og:image" />
+        <meta property="og:site_name" />
+        <meta property="og:description" />
+        <title>
+            Quản trị
+        </title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <!-- BEGIN: VENDOR CSS-->
+        <link rel="stylesheet" type="text/css" href="../css/admin/vendor/vendors.min.css" />
+        <link rel="shortcut icon" href="../images/custom/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" type="text/css" href="../css/admin/vendor/animate-css/animate.css" />
+        <!-- END: VENDOR CSS-->
+        <link rel="stylesheet" href="../js/ms-Dropdown-master/css/msdropdown/dd.css" />
+        <link rel="stylesheet" href="../js/Font-awesome-4.7.0/css/font-awesome.min.css" />
+        <!-- BEGIN: Page Level CSS-->
+        <link rel="stylesheet" type="text/css" href="../css/admin/materialize.css" />
+        <link rel="stylesheet" type="text/css" href="../css/admin/style.css" />
+        <link href="../js/sweet/sweet-alert.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="../css/admin/layouts/style-horizontal.css" />
+        <link rel="stylesheet" type="text/css" href="../css/admin/datepicker/jquery.datetimepicker.css" />
+        <!-- END: Page Level CSS-->
+        <!-- BEGIN: Custom CSS-->
+        <link rel="stylesheet" type="text/css" href="../css/admin/custom/custom.css" />
+        <link rel="stylesheet" type="text/css" href="../css/admin/custom/style-new.css" />
+        <!-- END: Custom CSS-->
+        <script src="../js/admin/NewUI/jquery-1.9.1.min.js"></script>
+        <style>
+            .ldajax {
+                width: 100%;
+                height: 100%;
+                z-index: 99999;
+                position: fixed;
+                display: none;
+                opacity: 0.8;
+                background: #fff;
+            }
+
+            .img-loading {
+                width: 100%;
+                text-align: center;
+            }
+
+            .img-loading img {
+                position: absolute;
+                top: 40%;
+                left: 50%;
+            }
+
+            .mg-right {
+                margin-right: 10px;
+            }
+        </style>
+        <style>
+            @media screen and (max-width: 768px) {
+                .left-logo {
+                    width: 240px;
+                    padding-left: 65px !important;
+                }
+
+                .center-header {
+                    position: absolute;
+                    top: 60px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    z-index: 999
+                }
+
+                .form-search-box {
+                    width: 300px
+                }
+
+                .search-form-wrap {
+                    width: 100%
+                }
+
+                .search-form-wrap .search-form .select-form {
+                    width: 130px;
+                }
+
+                .search-form-wrap .search-form .select-form .icon {
+                    top: 75%;
+                    -webkit-transform: translateY(-50%);
+                    transform: translateY(-50%);
+                    right: 30px;
+                }
+
+                .search-form-wrap .search-form .main-btn {
+                    top: 55px;
+                }
+
+                .navbar-list right li:nth-child(1) {
+                    display: none;
+                }
+
+                /*      .navbar-list right li:nth-child(2) {
+                    display: none;
+                }*/
+                .navbar-list right li:nth-child(3) {
+                    display: none;
+                }
+
+                .navbar .navbar-dark ul a {
+                    transform: translateY(12px)
+                }
+
+                #main {
+                    margin-top: 130px
+                }
+
+                .navbar .navbar-dark ul a {
+                    transform: translateY(0);
+                }
+
+                .search-form-wrap .search-form .select-form .icon {
+                    top: 50%
+                }
+
+                .form-search-box {
+                    width: 500px
+                }
+
+                .search-form-wrap .search-form .main-btn {
+                    top: 50px !important;
+                }
+
+                .center-header {
+                    top: 70px
+                }
+
+                nav ul li:nth-child(1) {
+                    display: none
+                }
+            }
+
+            @media screen and (max-width: 576px) {
+                .left-logo {
+                    width: 240px !important;
+                    padding-left: 65px;
+                }
+
+                .center-header {
+                    position: absolute !important;
+                    top: 60px !important;
+                    left: 50% !important;
+                    transform: translateX(-50%) !important;
+                }
+
+                .form-search-box {
+                    width: 300px !important;
+                }
+
+                .search-form-wrap {
+                    width: 100% !important;
+                }
+
+                .search-form-wrap .search-form .select-form {
+                    width: 130px !important;
+                }
+
+                .search-form-wrap .search-form .select-form .icon {
+                    top: 75% !important;
+                    -webkit-transform: translateY(-50%) !important;
+                    transform: translateY(-50%) !important;
+                    right: 30px !important;
+                }
+
+                .search-form-wrap .search-form .main-btn {
+                    top: 55px;
+                }
+
+                .navbar-list right ul li:first-child {
+                    display: none !important;
+                }
+
+                /*      .navbar-list right li:nth-child(2) {
+                    display: none !important;
+                }*/
+                .navbar-list right li:nth-child(3) {
+                    display: none !important;
+                }
+
+                .navbar .navbar-dark ul a {
+                    transform: translateY(12px) !important;
+                }
+
+                #main {
+                    margin-top: 130px !important;
+                }
+
+                nav ul li:nth-child(1) {
+                    display: none
+                }
+
+                h4 {
+                    position: relative;
+                    z-index: -1;
+                }
+            }
+        </style>
+
+        <style>
+            .all-pqd {
+                width: 1300px;
+                max-width: 100%;
+                margin: 0 auto;
+                position: relative;
+                overflow: hidden;
+            }
+        </style>
+    </head>
+
+    <body class="horizontal-layout page-header-light horizontal-menu 2-columns  " data-open="click"
+        data-menu="horizontal-menu" data-col="2-columns">
+        <form method="post" action="./gio-hang" id="form1" enctype="multipart/form-data" novalidate="">
+            <div class="aspNetHidden">
+                <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+                <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+                <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE"
+                    value="sgTQmzkGzvoKOIN4bETq4lx+UGZMN8rlzOQ2fqq6lAAdC6NpbGz1WVHV2txv56TrvZP2Fns0WWyCJ5M7tn2K+dAFNRwIQYgQ0hMUL/EIWkGGUyy00OX+sss9Gkut/BEm1CUTzdY21gzA4uFRzXn+TJJnKFO60iKawYWq4XLcLJKqkXuPHdfGJzpuffRG/E9fcNYJione4qoTqTuIkKXNiAtEoThjvDQxolo/MZO51v92RFiTWoWogaKJsYqjao08s1dhxKHh9TK3Dlx6FPKqRaNJeqqFZeGzSlt1fX7zzBNyK3S5FApUzUTF/RLISK7B8pWeB9PJxVF+kzye3ptZtB4LkHoGwC+zEdNfJxdok3edbmTcpwUcFw0W53CVZqmq66gwsGmfF2IJiimtQKeq/lCzaUUBR+lJ+1LeBRki6DWAPssK9Rxal4OGWXt3aR4sDn2dyVy7mXN+NjyVwSaHNjfj2P2I6URfS6IHN+LXFzAlJ5iFlwuwPBYBRyygQiTwa6Z9bQFMOOsKIoOI4k2zlKM78BfOsACn+SkMro1t/8NqTUFMeJzhytN1/GXbQeBt/cMwXU82kIys5kkJFMRthNw4Hfj/uzIN7KZCb5rcPbj7evtW9lOupmhWZ9jrnd+kgWE7xf7KUtdmDkdN5jOzMvP/osc5a8ejSJC+xca0Hsdx2TDsf574rV2U0o+O7Lj0birTO0/8YYt7hmqDUSPutlfOpml9nBFXdMXQKzWl8M8XAprwj7bP9pp5Vh9tSiHEY5Fs5R/QCRRnoqNE7dQMoQAZTv/t2zQJey4y7ZA82A2VLRsLS5S9pMEpIJInPJd78SlEptv+GCDIgeAaWWyUthhWSFFti79KV8I2OWL1kFDKEVYcwyFQm5ZNH9ZdnhGe1IKlKNUeucTf/YK87RVMFAKPS3Vax/mDuj5j8HkCUaLlfTr4hDtV82QguPqTX1Xema26c4fwu6BeGUtjWCd8ZR6XoCWX7GvUwkN0T+02xAhyTvqNn0433zNCrK7/ZtfG7AvzxNzSCq1N2hM4iE3b/bLbiQHzE9rvlbW+/0vqjyPToL/nv4yy6v7+RTx1WR6WAQ92+6L46aXtu1nKPX9WvRJWXHLAZTMZkXKl0ESPPM0CaYyyaZSoXL9b2wxEc2Rt63RydBhgxHrJb+t88RNfID97PUt+Zn5ZmLGzoNvdMIHeN76YbY1X9XVpJZsKJE5hMiUIwdQ0AgDckMTRndDxQsJ2UtD8JX+1gOCBnmxRG6pSVxdUc7qBvLusz9HviYwm2B7aNHxwAzrjwEYdBK3ZjGPj4+YQhgCX5dGAv88z13xbQOYbZ4ijBzsOe1717FUtieZT5D8Bebvw96+k3YgTsgVuS8lkSE/mdEUk7fS5FttFM3mLETo72yScUxrlszJ2GphWeYwZgDzxXyNTQXXZh2TkciElaNiESy7OuJE3PklEroejAJknHwxbmAZC2VURbu6sEEdMiEePNF7y0sdRV92pjolwlMSwCvnswXfIKjXNI+mQc3oz4SlEb7uC7K2fx6IF7O5d4Y3OYAZ5e2bvJDm8W/sN8UACw5KhhCo2IO4LAToAPPE/VB0zTwlM6sxeb4+A9J2wWjfq8mUg4PnzdXI/l3hyyno8xFMBiCtGS9DEOMzNxAPg13PqOpNq2rIbsPBV0matpVDPPfNOZuXO69y02yVING94+sWrSKprUAuTinSpS7BLRYYDTuw/UOXsLHew/SVQQ8v5Kf/jZWXIe26pP1DLuVeWq9/ruwNvwj2+Pe/CMfPRQUuFKz5ST4eVv/xYAcUgnsMBeww01EGTsgEq9FkkihiJlkdvdvA6m5GfCTeiE1HnFOsN/bF4X38H+cc7Xptjgk0J9iz7H6lnwZt5sYfjVXGKtIkodomLptQybnWDziaZOhZtQRMORMlp2WodNmt7fd6z1+uXK2kEMw==" />
+            </div>
+
+            <script type="text/javascript">
+                //<![CDATA[
+                var theForm = document.forms['form1'];
+                if (!theForm) {
+                    theForm = document.form1;
+                }
+
+                function __doPostBack(eventTarget, eventArgument) {
+                    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+                        theForm.__EVENTTARGET.value = eventTarget;
+                        theForm.__EVENTARGUMENT.value = eventArgument;
+                        theForm.submit();
+                    }
+                }
+                //]]>
+            </script>
+
+
+            <script
+                src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZLLtADMvvx0eX3ttAWXpvkNw1cY5WP-Vrpe_cHftvUZCujT1Ki1tEPShxGvPPl-nnA2&amp;t=636726176369752514"
+                type="text/javascript"></script>
+
+
+            <script src="Scripts/WebForms/MsAjax/MicrosoftAjax.js" type="text/javascript"></script>
+            <script src="Scripts/WebForms/MsAjax/MicrosoftAjaxWebForms.js" type="text/javascript"></script>
+            <div class="aspNetHidden">
+
+                <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="2204E409" />
+                <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION"
+                    value="5TCRRWuYv8jXTi00YV8EsPVpqt/BVxNP8JBikQHzbLCAtr2xYka7jXNaeEXBC/KBUpOAtFEHLpQTb8e+cWPqwnRprSexCTl1kT8JrHcEiFx7b3cAegUc20MPLyKBmxzJCYgeB/rv00Ipc3NUufz+gIPtOV3ra90lgBW7wsFLcFyF0eL1HH0XS09Q+NcV/92Re+WRec9sL6gCWT22mZ5BAtjwkDaJZL/jj0j63TzLpDVzKOJIJt8mUOke1hJ28KCWzo9DM/sMewJXcr2mLAHAKeAEWGIT3jCjJCtN0egJZc8IPQLQrUR0/p624T9mdHjxnQRZVhXu5X38MTvVXaI/CuBtkW0NiAb5CeDD5bT9hoAagCh5YE/kbUjB0Qtw7fTu8VZm68OUn2TpE+W75YbBXGyRTQNagcb24DiRuhrnpOc=" />
+            </div>
+            <div id="loadingajax" class="ldajax">
+                <div class="img-loading">
+                    <img src="../App_Themes/NewUI/images/loading.gif" />
+                </div>
+            </div>
+            <script type="text/javascript">
+                //<![CDATA[
+                Sys.WebForms.PageRequestManager._initialize('ctl00$scr', 'form1', [], [], [], 90, 'ctl00');
+                //]]>
+            </script>
+
+
+            <header class="page-topbar" id="header">
+                <div class="navbar">
+                    <nav class="navbar-main navbar-color nav-collapsible sideNav-lock navbar-dark bg-dark-gradient">
+                        <div class="nav-wrapper" style="display: flex; justify-content: space-between; align-items: center">
+
+                            <div class="left-logo"
+                                style="width: 342px; display: flex; height: 100%; align-items: center; padding-left: 15px">
+                                <a href="/" style="display: flex">
+                                    <img style="width: 50%" src="/App_Themes/UserNew45/assets/images/logo/logo-icon.png"
+                                        alt="materialize logo">
+                                </a>
+                            </div>
+
+                            <div class="center-header" style="display: flex; height: 100%; align-items: center">
+                                <div class="form-search-box" style="display: flex; align-items: center">
+                                    <div class="search-form-wrap">
+                                        <div id="search" class="search-form tab-content">
+                                            <div class="select-form">
+                                                <select class="fcontrol" id="brand-source">
+                                                    <option value="taobao"
+                                                        data-image="/App_Themes/NINJA/images/hdsearch-item-taobao.png">
+                                                        Taobao</option>
+                                                    <option value="tmall"
+                                                        data-image="/App_Themes/NINJA/images/hdsearch-item-tmall.png">Tmall
+                                                    </option>
+                                                    <option value="1688"
+                                                        data-image="/App_Themes/NINJA/images/hdsearch-item-1688.png">1688
+                                                    </option>
+                                                </select>
+                                                <span class="icon">
+                                                    <i class="fa fa-sort" aria-hidden="true"></i>
+                                                </span>
+                                            </div>
+                                            <div class="input-form">
+                                                <input name="ctl00$txtSearch" id="txtSearch" type="text"
+                                                    class="fcontrol f-input"
+                                                    placeholder="Nhập tên sản phẩm bạn muốn tìm kiếm" />
+                                            </div>
+                                            <a href="javascript:" onclick="searchProduct()" class="main-btn">Tìm kiếm</a>
+                                            <input type="button" name="ctl00$btnSearch" value=""
+                                                onclick="document.forms[0].target = &#39;_blank&#39;;__doPostBack(&#39;ctl00$btnSearch&#39;,&#39;&#39;)"
+                                                id="btnSearch" style="display: none" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <ul class="navbar-list right">
+                                <li class="hide-on-med-and-down mg-right">¥1 = </span>3775 Đồng</li>
+                                <li class="hide-on-med-and-down">$1 = </span>23919 Đồng</li>
+                                <li class="hide-on-med-and-down"><a
+                                        class="waves-effect waves-block waves-light toggle-fullscreen"
+                                        href="javascript:void(0);"><i class="material-icons">settings_overscan</i></a></li>
+                                <li><a class="waves-effect waves-block waves-light" href="/thong-bao-cua-ban"><i
+                                            class="material-icons">notifications_none<small
+                                                class="notification-badge orange accent-3">0</small></i></a></li>
+                                <li class="user-box"><a class="waves-block" href="javascript:void(0);"><span
+                                            class="avatar-status avatar-online"><img src="/NO-IMAGE.jpg"
+                                                alt="avatar"><i></i></span></a>
+                                    <div class="status-desktop">
+                                        <div class="status-wrap">
+                                            <div class="status__header">
+                                                <h4>luandotien</h4>
+                                            </div>
+                                            <div class="status__body">
+                                                <div class="level">
+                                                    <div class="links"><a href="/thong-tin-nguoi-dung">Thông tin tài khoản<i
+                                                                class="fa fa-caret-right"></i></a></div>
+                                                    <div class="links"><a href="/danh-sach-don-hang?t=1">Đơn hàng của bạn<i
+                                                                class="fa fa-caret-right"></i></a></div>
+                                                </div>
+                                                <div class="status__footer"><a href="/dang-xuat" class="ft-btn">ĐĂNG
+                                                        XUẤT</a></div>
+                                            </div>
+                                        </div>
+                                </li>
+                            </ul>
+                            <!-- profile-dropdown-->
+                            <ul class="dropdown-content" id="profile-dropdown">
+                                <li><a class="grey-text text-darken-1" href="/thong-tin-nguoi-dung"><i
+                                            class="material-icons">person_outline</i> Thông tin của bạn</a></li>
+                                <li><a class="grey-text text-darken-1" href="/dang-xuat"><i
+                                            class="material-icons">keyboard_tab</i> Đăng xuất</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <!-- BEGIN: Horizontal nav start-->
+                    <nav class="white hide-on-med-and-down" id="horizontal-nav">
+                        <div class="nav-wrapper">
+                            <ul class="left hide-on-med-and-down" id="ul-horizontal-nav" data-menu="menu-navigation">
+                                <li>
+                                    <a href="/dashboard"><i class="material-icons">dashboard</i><span>Tài khoản</span></a>
+                                </li>
+                                <li>
+                                    <a href="/gio-hang"><i class="material-icons">shopping_cart</i><span>Giỏ hàng
+                                        </span></a>
+                                </li>
+
+                                <li>
+                                    <a href="/danh-sach-don-hang?t=1"><i class="material-icons">library_books</i><span>Nhập
+                                            khẩu ủy thác</span></a>
+                                </li>
+
+                                <li><a class="dropdown-menu" href="#" data-target="BuyHelper"><i
+                                            class="material-icons">library_books</i><span>Đơn hàng TMĐT khác<i
+                                                class="material-icons right">keyboard_arrow_down</i></span></a>
+                                    <ul class="dropdown-content dropdown-horizontal-list" id="BuyHelper">
+                                        <li data-menu=""><a href="/tao-don-hang-khac"><i
+                                                    class="chat_bubble_outline"></i>Tạo đơn các web TMĐT khác</a>
+                                        </li>
+                                        <li data-menu=""><a href="/danh-sach-don-hang?t=3"><i class="mail_outline"></i>Danh
+                                                sách đơn hàng TMĐT khác</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li><a class="dropdown-menu" href="#" data-target="BuyHelper1"><i
+                                            class="material-icons">library_books</i><span>Nhập khẩu chính ngạch<i
+                                                class="material-icons right">keyboard_arrow_down</i></span></a>
+                                    <ul class="dropdown-content dropdown-horizontal-list" id="BuyHelper1">
+                                        <li data-menu=""><a href="/tao-don-chinh-ngach"><i
+                                                    class="chat_bubble_outline"></i>Tạo đơn chính ngạch</a>
+                                        </li>
+                                        <li data-menu=""><a href="/danh-sach-don-hang?t=5"><i class="mail_outline"></i>Danh
+                                                sách đơn hàng chính ngạch</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li><a class="dropdown-menu" href="#" data-target="BuyHelper2"><i
+                                            class="material-icons">library_books</i><span>Tư vấn nguồn hàng<i
+                                                class="material-icons right">keyboard_arrow_down</i></span></a>
+                                    <ul class="dropdown-content dropdown-horizontal-list" id="BuyHelper2">
+                                        <li data-menu=""><a href="/tao-don-tu-van-nguon-hang"><i
+                                                    class="chat_bubble_outline"></i>Tạo đơn tư vấn nguồn hàng</a>
+                                        </li>
+                                        <li data-menu=""><a href="/danh-sach-don-hang?t=7"><i class="mail_outline"></i>Danh
+                                                sách đơn hàng tư vấn nguồn hàng</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a href="/khieu-nai"><i class="material-icons">report</i><span>Khiếu nại</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="/tracking-mvd"><i class="material-icons">local_shipping</i><span>Tra cứu mã đơn
+                                            hàng</span></a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <!-- END: Horizontal nav start-->
+                    </nav>
+                </div>
+            </header>
+            <!-- END: Header-->
+            <!-- BEGIN: SideNav-->
+            <aside class="sidenav-main nav-expanded nav-lock nav-collapsible sidenav-fixed hide-on-large-only">
+                <div class="brand-sidebar sidenav-light"></div>
+                <ul class="sidenav sidenav-collapsible leftside-navigation collapsible sidenav-fixed hide-on-large-only menu-shadow"
+                    id="slide-out" data-menu="menu-navigation" data-collapsible="menu-accordion">
+                    <li class="navigation-header"><a class="navigation-header-text">NINJADIRECT</a>
+                    </li>
+                    <li class="bold"><a class="waves-effect waves-cyan " href="dashboard"><i
+                                class="material-icons">dashboard</i><span class="menu-title" data-i18n="">Tài
+                                khoản</span></a>
+                    </li>
+                    <li class="bold"><a class="waves-effect waves-cyan " href="/gio-hang"><i
+                                class="material-icons">shopping_cart</i><span class="menu-title" data-i18n="">Giỏ hàng
+                            </span></a>
+                    </li>
+
+                    <li class="bold"><a class="waves-effect waves-cyan " href="/danh-sach-don-hang"><i
+                                class="material-icons">library_books</i><span class="menu-title" data-i18n="">Nhập khẩu ủy
+                                thác</span></a>
+                    </li>
+
+                    <li class="bold"><a class="waves-effect waves-cyan " href="/tao-don-hang-khac"><i
+                                class="material-icons">library_books</i><span class="menu-title" data-i18n="">Tạo đơn các
+                                web TMĐT khác</span></a>
+                    </li>
+
+                    <li class="bold"><a class="waves-effect waves-cyan " href="/danh-sach-don-hang?t=3"><i
+                                class="material-icons">library_books</i><span class="menu-title" data-i18n="">Danh sách đơn
+                                hàng TMĐT khác</span></a>
+                    </li>
+
+                    <li class="bold"><a class="waves-effect waves-cyan " href="/tao-don-chinh-ngach"><i
+                                class="material-icons">library_books</i><span class="menu-title" data-i18n="">Tạo đơn nhập
+                                khẩu chính ngạch</span></a>
+                    </li>
+
+                    <li class="bold"><a class="waves-effect waves-cyan " href="/danh-sach-don-hang?t=5"><i
+                                class="material-icons">library_books</i><span class="menu-title" data-i18n="">Danh sách đơn
+                                hàng nhập khẩu chính ngạch</span></a>
+                    </li>
+
+                    <li class="bold"><a class="waves-effect waves-cyan " href="/tao-don-tu-van-nguon-hang"><i
+                                class="material-icons">library_books</i><span class="menu-title" data-i18n="">Tạo đơn tư vấn
+                                nguồn hàng</span></a>
+                    </li>
+
+                    <li class="bold"><a class="waves-effect waves-cyan " href="/danh-sach-don-hang?t=7"><i
+                                class="material-icons">library_books</i><span class="menu-title" data-i18n="">Danh sách đơn
+                                hàng tư vấn nguồn hàng</span></a>
+                    </li>
+
+                    <li class="bold"><a class="waves-effect waves-cyan " href="/khieu-nai"><i
+                                class="material-icons">report</i><span class="menu-title" data-i18n="">Khiếu nại</span></a>
+                    </li>
+                    <li class="bold"><a class="waves-effect waves-cyan " href="/tracking-mvd"><i
+                                class="material-icons">local_shipping</i><span class="menu-title" data-i18n="">Tra cứu mã
+                                đơn hàng</span></a>
+                    </li>
+
+                </ul>
+                <div class="navigation-background"></div>
+                <a class="sidenav-trigger btn-floating btn-medium waves-effect waves-light hide-on-large-only" href="#"
+                    data-target="slide-out"><i class="material-icons">menu</i></a>
+            </aside>
+            <!-- END: SideNav-->
+            <input type="hidden" name="ctl00$hdfWebsearch" id="hdfWebsearch" />
+
+            <div id="main">
+                <div class="row">
+                    <div class="content-wrapper-before blue-grey lighten-5"></div>
+                    <div class="col s12">
+                        <div class="container">
+                            <div class="all-pqd">
+                                <div class="card-panel mt-3 no-shadow">
+                                    <div class="row">
+                                        <div class="col s12">
+                                            <div class="page-title mt-2 center-align">
+                                                <h4>Giỏ hàng</h4>
+                                            </div>
+                                        </div>
+                                        <div class="col s12 order-info">
+                                            <div class="step-wrap hide-on-med-and-down">
+                                                <ul class="process-list">
+                                                    <li class="process-item active"><i
+                                                            class="material-icons">shopping_cart</i>
+                                                        <p>CHỌN SẢN PHẨM</p>
+                                                    </li>
+                                                    <li class="process-item"><i class="material-icons">map</i>
+                                                        <p>TẠO ĐƠN HÀNG</p>
+                                                    </li>
+                                                    <li class="process-item"><i class="material-icons">attach_money</i>
+                                                        <p>ĐẶT CỌC</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="order-notice">
+                                                <div class="notice-wrap grey lighten-4">
+                                                    <p>
+                                                        Sản phẩm trong giỏ sẽ tự động xóa trong vòng 30 ngày. Người bán trên
+                                                        website 1688.com thường có quy định về số lượng mua tối thiểu, bội
+                                                        số mỗi sản phẩm, giá trị đơn hàng tối thiểu và sẽ từ chối bán nếu
+                                                        không đáp ứng. Trong trường hợp đó Ninja Direct -
+                                                        Nhập hàng quốc tế sẽ hủy những đơn hàng này và không báo trước.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col s12">
+
+                                            <p class="center-align red-text">Hiện tại không có sản phẩm nào trong giỏ hàng
+                                                của bạn.</p>
+
+                                            <div class="total-info mb-2">
+
+
+                                            </div>
+                                            <div class="list-order">
+
+                                                <div class="order-item-wrap">
+
+
+
+                                                </div>
+                                                <div class="total-checkout">
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <input type="hidden" name="ctl00$ContentPlaceHolder1$hdforderlistall"
+                id="ContentPlaceHolder1_hdforderlistall" />
+            <input type="hidden" name="ctl00$ContentPlaceHolder1$hdfallnote" id="ContentPlaceHolder1_hdfallnote" />
+            <input type="hidden" name="ctl00$ContentPlaceHolder1$hdfallorderid" id="ContentPlaceHolder1_hdfallorderid" />
+            <input type="hidden" name="ctl00$ContentPlaceHolder1$hdfProductBrand"
+                id="ContentPlaceHolder1_hdfProductBrand" />
+            <input type="hidden" name="ctl00$ContentPlaceHolder1$hdfListOrderTempID"
+                id="ContentPlaceHolder1_hdfListOrderTempID" />
+            <input type="hidden" name="ctl00$ContentPlaceHolder1$hdfListIMG" id="ContentPlaceHolder1_hdfListIMG" />
+            <input type="hidden" name="ctl00$ContentPlaceHolder1$ListProduct" id="ContentPlaceHolder1_ListProduct" />
+            <input type="submit" name="ctl00$ContentPlaceHolder1$checkoutallorder" value="chaeckdall"
+                id="ContentPlaceHolder1_checkoutallorder" style="display: none" />
+            <input type="submit" name="ctl00$ContentPlaceHolder1$checkout1order" value="chaeckdall"
+                id="ContentPlaceHolder1_checkout1order" style="display: none" />
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    $('.list-order').on('change', '.select-checkout input[type="checkbox"]', function () {
+                        var $this = $(this);
+                        if ($this.prop('checked')) {
+                            $this.parents('.order-item').css('border', '1.5px solid #000');
+                            $this.next().find('.checked').css('display', 'inline-block');
+                        } else {
+                            $this.parents('.order-item').css({
+                                'border': 'none'
+                            });
+                            $this.next().find('.checked').css('display', 'none');
+                        }
+                    });
+                    $('.upload-img').on('change', function () {
+                        var e = $(this);
+                        var id = e.attr("data-id");
+                        var preview = $('#preview-img-' + id);
+                        var files = e[0].files;
+                        fileName = Array.from(files).map((name) => name);
+                        fileName.forEach((index) => {
+                            if (/\.(jpe?g|png|gif)$/i.test(index.name)) {
+                                var reader = new FileReader();
+                                reader.addEventListener(
+                                    "load",
+                                    function () {
+                                        var image = new Image();
+                                        image.height = 50;
+                                        image.title = index.name;
+                                        image.src = this.result;
+                                        image.classList = "materialboxed";
+                                        var wrap = document.createElement("div");
+                                        wrap.classList = "img-block";
+                                        wrap.appendChild(image);
+                                        var close = document.createElement("span");
+                                        close.classList = "material-icons red-text delete";
+                                        close.innerHTML = "clear";
+                                        close.onclick = function () {
+                                            this.parentNode.parentNode.removeChild(this.parentNode);
+                                        };
+                                        wrap.appendChild(close);
+                                        preview.append(wrap);
+                                        //preview.appendChild(wrap);
+                                    },
+                                    false
+                                );
+                                reader.readAsDataURL(index);
+                            }
+                        });
+                    });
+                });
+
+                function updatequantity1(ID, obj, shopid) {
+                    var quantity = obj.val();
+                    if (quantity == 0) {
+                        deleteordertemp(ID, shopid);
+                    } else {
+                        $.ajax({
+                            type: "POST",
+                            url: "/Cart.aspx/UpdateQuantityOrderTemp",
+                            data: "{ID:'" + ID + "',quantity:'" + quantity + "'}",
+                            contentType: "application/json; charset=utf-8",
+                            dataType: "json",
+                            success: function (msg) {
+                                if (msg.d == "1") {
+                                    location.reload();
+                                }
+                            },
+                            error: function (xmlhttprequest, textstatus, errorthrow) {
+                                // alert('lỗi');
+                            }
+                        });
+                    }
+
+                }
+
+                function updatequantity(ID, obj, shopid) {
+                    var quantity = obj.parent().parent().find(".quantitiofpro").val();
+                    var brand = obj.parent().parent().parent().find(".notebrand").val();
+                    if (quantity == 0) {
+                        deleteordertemp(ID, shopid);
+                    } else {
+                        $.ajax({
+                            type: "POST",
+                            url: "/Cart.aspx/UpdateQuantityOrderTemp",
+                            data: "{ID:'" + ID + "',quantity:'" + quantity + "',brand:'" + brand + "'}",
+                            contentType: "application/json; charset=utf-8",
+                            dataType: "json",
+                            success: function (msg) {
+                                if (msg.d == "1") {
+                                    location.reload();
+                                }
+                            },
+                            error: function (xmlhttprequest, textstatus, errorthrow) {
+                                // alert('lỗi');
+                            }
+                        });
+                    }
+
+                }
+
+                function deleteordertemp(ID, shopid) {
+                    var r = confirm("Bạn muốn xóa sản phẩm này?");
+                    if (r == true) {
+                        $.ajax({
+                            type: "POST",
+                            url: "/Cart.aspx/deleteOrderTemp",
+                            data: "{ID:'" + ID + "',shopID:'" + shopid + "'}",
+                            contentType: "application/json; charset=utf-8",
+                            dataType: "json",
+                            success: function (msg) {
+                                if (msg.d == "1") {
+                                    location.reload();
+                                }
+                            },
+                            error: function (xmlhttprequest, textstatus, errorthrow) {
+                                //alert('lỗi');
+                            }
+                        });
+                    } else { }
+                }
+
+                function deleteordershoptemp(ID) {
+                    var r = confirm("Bạn muốn xóa cửa hàng này và tất cả sản phẩm hiện có ?");
+                    if (r == true) {
+                        $.ajax({
+                            type: "POST",
+                            url: "/Cart.aspx/deleteOrderShopTemp",
+                            data: "{ID:'" + ID + "'}",
+                            contentType: "application/json; charset=utf-8",
+                            dataType: "json",
+                            success: function (msg) {
+                                if (msg.d == "1") {
+                                    location.reload();
+                                }
+                            },
+                            error: function (xmlhttprequest, textstatus, errorthrow) {
+                                //alert('lỗi');
+                            }
+                        });
+                    } else { }
+                }
+
+                function updatecheck(obj, ID, fieldUpdate) {
+                    $("body").append("<div class=\"loading\"></div>");
+                    var chk = obj.is(':checked');
+                    $.ajax({
+                        type: "POST",
+                        url: "Cart.aspx/UpdateField",
+                        data: "{ID:'" + ID + "',chk:'" + chk + "',field:'" + fieldUpdate + "'}",
+                        contentType: "application/json; charset=utf-8",
+                        dataType: "json",
+                        success: function (msg) {
+                            var ret = msg.d;
+                            if (ret == 1) {
+
+                            } else if (ret == "wronguser") {
+                                alert("Không đúng tài khoản.");
+                            } else if (ret == "null") {
+                                alert("Không tồn tại.");
+                            }
+                        },
+                        error: function (xmlhttprequest, textstatus, errorthrow) {
+                            //alert(errorthrow);
+                        }
+                    });
+                    $(".loading").remove();
+                }
+
+                function checkoutAll(listorderid) {
+                    $("#ContentPlaceHolder1_hdfListOrderTempID").val(listorderid);
+                    var striplist = listorderid.split('|');
+                    var html = "";
+                    var brandpro = "";
+
+                    if (striplist.length > 0) {
+                        for (var i = 0; i < striplist.length - 1; i++) {
+
+                            var ID = striplist[i];
+                            var objo = $("#" + ID + "_checkproductselect");
+
+                            var note = $("#order_temp_" + ID + "").val();
+                            var priceVND = $("#priceVND_" + ID + "").attr("data-price");
+
+                            if (note == null || note == "") {
+                                note = "";
+                            }
+                            if (isEmpty(priceVND)) {
+                                alert('lỗi priceVND');
+                                return;
+                            }
+
+                            var base64 = "";
+                            $("#preview-img-" + ID + " img").each(function () {
+                                base64 += $(this).attr('src') + "$";
+                            })
+                            html += ID + "?" + note + "?" + priceVND + "?" + base64 + "|";
+
+                        }
+                        $(".brand-name-product").each(function () {
+                            var idpro = $(this).find(".notebrand").attr("data-item-id");
+                            var brandtext = $(this).find(".notebrand").val();
+                            brandpro += idpro + "," + brandtext + "|";
+                        });
+
+                        $("#ContentPlaceHolder1_hdfProductBrand").val(brandpro);
+                        $("#ContentPlaceHolder1_hdforderlistall").val(html);
+                        $("#ContentPlaceHolder1_checkoutallorder").click();
+                    }
+                }
+
+                function checkoutAllSelect() {
+                    var listorderid = $("#ContentPlaceHolder1_hdfListOrderTempID").val();
+                    var striplist = listorderid.split('|');
+                    var html = "";
+                    var brandpro = "";
+                    if (striplist.length - 1 > 0) {
+                        for (var i = 0; i < striplist.length - 1; i++) {
+
+                            var ID = striplist[i];
+                            var objo = $("#" + ID + "_checkproductselect");
+
+                            var note = $("#order_temp_" + ID + "").val();
+                            var priceVND = $("#priceVND_" + ID + "").attr("data-price");
+
+                            if (note == null || note == "") {
+                                note = "";
+                            }
+                            if (isEmpty(priceVND)) {
+                                alert('lỗi priceVND');
+                                return;
+                            }
+                            var base64 = "";
+                            $("#preview-img-" + ID + " img").each(function () {
+                                base64 += $(this).attr('src') + "$";
+                            })
+                            html += ID + "?" + note + "?" + priceVND + "?" + base64 + "|";
+                        }
+
+                        $(".brand-name-product").each(function () {
+                            var idpro = $(this).find(".notebrand").attr("data-item-id");
+                            var brandtext = $(this).find(".notebrand").val();
+                            brandpro += idpro + "," + brandtext + "|";
+                        });
+
+                        $("#ContentPlaceHolder1_hdfProductBrand").val(brandpro);
+                        $("#ContentPlaceHolder1_hdforderlistall").val(html);
+                        $("#ContentPlaceHolder1_checkoutallorder").click();
+                    }
+                }
+
+                function isEmpty(str) {
+                    return !str.replace(/^\s+/g, '').length; // boolean (`true` if field is empty)
+                }
+
+                function getCartToSuccess(obj) {
+
+                    var countOrderCheck = 0;
+                    var list = "";
+                    if (obj.is(":checked")) {
+                        obj.parent().parent().addClass("select");
+                    } else {
+                        obj.parent().parent().removeClass("select");
+                    }
+                    $(".shop-cart").each(function () {
+                        if ($(this).hasClass("select")) {
+                            countOrderCheck += 1;
+                            list += $(this).attr("data-item-id") + "|";
+                        }
+                    });
+                    $("#ContentPlaceHolder1_hdfListOrderTempID").val(list);
+                    if (countOrderCheck > 0) {
+                        $(".getallOrder").attr("style", "display:inline-block;").find(".numofOrder").html(countOrderCheck);
+                    } else {
+                        $(".getallOrder").removeAttr("style").hide().find(".numofOrder").html(countOrderCheck);
+                    }
+                }
+
+                $(document).ready(function () {
+                    var countOrderCheck = 0;
+                    var list = "";
+                    $(".shop-cart").each(function () {
+                        if ($(this).hasClass("select")) {
+                            countOrderCheck += 1;
+                            list += $(this).attr("data-item-id") + "|";
+                        }
+                    });
+                    $("#ContentPlaceHolder1_hdfListOrderTempID").val(list);
+                    if (countOrderCheck > 0) {
+                        $(".getallOrder").attr("style", "display:inline-block;").find(".numofOrder").html(countOrderCheck);
+                    } else {
+                        $(".getallOrder").removeAttr("style").hide().find(".numofOrder").html(countOrderCheck);
+                    }
+                });
+
+                function checkout(ID) {
+                    var infor = "";
+                    var brandpro = "";
+                    var chk_isfast = $("#chk_fast_" + ID + "").is(':checked');
+                    var note = $("#order_temp_" + ID + "").val();
+                    if (note == null || note == "") {
+                        note = "";
+                    }
+                    var base64 = "";
+                    $("#preview-img-" + ID + " img").each(function () {
+                        base64 += $(this).attr('src') + "$";
+                    })
+                    var priceVND = $("#priceVND_" + ID + "").attr("data-price");
+                    var objo = $("#" + ID + "_checkproductselect");
+                    infor += ID + "?" + note + "?" + priceVND + "?" + base64 + "|";
+
+                    $(".brand-name-product").each(function () {
+                        var parent = $(this).attr("data-parent");
+                        if (parent == ID) {
+                            var idpro = $(this).find(".notebrand").attr("data-item-id");
+                            var brandtext = $(this).find(".notebrand").val();
+                            brandpro += idpro + "," + brandtext + "|";
+                        }
+                    });
+
+                    var parent = $("#priceVND_" + ID + "").parent().parent().parent().parent().parent(); //.find(".order-main");
+                    var checkbox = parent.find(".left-info").find(".order-main").find(".checkbox");
+                    var item = "";
+                    checkbox.each(function () {
+                        var parent = $(this).val();
+                        if ($(this).is(":checked") == true) {
+                            item += parent + "|";
+
+                        }
+                    });
+
+                    $("#ContentPlaceHolder1_ListProduct").val(item);
+                    $("#ContentPlaceHolder1_hdforderlistall").val(infor);
+                    $("#ContentPlaceHolder1_hdfProductBrand").val(brandpro);
+                    $("#ContentPlaceHolder1_checkout1order").click();
+                }
+            </script>
+
+            <input type="hidden" name="ctl00$hdfMainLoginID" id="hdfMainLoginID" />
+            <input type="hidden" name="ctl00$hdfMainLoginStatus" id="hdfMainLoginStatus" />
+            <input type="hidden" name="ctl00$hdfShowExtension" id="hdfShowExtension" value="0" />
+        </form>
+        <footer
+            class="page-footer footer footer-static footer-dark  bg-dark-gradient gradient-shadow navbar-border navbar-shadow">
+            <div class="footer-copyright">
+                <div class="container">
+                    <span>&copy; 2021 <a href="#" target="_blank">NINJADIRECT</a>
+                        All rights reserved.</span><span class="right hide-on-small-only">NINJADIRECT
+                        <a href="#">Version: 5.0</a></span>
+                </div>
+            </div>
+        </footer>
+        <a href="javascript:;" id="return-to-top"><i class="material-icons">arrow_upward</i></a>
+        <!-- END: Footer-->
+        <!-- BEGIN VENDOR JS-->
+        <script src="../js/admin/vendors.min.js" type="text/javascript"></script>
+        <!-- BEGIN VENDOR JS-->
+        <!-- BEGIN PAGE VENDOR JS-->
+        <script src="../js/admin/formatter/jquery.formatter.min.js"
+            type="text/javascript"></script>
+        <!-- END PAGE VENDOR JS-->
+        <script src="../js/ms-Dropdown-master/js/msdropdown/jquery.dd.min.js"></script>
+        <!-- BEGIN THEME  JS-->
+        <script src="../js/user/plugins.js" type="text/javascript"></script>
+        <script src="../js/user/custom/custom-script.js" type="text/javascript"></script>
+        <script src="../js/sweet/sweet-alert.js" type="text/javascript"></script>
+        <!-- END THEME  JS-->
+        <!-- BEGIN PAGE LEVEL JS-->
+        <script src="../js/scripts/jquery.signalR-2.2.3.min.js"></script>
+        <!-- <script src="/signalr/hubs"></script> -->
+        <script src="../js/datepicker/jquery.datetimepicker.full.js"></script>
+        <script src="../js/admin/pushdesktop/CreateDevice.js"></script>
+        <!-- END PAGE LEVEL JS-->
+        <script>
+            $("#brand-source").msDropdown();
+        </script>
+
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('.txtsearchfield').on("keypress", function (e) {
+                    if (e.keyCode == 13) {
+                        searchProduct();
+                    }
+                });
+            });
+
+            function searchProduct() {
+                var web = $("#brand-source").val();
+                $("#hdfWebsearch").val(web);
+                $("#btnSearch").click();
+            }
+
+            function OnClientFileSelected(sender, args) {
+                if ($telerik.isIE) return;
+                else {
+                    truncateName(args);
+                    var file = args.get_fileInputField().files.item(0);
+                    showThumbnail(file, args);
+                }
+            }
+            $(document).ready(function () {
+                if ($("#hdfShowExtension").val() == 1) {
+                    $(".fixed-download").removeClass('open');
+                }
+            })
+
+            function truncateName(args) {
+                var $span = $(".ruUploadProgress", args.get_row());
+                var text = $span.text();
+                if (text.length > 23) {
+                    var newString = text.substring(0, 23) + '...';
+                    $span.text(newString);
+                }
+            }
+
+            function showThumbnail(file, args) {
+
+                var image = document.createElement("img");
+
+                image.file = file;
+                image.className = "ab img-responsive";
+
+                var $row = $(args.get_row());
+                $row.parent().className = "row ruInputs list-unstyled";
+                $row.append(image);
+
+
+                var reader = new FileReader();
+                reader.onload = (function (aImg) {
+                    return function (e) {
+                        aImg.src = e.target.result;
+                    };
+                }(image));
+                var ret = reader.readAsDataURL(file);
+                var canvas = document.createElement("canvas");
+
+                ctx = canvas.getContext("2d");
+                image.onload = function () {
+                    ctx.drawImage(image, 100, 100);
+                };
+            }
+
+            function notshow() {
+                var value = $("#hdfShowExtension").val();
+                $.ajax({
+                    type: "POST",
+                    url: "/dashboard.aspx/Notshow",
+                    data: "{data:'" + value + "'}",
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function (msg) {
+                        if (value = "0") {
+                            $("#hdfShowExtension").val(1);
+                        } else {
+                            $("#hdfShowExtension").val(0);
+                        }
+
+                    },
+                    error: function (xmlhttprequest, textstatus, errorthrow) {
+                        alert('lỗi');
+                    }
+                });
+
+            }
+        </script>
+
+        <style>
+            .dd {
+                width: 130px !important;
+            }
+
+            .dd .ddChild {
+                height: auto !important;
+                top: 44px !important;
+            }
+
+            .form-search-box {
+                width: 600px;
+            }
+
+            .search-form-wrap {
+                width: 100%;
+                padding: 0;
+                background: #F3F3F3;
+                border-radius: 0;
+            }
+
+            .search-form-wrap .search-form {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                position: relative;
+                border: 1px solid #e1e1e1;
+                background-color: #fff;
+                height: 45px !important;
+            }
+
+            .search-form-wrap .search-form .dd {
+                border: 0;
+                border-radius: 0;
+                outline: 0;
+            }
+
+            .search-form-wrap .search-form .dd .ddArrow {
+                display: none;
+            }
+
+            .search-form-wrap .search-form .dd .ddChild::-webkit-scrollbar {
+                width: 5px;
+            }
+
+            .search-form-wrap .search-form .dd .ddChild::-webkit-scrollbar-track {
+                background: #f1f1f1;
+            }
+
+            .search-form-wrap .search-form .dd .ddChild::-webkit-scrollbar-thumb {
+                background: #888;
+                border-radius: 5px;
+            }
+
+            .search-form-wrap .search-form .dd .ddChild li {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                width: 100%;
+            }
+
+            .search-form-wrap .search-form .dd .ddChild li img {
+                max-width: 35px;
+            }
+
+            .search-form-wrap .search-form .dd .divider {
+                display: none;
+            }
+
+            .search-form-wrap .search-form .dd .ddTitle {
+                background: #fff;
+                border-radius: 0;
+            }
+
+            .search-form-wrap .search-form .dd .ddTitle .ddTitleText {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                position: relative;
+            }
+
+            .search-form-wrap .search-form .dd .ddTitle .ddTitleText:before {
+                content: '';
+                position: absolute;
+                right: 0;
+                top: 6px;
+                height: 30px;
+                width: 1px;
+                background: #80808063;
+            }
+
+            .search-form-wrap .search-form .dd .ddTitle .ddTitleText img {
+                display: block;
+                height: 30px;
+                width: 30px;
+                -o-object-fit: contain;
+                object-fit: contain;
+            }
+
+            .search-form-wrap .search-form .dd .ddlabel {
+                font-size: 13px;
+                font-weight: 500;
+                color: black;
+                display: inline-block;
+                vertical-align: middle;
+                padding: 8px;
+                line-height: 1;
+                max-width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .search-form-wrap .search-form .select-form {
+                min-height: 42px;
+                width: 145px;
+                -ms-flex-negative: 0;
+                flex-shrink: 0;
+                position: relative;
+            }
+
+            .search-form-wrap .search-form .select-form .icon {
+                position: absolute;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+                right: 30px;
+                pointer-events: none;
+                color: #C2002F;
+            }
+
+            .search-form-wrap .search-form .main-btn {
+                position: absolute;
+                right: 5px;
+                top: 4px;
+                z-index: 1;
+                width: 126px;
+                height: 35px;
+                padding: 0;
+                text-align: center;
+                line-height: 35px;
+                white-space: nowrap;
+                background: #C2002F;
+                color: #fff;
+                font-weight: bold;
+                text-transform: uppercase;
+                font-size: 14px;
+                background-position: center center;
+                background-size: cover;
+                -webkit-transition: 0.3s ease;
+                transition: 0.3s ease;
+            }
+
+            .search-form-wrap .search-form .main-btn:hover {
+                background-color: white;
+                color: #C2002F;
+                border: 1px solid #C2002F;
+            }
+
+            .search-form-wrap .search-form .main-btn:hover .search-form-wrap .input-form .f-input {
+                border-radius: 0 30px 30px 0 !important;
+            }
+
+            @media screen and (max-width: 576px) {
+                .search-form-wrap .search-form .main-btn {
+                    top: 80px;
+                }
+            }
+
+            .search-form-wrap .input-form {
+                width: 100%;
+                position: relative;
+                height: 45px;
+            }
+
+            .search-form-wrap .input-form .f-input {
+                position: absolute;
+                height: 42px;
+                border: 0 !important;
+            }
+
+            .search-form-wrap .search-form .select-form select {
+                background-size: cover;
+                border: solid 0px #ececec;
+            }
+        </style>
+    </body>
+
+</html>

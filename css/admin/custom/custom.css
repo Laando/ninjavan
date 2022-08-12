@@ -2892,3 +2892,93 @@ input:not([type]):disabled, input:not([type])[readonly="readonly"], input[type=t
     height: 390px
 }
 /*# sourceMappingURL=custom.css.map */
+
+.all {
+    width: 1170px;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.faq-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 15px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.process-list {
+    list-style: none;
+    padding: 0;
+    position: relative;
+    max-width: 800px;
+    margin: 20px auto 26px;
+    border: none;
+    z-index: 0;
+    padding-left: 50px !important;
+}
+
+.process-list .process-item {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    float: none;
+    position: relative;
+}
+
+.process-list .process-item.active {
+    color: #ffff;
+}
+
+.process-list .process-item.active i {
+    background: #C2002F;
+    border-color: #fff;
+    border-style: solid;
+}
+
+.process-list .process-item i {
+    display: block;
+    height: 68px;
+    width: 68px;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    background: #f5f6f7;
+    border: 2px solid #e5e5e5;
+    line-height: 65px;
+    font-size: 30px;
+    border-radius: 50%;
+    border-style: dashed;
+}
+
+.process-list .process-item.active p {
+    color: #C2002F;
+    font-weight: bold;
+}
+
+.process-list .process-item.active:after {
+    background: #C2002F;
+}
+
+.process-list .process-item:after {
+    content: '';
+    display: block;
+    height: 3px;
+    background: #e5e5e5;
+    width: 100%;
+    position: absolute;
+    top: 33px;
+    z-index: -1;
+    right: -100px;
+}
+
+.process-list .process-item:last-child:after {
+    width: 0;
+}
